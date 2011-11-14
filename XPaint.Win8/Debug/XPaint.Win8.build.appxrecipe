@@ -8,7 +8,7 @@
   <ItemGroup>
     <AppXManifest Include="C:\Projects\XPaint.Win8\XPaint.Win8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2011-11-10T22:40:34.791</Modified>
+      <Modified>2011-11-14T20:08:31.536</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -18,11 +18,11 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2011-11-10T22:45:48.497</Modified>
+      <Modified>2011-11-14T20:33:17.597</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2011-11-10T22:42:39.488</Modified>
+      <Modified>2011-11-14T20:33:10.336</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -42,11 +42,15 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\app.js">
       <PackagePath>js\app.js</PackagePath>
-      <Modified>2011-11-10T22:45:46.220</Modified>
+      <Modified>2011-11-14T20:31:53.883</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-14T20:22:03.003</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\jquery-1.7.min.js">
+      <PackagePath>js\jquery-1.7.min.js</PackagePath>
+      <Modified>2011-11-14T20:06:51.807</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\winjs\Css\ui-dark.css">
       <PackagePath>winjs\Css\ui-dark.css</PackagePath>

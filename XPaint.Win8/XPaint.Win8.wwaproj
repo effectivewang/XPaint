@@ -28,6 +28,7 @@
     <Content Include="images\storelogo.png" />
     <AppxManifest Include="package.appxmanifest" />
     <Content Include="js\app.js" />
+    <Content Include="js\jquery-1.7.min.js" />
     <Content Include="winjs\Css\ui-dark.css" />
     <Content Include="winjs\Css\ui-light.css" />
     <Content Include="winjs\js\animations.js" />
