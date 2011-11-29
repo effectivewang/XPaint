@@ -1,0 +1,24 @@
+﻿body
+{
+}
+
+#toolbox
+{
+    width: 80px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+#layout-table
+{
+    padding: 8px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#myCanvas
+{
+    height: 800px;
+    width:  1024px;
+}

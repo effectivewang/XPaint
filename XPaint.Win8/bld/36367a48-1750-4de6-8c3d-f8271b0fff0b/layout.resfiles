@@ -1,4 +1,5 @@
 css\default.css
+css\style.css
 default.html
 images\logo.png
 images\smalllogo.png
@@ -6,6 +7,9 @@ images\splashscreen.png
 images\storelogo.png
 js\app.js
 js\jquery-1.7.min.js
+js\lineTool.js
+js\oop.js
+js\tool.js
 winjs\Css\ui-dark.css
 winjs\Css\ui-light.css
 winjs\js\animations.js

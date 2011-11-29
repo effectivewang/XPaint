@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="XPaint.Win8" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="XPaint.Win8" ForegroundText="light" BackgroundColor="#0084FF">
+      <VisualElements DisplayName="XPaint.Win8" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="XPaint.Win8" ForegroundText="light" BackgroundColor="#FFFFFF" InitialRotationPreference="portrait">
         <DefaultTile ShowName="true" />
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>

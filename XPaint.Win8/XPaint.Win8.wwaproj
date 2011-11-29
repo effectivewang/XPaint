@@ -21,6 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="css\default.css" />
+    <Content Include="css\style.css" />
     <Content Include="default.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
@@ -29,6 +30,9 @@
     <AppxManifest Include="package.appxmanifest" />
     <Content Include="js\app.js" />
     <Content Include="js\jquery-1.7.min.js" />
+    <Content Include="js\lineTool.js" />
+    <Content Include="js\oop.js" />
+    <Content Include="js\tool.js" />
     <Content Include="winjs\Css\ui-dark.css" />
     <Content Include="winjs\Css\ui-light.css" />
     <Content Include="winjs\js\animations.js" />
@@ -40,6 +44,9 @@
     <Content Include="winjs\js\uicollections.js" />
     <Content Include="winjs\js\wwaapp.js" />
     <Content Include="js\default.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.targets" />
 </Project>

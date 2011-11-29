@@ -8,7 +8,7 @@
   <ItemGroup>
     <AppXManifest Include="C:\Projects\XPaint.Win8\XPaint.Win8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2011-11-14T20:08:31.536</Modified>
+      <Modified>2011-11-29T19:51:01.869</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -16,41 +16,57 @@
       <PackagePath>css\default.css</PackagePath>
       <Modified>2011-11-10T22:14:53.613</Modified>
     </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\css\style.css">
+      <PackagePath>css\style.css</PackagePath>
+      <Modified>2011-11-29T19:30:04.661</Modified>
+    </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2011-11-14T20:33:17.597</Modified>
+      <Modified>2011-11-29T19:51:24.055</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2011-11-14T20:33:10.336</Modified>
+      <Modified>2011-11-29T19:27:51.521</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-29T19:19:52.111</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-29T19:20:37.503</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-29T19:23:06.894</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-29T19:14:36.372</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\app.js">
       <PackagePath>js\app.js</PackagePath>
-      <Modified>2011-11-14T20:31:53.883</Modified>
+      <Modified>2011-11-29T19:23:29.184</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2011-11-14T20:22:03.003</Modified>
+      <Modified>2011-11-27T20:18:45.391</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\jquery-1.7.min.js">
       <PackagePath>js\jquery-1.7.min.js</PackagePath>
       <Modified>2011-11-14T20:06:51.807</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\lineTool.js">
+      <PackagePath>js\lineTool.js</PackagePath>
+      <Modified>2011-11-29T18:56:10.222</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\oop.js">
+      <PackagePath>js\oop.js</PackagePath>
+      <Modified>2011-11-29T18:54:35.607</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\js\tool.js">
+      <PackagePath>js\tool.js</PackagePath>
+      <Modified>2011-11-29T18:56:07.088</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\winjs\Css\ui-dark.css">
       <PackagePath>winjs\Css\ui-dark.css</PackagePath>
@@ -90,7 +106,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint.Win8\XPaint.Win8\winjs\js\wwaapp.js">
       <PackagePath>winjs\js\wwaapp.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2011-11-27T20:06:07.604</Modified>
     </AppXPackagedFile>
   </ItemGroup>
 </Project>
