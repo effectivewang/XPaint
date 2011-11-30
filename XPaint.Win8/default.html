@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/css/default.css" />
     <script src="/js/default.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/tool.js"></script>
-    <script src="/js/lineTool.js"></script>
+    <script src="/js/tools/tool.js"></script>
+    <script src="/js/tools/lineTool.js"></script>
     <script src="/js/jquery-1.7.min.js"></script>
     <!-- Application Stylesheet -->
     <link rel="stylesheet" href="/css/style.css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript">
        $(document).ready(function () {
 
-                var toolbox = document.getElementById("toolbox");
+                var toolbox = $("#toolbox");
                 var canvas = document.getElementById("myCanvas");
 
                 var app = new App(toolbox, canvas);
@@ -40,6 +40,7 @@
                     <td >
                         <div id="toolbox">
                             Toolbox
+                            <img  alt="brush" src="images/tools/Brush_2.png" />
                         </div>
                     </td>
                     <td>
