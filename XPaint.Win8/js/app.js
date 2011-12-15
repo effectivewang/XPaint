@@ -58,6 +58,8 @@ App.prototype.loadControls = function () {
         this._toolbox.append("<img id='" + toolName + "' src='" + iconFile + "' />");
     }
 
+    // this._toolbox.dialog('open');
+
 }
 
 App.prototype.initEvents = function () {

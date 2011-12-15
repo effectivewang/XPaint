@@ -17,8 +17,48 @@
     height: 100%;
 }
 
-#myCanvas
+#contentHost {
+    width: 100%;
+    height: 100%;
+}
+
+.layer
 {
-    height: 800px;
-    width:  1024px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Command Button Icons */
+.win-commandicon
+{
+    display: inline-block;
+    margin: 0px 30px; /* padding for command buttons */    
+    min-width: 0px;
+    min-height: 0px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0px;
+
+    /* Normal sizing */
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    background-origin: border-box;
+
+    /* Default Font for Glyphs */
+    font-family: "Segoe UI Symbol";
+    /* Applications provide their own content, like &#xE0D5; */
+    vertical-align: middle;
+    font-size: 8pt;
+    line-height: 26px; /* line-height must match the content box height */    
+}
+
+.win-commandicon.win-large
+{
+    width: 40px;
+    height: 40px;
+    font-size: 14pt;
+    line-height: 36px; /* line-height must match the content box height */
 }
