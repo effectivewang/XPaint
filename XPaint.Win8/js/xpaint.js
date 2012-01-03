@@ -1,18 +1,18 @@
 ﻿(function () {
-    'use strict';
+    
 
     var erasing = false,
         canvas = null,
         ctx = null,
-        undoStack = [],
-        redoStack = [],
+        history = new XPaint.history();
         palettes = { size: null, brush: null, eraser: null },
         imageIndex = null;
 
     function onToolClicked() {
-        var toolName = arguments[0].id;
+        var targetTool = arguments[0].target;
 
-        var tool = toolName();
+        var toolName = "XPaint." + targetTool.id;     
+        this.tool = new Function("return new " + toolName + "();")();
 
     }
 
@@ -21,7 +21,7 @@
     }
 
     function hookupAppbarEvents() {
-        document.getElementById('brushTool').addEventListener('click', onToolClicked, false);
+        document.getElementById('lineTool').addEventListener('click', onToolClicked, false);
     }
 
     function hookupcanvasEvents() {
@@ -97,6 +97,7 @@
         else {
             imageIndex = null;
         }
+
         undoStack = [];
         redoStack = [];
 

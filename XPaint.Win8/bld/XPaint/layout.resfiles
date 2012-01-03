@@ -132,9 +132,12 @@ css\style.css
 default.html
 html\gallery.html
 html\xpaint.html
-js\app.js
-js\tools\lineTool.js
-js\tools\tool.js
+js\command.js
+js\history.js
+js\layer.js
+js\loader\head.js
+js\tool\lineTool.js
+js\tool\tool.js
 js\xpaint.js
 winjs\Css\ui-dark.css
 winjs\Css\ui-light.css

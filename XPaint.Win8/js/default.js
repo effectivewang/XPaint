@@ -3,6 +3,17 @@
     // Uncomment the following line to enable first chance exceptions.
     Debug.enableFirstChanceException(true);
 
+    function loadFiles() {
+        head.js("js/command.js")
+        .js("js/history.js")
+        .js("js/xpaint.js")
+        .js("js/layer.js")
+        .js("js/tool/tool.js")
+        .js("js/tool/lineTool.js");
+    }
+
+    loadFiles();
+
     var resourceLoader = null;
 
     function activated(e) {

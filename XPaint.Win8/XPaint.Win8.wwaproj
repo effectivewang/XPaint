@@ -155,9 +155,12 @@
     <Content Include="html\gallery.html" />
     <Content Include="html\xpaint.html" />
     <AppxManifest Include="package.appxmanifest" />
-    <Content Include="js\app.js" />
-    <Content Include="js\tools\lineTool.js" />
-    <Content Include="js\tools\tool.js" />
+    <Content Include="js\command.js" />
+    <Content Include="js\history.js" />
+    <Content Include="js\layer.js" />
+    <Content Include="js\loader\head.js" />
+    <Content Include="js\tool\lineTool.js" />
+    <Content Include="js\tool\tool.js" />
     <Content Include="js\xpaint.js" />
     <Content Include="winjs\Css\ui-dark.css" />
     <Content Include="winjs\Css\ui-light.css" />
