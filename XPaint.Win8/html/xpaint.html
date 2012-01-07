@@ -4,38 +4,62 @@
     <title></title>
 </head>
 <body>    
-    <canvas id="xpaint" style="width: 100%; height: 100%"></canvas>
+    <canvas id="xpaint" class="layer"></canvas>
 
     <div id="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="{position: 'bottom', autoHide: 0, transient: false, lightDismiss: false}">
-        <div class="win-top">
-            <button aria-labelledby="lbl-cmd-gallery" id="lineTool" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/brush_2.png)">
-                </span>
+        <div class="win-left">
+            <button aria-labelledby="lbl-cmd-gallery" id="gallery" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/home.png)"></span>
+                <span id="lbl-cmd-gallery" class="win-label" data-win-res="textContent: xpaint_appbar_gallery"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="shapeButton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/Shape_ellipses_2.png)">
+        </div>
+        <div class="win-right">
+            <button aria-labelledby="lbl-cmd-brush" id="BrushTool" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/brush.png)">
                 </span>
+                <span id="lbl-cmd-brush" class="win-label" data-win-res="textContent: xpaint_appbar_brush"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="textButton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/text_2.png)">
+            <button aria-labelledby="lbl-cmd-shape" id="ShapeTool" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/brush.png)">
                 </span>
+                <span id="lbl-cmd-shape" class="win-label" data-win-res="textContent: xpaint_appbar_shape"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="fillButton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/fill_2.png)">
+            <button aria-labelledby="lbl-cmd-eraser" id="EraserTool" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/eraser.png)">
                 </span>
+                <span id="lbl-cmd-eraser" class="win-label" data-win-res="textContent: xpaint_appbar_eraser"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="stampButton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/stamp_2.png)">
+            
+            <button aria-labelledby="lbl-cmd-colorPicker" id="PickerTool" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/colorPicker.png)" data-win-bind="style.backgroundColor: Settings.brush.color Palettes.colorToStyle">
                 </span>
+                <span id="lbl-cmd-colorPicker" class="win-label" data-win-res="textContent: xpaint_appbar_colorPicker"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="eraserButton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/eraser_2.png)">
+
+            <button aria-labelledby="lbl-cmd-crop" id="CropTool" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/images/tools/crop_2.png)">
                 </span>
+                <span id="lbl-cmd-crop" class="win-label" data-win-res="textContent: xpaint_appbar_crop"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-gallery" id="cropbutton" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/asset/images/tools/crop_2.png)">
+            
+            <button aria-labelledby="lbl-cmd-palette" id="colorPalette" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/palette.png)">
                 </span>
+                <span id="lbl-cmd-palette" class="win-label" data-win-res="textContent: xpaint_appbar_palette"></span>
             </button>
+            
+            <button aria-labelledby="lbl-cmd-undo" id="undoButton" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/undo.png)">
+                </span>
+                <span id="lbl-cmd-undo" class="win-label" data-win-res="textContent: xpaint_appbar_undo"></span>
+            </button>
+
+            <button aria-labelledby="lbl-cmd-redo" id="redoButton" class="win-command">
+                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/redo.png)">
+                </span>
+                <span id="lbl-cmd-redo" class="win-label" data-win-res="textContent: xpaint_appbar_redo"></span>
+            </button>
+            
         </div>
     </div>
 </body>

@@ -1,23 +1,34 @@
 ﻿(function layer(canvas) {
 
-    function getCurrent() {
-        return canvas;
+    var canvas;
+    var ctx;
+
+    function create(canvas) {
+        this.canvas = canvas;
+        this.context = canvas.getContext("2d");
+
+        return {
+            canvas: this.canvas,
+            context: this.context,
+            width: this.canvas.width,
+            height: this.canvas.height
+        };
     }
 
     WinJS.Namespace.define("layer", {
-        current: getCurrent
+        create: create
     });
+
 })();
 
-(function layerManager() {
+(function () {
 
     function createLayers(canvas){
-        this.backgroundLayer = new layer(canvas);
-        this.operationLayer = new layer(canvas);
-        this.paintingLayer = new layer(canvas);
+        this.operationLayer = layer.create(canvas);
+        this.paintingLayer = layer.create(canvas);
     }
 
-    function getCanvas() {
+    function getPainting() {
         return this.paintingLayer;
     }
 
@@ -25,9 +36,9 @@
         return this.operationLayer;
     }
 
-    WinJS.Namespace.defineWithParent(layer, "layerManager", {
+    WinJS.Namespace.define("layerManager", {
         createLayers: createLayers,
-        defaultLayer: getOperation
+        getDefault: getPainting
     });
 
 })();

@@ -5,7 +5,7 @@
     <DisplayName>XPaint.Win8</DisplayName>
     <Description>XPaint.Win8</Description>
     <PublisherDisplayName>roger at home</PublisherDisplayName>
-    <Logo>asset\images\storelogo.png</Logo>
+    <Logo>assets\images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2</OSMinVersion>
@@ -16,9 +16,9 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="XPaint.Win8" Logo="asset\images\logo.png" SmallLogo="asset\images\smalllogo.png" Description="XPaint.Win8" ForegroundText="light" BackgroundColor="#FFFFFF" InitialRotationPreference="portrait">
+      <VisualElements DisplayName="XPaint.Win8" Logo="assets\images\logo.png" SmallLogo="assets\images\smalllogo.png" Description="XPaint.Win8" ForegroundText="light" BackgroundColor="#FFFFFF" InitialRotationPreference="portrait">
         <DefaultTile ShowName="true" />
-        <SplashScreen Image="asset\images\splashscreen.png" />
+        <SplashScreen Image="assets\images\splashscreen.png" />
       </VisualElements>
     </Application>
   </Applications>

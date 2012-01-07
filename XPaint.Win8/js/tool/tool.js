@@ -2,10 +2,10 @@
 
     XPaint = XPaint || {};
 
-    XPaint.tool = function () {
-        this.onmousedown = function (e) { }
-        this.onmousemove = function (e) { }
-        this.onmouseup = function (e) { }
+    XPaint.Tool = function () {
+        this.down = function (e) { }
+        this.move = function (e) { }
+        this.up = function (e) { }
 
         // virtual drawing method
         this.draw = function (context) {}

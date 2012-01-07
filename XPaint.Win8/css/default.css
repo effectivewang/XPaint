@@ -1,37 +1,54 @@
-﻿html, body {
+﻿
+/* Reset
+***************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
     padding: 0;
+    font-size: 100%; 
+    vertical-align: baseline;
+    text-decoration:none;
+    border: 0;
+    outline: 0;
+    background:transparent;
+}
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+blockquote, q { quotes: none; }
+
+:focus { outline: 0; }
+
+
+/* General
+***************************************************************/
+
+html, body {
+    width: 100%;
     height: 100%;
+    cursor: default;
+    color: rgba(0, 0, 0, 1.0);
 }
 
 body {
-    display: -ms-box;
-    -ms-box-orient: vertical;
-    -ms-box-pack: center;
-    -ms-box-align: middle;
+    font-family: "Segoe UI Semilight";
+    /*Was 10pt - changed to %*/
+    font-size: 81.3%;
+    overflow: hidden;
 }
 
-.fixed-layout {
-    width: 1024px;
-    height: 768px;
+/* Headings */
+h1,h2,h3,h4,h5,h6, legend, label, p { 
+    font-style: normal;
+    font-weight:normal;
 }
 
-@media screen and (-ms-view-state: full-screen)
-{
- 
-}
+h1 { font-size: 26px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 21px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
 
-@media screen and (-ms-view-state: fill)
-{
-
-}
-
-@media screen and (-ms-view-state: snapped)
-{
-
-}
-		
-@media screen and (-ms-view-state: device-portrait)
-{
-
-}

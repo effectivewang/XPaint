@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="brushPalette" class="palette">
+        <div id="brushStyle">
+            <ol>
+                <li>
+                    <label for="brushSize"><span data-win-res="textContent: palette_brush_size"></span> <span data-win-bind="textContent: Settings.brush.width"></span></label>
+                    <input id="brushSize" class="size" type="range" min="1" max="20" data-win-bind="value: Settings.brush.width; change: Settings.brush.width Palettes.reverseEventBind">
+                </li>
+                <li>
+                    <label for="red"><span data-win-res="textContent: palette_brush_red"></span> <span data-win-bind="textContent: Settings.brush.color.r"></span></label>
+                    <input id="red" type="range" min="0" max="255" data-win-bind="value: Settings.brush.color.r; change: Settings.brush.color.r Palettes.reverseEventBind">
+                </li>
+                <li>
+                    <label for="green"><span data-win-res="textContent: palette_brush_green"></span> <span data-win-bind="textContent: Settings.brush.color.g"></span></label>
+                    <input id="green" type="range" min="0" max="255" data-win-bind="value: Settings.brush.color.g; change: Settings.brush.color.g Palettes.reverseEventBind">
+                </li>
+                <li>
+                    <label for="blue"><span data-win-res="textContent: palette_brush_blue"></span> <span data-win-bind="textContent: Settings.brush.color.b"></span></label>
+                    <input id="blue" type="range" min="0" max="255" data-win-bind="value: Settings.brush.color.b; change: Settings.brush.color.b Palettes.reverseEventBind">
+                </li>
+            </ol>
+        </div>
+
+        <div id="rightColumn">
+            <div id="swatches">
+                <ol id="swatchList">
+                    <li id="currentColorSwatch" data-win-bind="style.backgroundColor: Settings.brush.color Palettes.colorToStyle" class="swatch"></li>
+                    <li class="swatch" style="background: rgba(0,0,0,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(255,255,255,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(255,0,0,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(0,255,0,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(0,0,255,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(255,255,0,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(255,0,255,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                    <li class="swatch" style="background: rgba(0,255,255,1)" data-win-bind="onclick: Palettes.swatchClicked"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

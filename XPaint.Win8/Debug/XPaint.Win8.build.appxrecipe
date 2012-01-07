@@ -8,581 +8,685 @@
   <ItemGroup>
     <AppXManifest Include="C:\Projects\XPaint\XPaint.Win8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2011-12-31T12:35:48.512</Modified>
+      <Modified>2012-01-08T00:34:21.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\logo.png">
-      <PackagePath>asset\images\logo.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\applyFilter.png">
+      <PackagePath>assets\icons\appbar\applyFilter.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.637</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\brush.png">
+      <PackagePath>assets\icons\appbar\brush.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.653</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\colorPicker.png">
+      <PackagePath>assets\icons\appbar\colorPicker.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.653</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\deleteFile.png">
+      <PackagePath>assets\icons\appbar\deleteFile.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.668</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\eraser.png">
+      <PackagePath>assets\icons\appbar\eraser.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.668</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\home.png">
+      <PackagePath>assets\icons\appbar\home.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.684</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\import.png">
+      <PackagePath>assets\icons\appbar\import.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.684</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\newFile.png">
+      <PackagePath>assets\icons\appbar\newFile.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.700</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\palette.png">
+      <PackagePath>assets\icons\appbar\palette.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.700</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\redo.png">
+      <PackagePath>assets\icons\appbar\redo.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.715</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\saveAs.png">
+      <PackagePath>assets\icons\appbar\saveAs.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.731</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\icons\appbar\undo.png">
+      <PackagePath>assets\icons\appbar\undo.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.731</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\logo.png">
+      <PackagePath>assets\images\logo.png</PackagePath>
       <Modified>2011-11-29T19:19:52.111</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\adc-en-100c-000000.png">
-      <PackagePath>asset\images\patterns\adc-en-100c-000000.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\marker.png">
+      <PackagePath>assets\images\marker.png</PackagePath>
+      <Modified>2006-10-29T10:02:46.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\mask.png">
+      <PackagePath>assets\images\mask.png</PackagePath>
+      <Modified>2006-10-29T10:02:46.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\adc-en-100c-000000.png">
+      <PackagePath>assets\images\patterns\adc-en-100c-000000.png</PackagePath>
       <Modified>2011-03-30T09:39:44.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\ad_choices_en.png">
-      <PackagePath>asset\images\patterns\ad_choices_en.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\ad_choices_en.png">
+      <PackagePath>assets\images\patterns\ad_choices_en.png</PackagePath>
       <Modified>2011-10-27T04:19:40.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\ad_choices_i.png">
-      <PackagePath>asset\images\patterns\ad_choices_i.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\ad_choices_i.png">
+      <PackagePath>assets\images\patterns\ad_choices_i.png</PackagePath>
       <Modified>2011-10-27T04:20:00.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_057.gif">
-      <PackagePath>asset\images\patterns\pattern_057.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_057.gif">
+      <PackagePath>assets\images\patterns\pattern_057.gif</PackagePath>
       <Modified>2007-03-08T09:14:12.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_058.gif">
-      <PackagePath>asset\images\patterns\pattern_058.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_058.gif">
+      <PackagePath>assets\images\patterns\pattern_058.gif</PackagePath>
       <Modified>2007-03-08T09:14:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_059.gif">
-      <PackagePath>asset\images\patterns\pattern_059.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_059.gif">
+      <PackagePath>assets\images\patterns\pattern_059.gif</PackagePath>
       <Modified>2007-03-08T09:14:14.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_060.gif">
-      <PackagePath>asset\images\patterns\pattern_060.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_060.gif">
+      <PackagePath>assets\images\patterns\pattern_060.gif</PackagePath>
       <Modified>2007-03-08T09:14:15.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_061.gif">
-      <PackagePath>asset\images\patterns\pattern_061.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_061.gif">
+      <PackagePath>assets\images\patterns\pattern_061.gif</PackagePath>
       <Modified>2007-03-08T09:14:16.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_062.gif">
-      <PackagePath>asset\images\patterns\pattern_062.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_062.gif">
+      <PackagePath>assets\images\patterns\pattern_062.gif</PackagePath>
       <Modified>2007-03-08T09:14:17.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_063.gif">
-      <PackagePath>asset\images\patterns\pattern_063.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_063.gif">
+      <PackagePath>assets\images\patterns\pattern_063.gif</PackagePath>
       <Modified>2007-03-08T09:14:18.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_064.gif">
-      <PackagePath>asset\images\patterns\pattern_064.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_064.gif">
+      <PackagePath>assets\images\patterns\pattern_064.gif</PackagePath>
       <Modified>2007-03-08T09:14:20.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_065.gif">
-      <PackagePath>asset\images\patterns\pattern_065.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_065.gif">
+      <PackagePath>assets\images\patterns\pattern_065.gif</PackagePath>
       <Modified>2007-03-08T09:14:21.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_066.gif">
-      <PackagePath>asset\images\patterns\pattern_066.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_066.gif">
+      <PackagePath>assets\images\patterns\pattern_066.gif</PackagePath>
       <Modified>2007-03-08T09:14:22.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_067.gif">
-      <PackagePath>asset\images\patterns\pattern_067.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_067.gif">
+      <PackagePath>assets\images\patterns\pattern_067.gif</PackagePath>
       <Modified>2007-03-08T09:14:23.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_068.gif">
-      <PackagePath>asset\images\patterns\pattern_068.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_068.gif">
+      <PackagePath>assets\images\patterns\pattern_068.gif</PackagePath>
       <Modified>2007-03-08T09:14:24.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_069.gif">
-      <PackagePath>asset\images\patterns\pattern_069.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_069.gif">
+      <PackagePath>assets\images\patterns\pattern_069.gif</PackagePath>
       <Modified>2007-03-08T09:14:25.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_070.gif">
-      <PackagePath>asset\images\patterns\pattern_070.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_070.gif">
+      <PackagePath>assets\images\patterns\pattern_070.gif</PackagePath>
       <Modified>2007-03-08T09:14:26.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_071.gif">
-      <PackagePath>asset\images\patterns\pattern_071.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_071.gif">
+      <PackagePath>assets\images\patterns\pattern_071.gif</PackagePath>
       <Modified>2007-03-08T09:14:27.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_072.gif">
-      <PackagePath>asset\images\patterns\pattern_072.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_072.gif">
+      <PackagePath>assets\images\patterns\pattern_072.gif</PackagePath>
       <Modified>2007-03-08T09:14:28.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_073.gif">
-      <PackagePath>asset\images\patterns\pattern_073.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_073.gif">
+      <PackagePath>assets\images\patterns\pattern_073.gif</PackagePath>
       <Modified>2007-03-08T09:14:30.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_074.gif">
-      <PackagePath>asset\images\patterns\pattern_074.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_074.gif">
+      <PackagePath>assets\images\patterns\pattern_074.gif</PackagePath>
       <Modified>2007-03-08T09:14:31.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_075.gif">
-      <PackagePath>asset\images\patterns\pattern_075.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_075.gif">
+      <PackagePath>assets\images\patterns\pattern_075.gif</PackagePath>
       <Modified>2007-03-08T09:14:32.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_076.gif">
-      <PackagePath>asset\images\patterns\pattern_076.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_076.gif">
+      <PackagePath>assets\images\patterns\pattern_076.gif</PackagePath>
       <Modified>2007-03-08T09:14:34.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_077.gif">
-      <PackagePath>asset\images\patterns\pattern_077.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_077.gif">
+      <PackagePath>assets\images\patterns\pattern_077.gif</PackagePath>
       <Modified>2007-03-08T09:14:35.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_078.gif">
-      <PackagePath>asset\images\patterns\pattern_078.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_078.gif">
+      <PackagePath>assets\images\patterns\pattern_078.gif</PackagePath>
       <Modified>2007-03-08T09:14:37.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_079.gif">
-      <PackagePath>asset\images\patterns\pattern_079.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_079.gif">
+      <PackagePath>assets\images\patterns\pattern_079.gif</PackagePath>
       <Modified>2007-03-08T09:14:38.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_080.gif">
-      <PackagePath>asset\images\patterns\pattern_080.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_080.gif">
+      <PackagePath>assets\images\patterns\pattern_080.gif</PackagePath>
       <Modified>2007-03-08T09:14:39.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_081.gif">
-      <PackagePath>asset\images\patterns\pattern_081.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_081.gif">
+      <PackagePath>assets\images\patterns\pattern_081.gif</PackagePath>
       <Modified>2007-03-08T09:14:41.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_082.gif">
-      <PackagePath>asset\images\patterns\pattern_082.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_082.gif">
+      <PackagePath>assets\images\patterns\pattern_082.gif</PackagePath>
       <Modified>2007-03-08T09:14:42.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_083.gif">
-      <PackagePath>asset\images\patterns\pattern_083.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_083.gif">
+      <PackagePath>assets\images\patterns\pattern_083.gif</PackagePath>
       <Modified>2007-03-08T09:14:43.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_084.gif">
-      <PackagePath>asset\images\patterns\pattern_084.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_084.gif">
+      <PackagePath>assets\images\patterns\pattern_084.gif</PackagePath>
       <Modified>2007-03-08T09:14:44.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_085.gif">
-      <PackagePath>asset\images\patterns\pattern_085.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_085.gif">
+      <PackagePath>assets\images\patterns\pattern_085.gif</PackagePath>
       <Modified>2007-03-08T09:14:45.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_086.gif">
-      <PackagePath>asset\images\patterns\pattern_086.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_086.gif">
+      <PackagePath>assets\images\patterns\pattern_086.gif</PackagePath>
       <Modified>2007-03-08T09:14:47.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_087.gif">
-      <PackagePath>asset\images\patterns\pattern_087.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_087.gif">
+      <PackagePath>assets\images\patterns\pattern_087.gif</PackagePath>
       <Modified>2007-03-08T09:14:48.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_088.gif">
-      <PackagePath>asset\images\patterns\pattern_088.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_088.gif">
+      <PackagePath>assets\images\patterns\pattern_088.gif</PackagePath>
       <Modified>2007-03-08T09:14:50.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_089.gif">
-      <PackagePath>asset\images\patterns\pattern_089.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_089.gif">
+      <PackagePath>assets\images\patterns\pattern_089.gif</PackagePath>
       <Modified>2007-03-08T09:14:52.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_090.gif">
-      <PackagePath>asset\images\patterns\pattern_090.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_090.gif">
+      <PackagePath>assets\images\patterns\pattern_090.gif</PackagePath>
       <Modified>2007-03-08T09:14:53.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_091.gif">
-      <PackagePath>asset\images\patterns\pattern_091.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_091.gif">
+      <PackagePath>assets\images\patterns\pattern_091.gif</PackagePath>
       <Modified>2007-03-08T09:14:55.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_092.gif">
-      <PackagePath>asset\images\patterns\pattern_092.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_092.gif">
+      <PackagePath>assets\images\patterns\pattern_092.gif</PackagePath>
       <Modified>2007-03-08T09:14:56.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_093.gif">
-      <PackagePath>asset\images\patterns\pattern_093.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_093.gif">
+      <PackagePath>assets\images\patterns\pattern_093.gif</PackagePath>
       <Modified>2007-03-08T09:14:57.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_094.gif">
-      <PackagePath>asset\images\patterns\pattern_094.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_094.gif">
+      <PackagePath>assets\images\patterns\pattern_094.gif</PackagePath>
       <Modified>2007-03-08T09:14:58.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_095.gif">
-      <PackagePath>asset\images\patterns\pattern_095.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_095.gif">
+      <PackagePath>assets\images\patterns\pattern_095.gif</PackagePath>
       <Modified>2007-03-08T09:15:00.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_096.gif">
-      <PackagePath>asset\images\patterns\pattern_096.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_096.gif">
+      <PackagePath>assets\images\patterns\pattern_096.gif</PackagePath>
       <Modified>2007-03-08T09:15:01.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_097.gif">
-      <PackagePath>asset\images\patterns\pattern_097.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_097.gif">
+      <PackagePath>assets\images\patterns\pattern_097.gif</PackagePath>
       <Modified>2007-03-08T09:15:03.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_098.gif">
-      <PackagePath>asset\images\patterns\pattern_098.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_098.gif">
+      <PackagePath>assets\images\patterns\pattern_098.gif</PackagePath>
       <Modified>2007-03-08T09:15:04.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_099.gif">
-      <PackagePath>asset\images\patterns\pattern_099.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_099.gif">
+      <PackagePath>assets\images\patterns\pattern_099.gif</PackagePath>
       <Modified>2007-03-08T09:15:05.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_100.gif">
-      <PackagePath>asset\images\patterns\pattern_100.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_100.gif">
+      <PackagePath>assets\images\patterns\pattern_100.gif</PackagePath>
       <Modified>2007-03-08T09:15:09.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_101.gif">
-      <PackagePath>asset\images\patterns\pattern_101.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_101.gif">
+      <PackagePath>assets\images\patterns\pattern_101.gif</PackagePath>
       <Modified>2007-03-08T09:15:10.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_102.gif">
-      <PackagePath>asset\images\patterns\pattern_102.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_102.gif">
+      <PackagePath>assets\images\patterns\pattern_102.gif</PackagePath>
       <Modified>2007-03-08T09:15:11.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_103.gif">
-      <PackagePath>asset\images\patterns\pattern_103.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_103.gif">
+      <PackagePath>assets\images\patterns\pattern_103.gif</PackagePath>
       <Modified>2007-03-08T09:15:12.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_104.gif">
-      <PackagePath>asset\images\patterns\pattern_104.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_104.gif">
+      <PackagePath>assets\images\patterns\pattern_104.gif</PackagePath>
       <Modified>2007-03-08T09:15:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_105.gif">
-      <PackagePath>asset\images\patterns\pattern_105.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_105.gif">
+      <PackagePath>assets\images\patterns\pattern_105.gif</PackagePath>
       <Modified>2007-03-08T09:15:14.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_106.gif">
-      <PackagePath>asset\images\patterns\pattern_106.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_106.gif">
+      <PackagePath>assets\images\patterns\pattern_106.gif</PackagePath>
       <Modified>2007-03-08T09:15:15.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_107.gif">
-      <PackagePath>asset\images\patterns\pattern_107.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_107.gif">
+      <PackagePath>assets\images\patterns\pattern_107.gif</PackagePath>
       <Modified>2007-03-08T09:15:17.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_108.gif">
-      <PackagePath>asset\images\patterns\pattern_108.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_108.gif">
+      <PackagePath>assets\images\patterns\pattern_108.gif</PackagePath>
       <Modified>2007-03-08T09:15:18.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_109.gif">
-      <PackagePath>asset\images\patterns\pattern_109.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_109.gif">
+      <PackagePath>assets\images\patterns\pattern_109.gif</PackagePath>
       <Modified>2007-03-08T09:15:19.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_110.gif">
-      <PackagePath>asset\images\patterns\pattern_110.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_110.gif">
+      <PackagePath>assets\images\patterns\pattern_110.gif</PackagePath>
       <Modified>2007-03-08T09:15:20.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_111.gif">
-      <PackagePath>asset\images\patterns\pattern_111.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_111.gif">
+      <PackagePath>assets\images\patterns\pattern_111.gif</PackagePath>
       <Modified>2007-03-08T09:15:21.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_112.gif">
-      <PackagePath>asset\images\patterns\pattern_112.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_112.gif">
+      <PackagePath>assets\images\patterns\pattern_112.gif</PackagePath>
       <Modified>2007-03-08T09:15:22.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_113.gif">
-      <PackagePath>asset\images\patterns\pattern_113.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_113.gif">
+      <PackagePath>assets\images\patterns\pattern_113.gif</PackagePath>
       <Modified>2007-03-08T09:15:23.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_114.gif">
-      <PackagePath>asset\images\patterns\pattern_114.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_114.gif">
+      <PackagePath>assets\images\patterns\pattern_114.gif</PackagePath>
       <Modified>2007-03-08T09:15:25.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_115.gif">
-      <PackagePath>asset\images\patterns\pattern_115.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_115.gif">
+      <PackagePath>assets\images\patterns\pattern_115.gif</PackagePath>
       <Modified>2007-03-08T09:15:26.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_116.gif">
-      <PackagePath>asset\images\patterns\pattern_116.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_116.gif">
+      <PackagePath>assets\images\patterns\pattern_116.gif</PackagePath>
       <Modified>2007-03-08T09:15:27.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_117.gif">
-      <PackagePath>asset\images\patterns\pattern_117.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_117.gif">
+      <PackagePath>assets\images\patterns\pattern_117.gif</PackagePath>
       <Modified>2007-03-08T09:15:28.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_118.gif">
-      <PackagePath>asset\images\patterns\pattern_118.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_118.gif">
+      <PackagePath>assets\images\patterns\pattern_118.gif</PackagePath>
       <Modified>2007-03-08T09:15:29.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_119.gif">
-      <PackagePath>asset\images\patterns\pattern_119.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_119.gif">
+      <PackagePath>assets\images\patterns\pattern_119.gif</PackagePath>
       <Modified>2007-03-08T09:15:31.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_120.gif">
-      <PackagePath>asset\images\patterns\pattern_120.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_120.gif">
+      <PackagePath>assets\images\patterns\pattern_120.gif</PackagePath>
       <Modified>2007-03-08T09:15:32.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_121.gif">
-      <PackagePath>asset\images\patterns\pattern_121.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_121.gif">
+      <PackagePath>assets\images\patterns\pattern_121.gif</PackagePath>
       <Modified>2007-03-08T09:15:33.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_122.gif">
-      <PackagePath>asset\images\patterns\pattern_122.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_122.gif">
+      <PackagePath>assets\images\patterns\pattern_122.gif</PackagePath>
       <Modified>2007-03-08T09:15:34.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_123.gif">
-      <PackagePath>asset\images\patterns\pattern_123.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_123.gif">
+      <PackagePath>assets\images\patterns\pattern_123.gif</PackagePath>
       <Modified>2007-03-08T09:15:38.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_124.gif">
-      <PackagePath>asset\images\patterns\pattern_124.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_124.gif">
+      <PackagePath>assets\images\patterns\pattern_124.gif</PackagePath>
       <Modified>2007-03-08T09:15:39.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_125.gif">
-      <PackagePath>asset\images\patterns\pattern_125.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_125.gif">
+      <PackagePath>assets\images\patterns\pattern_125.gif</PackagePath>
       <Modified>2007-03-08T09:15:40.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_126.gif">
-      <PackagePath>asset\images\patterns\pattern_126.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_126.gif">
+      <PackagePath>assets\images\patterns\pattern_126.gif</PackagePath>
       <Modified>2007-03-08T09:15:41.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_127.gif">
-      <PackagePath>asset\images\patterns\pattern_127.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_127.gif">
+      <PackagePath>assets\images\patterns\pattern_127.gif</PackagePath>
       <Modified>2007-03-08T09:15:42.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_128.gif">
-      <PackagePath>asset\images\patterns\pattern_128.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_128.gif">
+      <PackagePath>assets\images\patterns\pattern_128.gif</PackagePath>
       <Modified>2007-03-08T09:15:44.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_129.gif">
-      <PackagePath>asset\images\patterns\pattern_129.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_129.gif">
+      <PackagePath>assets\images\patterns\pattern_129.gif</PackagePath>
       <Modified>2007-03-08T09:15:45.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_130.gif">
-      <PackagePath>asset\images\patterns\pattern_130.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_130.gif">
+      <PackagePath>assets\images\patterns\pattern_130.gif</PackagePath>
       <Modified>2007-03-08T09:15:46.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_131.gif">
-      <PackagePath>asset\images\patterns\pattern_131.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_131.gif">
+      <PackagePath>assets\images\patterns\pattern_131.gif</PackagePath>
       <Modified>2007-03-08T09:15:48.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_132.gif">
-      <PackagePath>asset\images\patterns\pattern_132.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_132.gif">
+      <PackagePath>assets\images\patterns\pattern_132.gif</PackagePath>
       <Modified>2007-03-08T09:15:49.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_133.gif">
-      <PackagePath>asset\images\patterns\pattern_133.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_133.gif">
+      <PackagePath>assets\images\patterns\pattern_133.gif</PackagePath>
       <Modified>2007-03-08T09:15:50.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_134.gif">
-      <PackagePath>asset\images\patterns\pattern_134.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_134.gif">
+      <PackagePath>assets\images\patterns\pattern_134.gif</PackagePath>
       <Modified>2007-03-08T09:15:51.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_135.gif">
-      <PackagePath>asset\images\patterns\pattern_135.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_135.gif">
+      <PackagePath>assets\images\patterns\pattern_135.gif</PackagePath>
       <Modified>2007-03-08T09:15:53.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_136.gif">
-      <PackagePath>asset\images\patterns\pattern_136.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_136.gif">
+      <PackagePath>assets\images\patterns\pattern_136.gif</PackagePath>
       <Modified>2007-03-08T09:15:54.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_137.gif">
-      <PackagePath>asset\images\patterns\pattern_137.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_137.gif">
+      <PackagePath>assets\images\patterns\pattern_137.gif</PackagePath>
       <Modified>2007-03-08T09:15:55.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_138.gif">
-      <PackagePath>asset\images\patterns\pattern_138.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_138.gif">
+      <PackagePath>assets\images\patterns\pattern_138.gif</PackagePath>
       <Modified>2007-03-08T09:15:56.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_139.gif">
-      <PackagePath>asset\images\patterns\pattern_139.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_139.gif">
+      <PackagePath>assets\images\patterns\pattern_139.gif</PackagePath>
       <Modified>2007-03-08T09:15:57.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_140.gif">
-      <PackagePath>asset\images\patterns\pattern_140.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_140.gif">
+      <PackagePath>assets\images\patterns\pattern_140.gif</PackagePath>
       <Modified>2007-03-08T09:15:59.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_141.gif">
-      <PackagePath>asset\images\patterns\pattern_141.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_141.gif">
+      <PackagePath>assets\images\patterns\pattern_141.gif</PackagePath>
       <Modified>2007-03-08T09:16:00.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_142.gif">
-      <PackagePath>asset\images\patterns\pattern_142.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_142.gif">
+      <PackagePath>assets\images\patterns\pattern_142.gif</PackagePath>
       <Modified>2007-03-08T09:16:01.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_143.gif">
-      <PackagePath>asset\images\patterns\pattern_143.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_143.gif">
+      <PackagePath>assets\images\patterns\pattern_143.gif</PackagePath>
       <Modified>2007-03-08T09:16:02.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_144.gif">
-      <PackagePath>asset\images\patterns\pattern_144.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_144.gif">
+      <PackagePath>assets\images\patterns\pattern_144.gif</PackagePath>
       <Modified>2007-03-08T09:16:03.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_145.gif">
-      <PackagePath>asset\images\patterns\pattern_145.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_145.gif">
+      <PackagePath>assets\images\patterns\pattern_145.gif</PackagePath>
       <Modified>2007-03-08T09:16:04.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_146.gif">
-      <PackagePath>asset\images\patterns\pattern_146.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_146.gif">
+      <PackagePath>assets\images\patterns\pattern_146.gif</PackagePath>
       <Modified>2007-03-08T09:16:05.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_147.gif">
-      <PackagePath>asset\images\patterns\pattern_147.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_147.gif">
+      <PackagePath>assets\images\patterns\pattern_147.gif</PackagePath>
       <Modified>2007-03-08T09:16:06.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_148.gif">
-      <PackagePath>asset\images\patterns\pattern_148.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_148.gif">
+      <PackagePath>assets\images\patterns\pattern_148.gif</PackagePath>
       <Modified>2007-03-08T09:16:07.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_149.gif">
-      <PackagePath>asset\images\patterns\pattern_149.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_149.gif">
+      <PackagePath>assets\images\patterns\pattern_149.gif</PackagePath>
       <Modified>2007-03-08T09:16:09.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_150.gif">
-      <PackagePath>asset\images\patterns\pattern_150.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_150.gif">
+      <PackagePath>assets\images\patterns\pattern_150.gif</PackagePath>
       <Modified>2007-03-08T09:16:10.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_151.gif">
-      <PackagePath>asset\images\patterns\pattern_151.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_151.gif">
+      <PackagePath>assets\images\patterns\pattern_151.gif</PackagePath>
       <Modified>2007-03-08T09:16:11.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_152.gif">
-      <PackagePath>asset\images\patterns\pattern_152.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_152.gif">
+      <PackagePath>assets\images\patterns\pattern_152.gif</PackagePath>
       <Modified>2007-03-08T09:16:12.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_153.gif">
-      <PackagePath>asset\images\patterns\pattern_153.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_153.gif">
+      <PackagePath>assets\images\patterns\pattern_153.gif</PackagePath>
       <Modified>2007-03-08T09:16:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_154.gif">
-      <PackagePath>asset\images\patterns\pattern_154.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_154.gif">
+      <PackagePath>assets\images\patterns\pattern_154.gif</PackagePath>
       <Modified>2007-03-08T09:16:14.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_155.gif">
-      <PackagePath>asset\images\patterns\pattern_155.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_155.gif">
+      <PackagePath>assets\images\patterns\pattern_155.gif</PackagePath>
       <Modified>2007-03-08T09:16:15.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_156.gif">
-      <PackagePath>asset\images\patterns\pattern_156.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_156.gif">
+      <PackagePath>assets\images\patterns\pattern_156.gif</PackagePath>
       <Modified>2007-03-08T09:16:16.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_157.gif">
-      <PackagePath>asset\images\patterns\pattern_157.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_157.gif">
+      <PackagePath>assets\images\patterns\pattern_157.gif</PackagePath>
       <Modified>2007-03-08T09:16:17.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\patterns\pattern_158.gif">
-      <PackagePath>asset\images\patterns\pattern_158.gif</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\patterns\pattern_158.gif">
+      <PackagePath>assets\images\patterns\pattern_158.gif</PackagePath>
       <Modified>2007-03-08T09:16:19.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\smalllogo.png">
-      <PackagePath>asset\images\smalllogo.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\sliderBrushSize.png">
+      <PackagePath>assets\images\sliderBrushSize.png</PackagePath>
+      <Modified>2012-01-03T20:55:59.778</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\smalllogo.png">
+      <PackagePath>assets\images\smalllogo.png</PackagePath>
       <Modified>2011-11-29T19:20:37.503</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\splashscreen.png">
-      <PackagePath>asset\images\splashscreen.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\splashscreen.png">
+      <PackagePath>assets\images\splashscreen.png</PackagePath>
       <Modified>2011-11-29T19:23:06.894</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\storelogo.png">
-      <PackagePath>asset\images\storelogo.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\storelogo.png">
+      <PackagePath>assets\images\storelogo.png</PackagePath>
       <Modified>2011-12-06T21:22:36.242</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\ad_choices_en.png">
-      <PackagePath>asset\images\tools\ad_choices_en.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\ad_choices_en.png">
+      <PackagePath>assets\images\tools\ad_choices_en.png</PackagePath>
       <Modified>2011-10-27T04:19:40.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\ad_choices_i.png">
-      <PackagePath>asset\images\tools\ad_choices_i.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\ad_choices_i.png">
+      <PackagePath>assets\images\tools\ad_choices_i.png</PackagePath>
       <Modified>2011-10-27T04:20:00.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Brush_2.png">
-      <PackagePath>asset\images\tools\Brush_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Brush_2.png">
+      <PackagePath>assets\images\tools\Brush_2.png</PackagePath>
       <Modified>2011-11-29T19:34:39.879</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Crop_2.png">
-      <PackagePath>asset\images\tools\Crop_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Crop_2.png">
+      <PackagePath>assets\images\tools\Crop_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Eraser_2.png">
-      <PackagePath>asset\images\tools\Eraser_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Eraser_2.png">
+      <PackagePath>assets\images\tools\Eraser_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Fill_2.png">
-      <PackagePath>asset\images\tools\Fill_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Fill_2.png">
+      <PackagePath>assets\images\tools\Fill_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\loupe.png">
-      <PackagePath>asset\images\tools\loupe.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\loupe.png">
+      <PackagePath>assets\images\tools\loupe.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Marquee_ellipses_2.png">
-      <PackagePath>asset\images\tools\Marquee_ellipses_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Marquee_ellipses_2.png">
+      <PackagePath>assets\images\tools\Marquee_ellipses_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Picker_2.png">
-      <PackagePath>asset\images\tools\Picker_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Picker_2.png">
+      <PackagePath>assets\images\tools\Picker_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Shape_burst_2.png">
-      <PackagePath>asset\images\tools\Shape_burst_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Shape_burst_2.png">
+      <PackagePath>assets\images\tools\Shape_burst_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Shape_ellipses_2.png">
-      <PackagePath>asset\images\tools\Shape_ellipses_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Shape_ellipses_2.png">
+      <PackagePath>assets\images\tools\Shape_ellipses_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Shape_gear_2.png">
-      <PackagePath>asset\images\tools\Shape_gear_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Shape_gear_2.png">
+      <PackagePath>assets\images\tools\Shape_gear_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Shape_polygon_2.png">
-      <PackagePath>asset\images\tools\Shape_polygon_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Shape_polygon_2.png">
+      <PackagePath>assets\images\tools\Shape_polygon_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Shape_star_2.png">
-      <PackagePath>asset\images\tools\Shape_star_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Shape_star_2.png">
+      <PackagePath>assets\images\tools\Shape_star_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Spirograph_2.png">
-      <PackagePath>asset\images\tools\Spirograph_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Spirograph_2.png">
+      <PackagePath>assets\images\tools\Spirograph_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Stamp_2.png">
-      <PackagePath>asset\images\tools\Stamp_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Stamp_2.png">
+      <PackagePath>assets\images\tools\Stamp_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\sw_add.png">
-      <PackagePath>asset\images\tools\sw_add.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\sw_add.png">
+      <PackagePath>assets\images\tools\sw_add.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\sw_switch.png">
-      <PackagePath>asset\images\tools\sw_switch.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\sw_switch.png">
+      <PackagePath>assets\images\tools\sw_switch.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\Text_2.png">
-      <PackagePath>asset\images\tools\Text_2.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\Text_2.png">
+      <PackagePath>assets\images\tools\Text_2.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\asset\images\tools\win_close.png">
-      <PackagePath>asset\images\tools\win_close.png</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\tools\win_close.png">
+      <PackagePath>assets\images\tools\win_close.png</PackagePath>
       <Modified>2010-01-12T18:24:13.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\assets\images\wheel.png">
+      <PackagePath>assets\images\wheel.png</PackagePath>
+      <Modified>2006-10-29T10:02:46.000</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2011-11-10T22:14:53.613</Modified>
+      <Modified>2012-01-05T22:48:47.582</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\css\style.css">
       <PackagePath>css\style.css</PackagePath>
-      <Modified>2011-12-15T22:27:54.674</Modified>
+      <Modified>2012-01-05T22:49:30.353</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2011-12-31T12:45:31.899</Modified>
+      <Modified>2012-01-08T00:42:37.475</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2011-12-27T21:43:03.963</Modified>
+      <Modified>2012-01-08T00:35:11.048</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\gallery.html">
       <PackagePath>html\gallery.html</PackagePath>
       <Modified>2011-12-06T19:50:19.436</Modified>
     </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\color.html">
+      <PackagePath>html\palettes\color.html</PackagePath>
+      <Modified>2012-01-04T21:33:26.093</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\shape.html">
+      <PackagePath>html\palettes\shape.html</PackagePath>
+      <Modified>2011-08-23T00:28:50.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\size.html">
+      <PackagePath>html\palettes\size.html</PackagePath>
+      <Modified>2012-01-05T22:12:58.422</Modified>
+    </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\xpaint.html">
       <PackagePath>html\xpaint.html</PackagePath>
-      <Modified>2011-12-31T12:44:29.547</Modified>
+      <Modified>2012-01-08T00:39:24.861</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command.js">
-      <PackagePath>js\command.js</PackagePath>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command\command.js">
+      <PackagePath>js\command\command.js</PackagePath>
       <Modified>2011-12-16T22:21:10.836</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command\history.js">
+      <PackagePath>js\command\history.js</PackagePath>
+      <Modified>2012-01-03T20:37:54.257</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2011-12-31T12:38:43.998</Modified>
-    </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\history.js">
-      <PackagePath>js\history.js</PackagePath>
-      <Modified>2011-12-16T21:02:39.022</Modified>
+      <Modified>2012-01-08T00:42:23.263</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\layer.js">
       <PackagePath>js\layer.js</PackagePath>
-      <Modified>2011-12-27T21:36:17.943</Modified>
+      <Modified>2012-01-08T00:23:41.169</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\loader\head.js">
       <PackagePath>js\loader\head.js</PackagePath>
       <Modified>2011-12-16T22:15:49.235</Modified>
     </AppXPackagedFile>
-    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\lineTool.js">
-      <PackagePath>js\tool\lineTool.js</PackagePath>
-      <Modified>2011-12-31T12:45:05.394</Modified>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\palettes.js">
+      <PackagePath>js\palettes.js</PackagePath>
+      <Modified>2012-01-08T00:37:42.915</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\brushTool.js">
+      <PackagePath>js\tool\brushTool.js</PackagePath>
+      <Modified>2012-01-08T00:40:48.860</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\cropTool.js">
+      <PackagePath>js\tool\cropTool.js</PackagePath>
+      <Modified>2012-01-07T23:50:30.260</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\eraseTool.js">
+      <PackagePath>js\tool\eraseTool.js</PackagePath>
+      <Modified>2012-01-07T23:50:31.870</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\pickerTool.js">
+      <PackagePath>js\tool\pickerTool.js</PackagePath>
+      <Modified>2011-08-23T00:28:50.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\selectTool.js">
+      <PackagePath>js\tool\selectTool.js</PackagePath>
+      <Modified>2011-08-23T00:28:50.000</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\shapeTool.js">
+      <PackagePath>js\tool\shapeTool.js</PackagePath>
+      <Modified>2012-01-08T00:41:25.965</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\tool.js">
       <PackagePath>js\tool\tool.js</PackagePath>
-      <Modified>2011-12-27T22:19:23.348</Modified>
+      <Modified>2012-01-08T00:38:12.609</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\utility.js">
+      <PackagePath>js\utility.js</PackagePath>
+      <Modified>2012-01-08T00:37:13.792</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\xpaint.js">
       <PackagePath>js\xpaint.js</PackagePath>
-      <Modified>2011-12-31T12:45:27.011</Modified>
+      <Modified>2012-01-08T00:42:35.692</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\Css\ui-dark.css">
       <PackagePath>winjs\Css\ui-dark.css</PackagePath>
@@ -606,7 +710,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\controls.js">
       <PackagePath>winjs\js\controls.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2012-01-05T22:38:56.438</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\res.js">
       <PackagePath>winjs\js\res.js</PackagePath>
@@ -614,7 +718,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\ui.js">
       <PackagePath>winjs\js\ui.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2012-01-07T15:36:07.173</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\uicollections.js">
       <PackagePath>winjs\js\uicollections.js</PackagePath>

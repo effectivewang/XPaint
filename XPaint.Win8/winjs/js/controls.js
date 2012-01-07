@@ -2,16 +2,16 @@
 /// <reference path='base.js' />
 /// <reference path='ui.js' />
 /// <reference path='animations.js' />
- 
+
 /*
   © Microsoft. All rights reserved.
 
   This library is supported for use in Windows Tailored Apps only.
 
-  Build: 6.2.8100.0 
-  Version: 0.5 
+  Build: 6.2.8100.0
+  Version: 0.5
 */
- 
+
 
 
 (function (WinJS, undefined) {
@@ -35,14 +35,14 @@
     WinJS.Class.mix(Control, WinJS.UI.DOMEventMixin);
 
     WinJS.Namespace.defineWithParent(WinJS, "UI", {
-        /// <summary locid="1">DatePicker control allows users to pick a date value</summary>
-        /// <name locid="2">Date Picker</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.DatePicker"></div>]]></htmlSnippet>
-        /// <event name="change" locid="3">Raised when the current date changes</event>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="1">DatePicker control allows users to pick a date value</summary>
+    /// <name locid="2">Date Picker</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.DatePicker"></div>]]></htmlSnippet>
+    /// <event name="change" locid="3">Raised when the current date changes</event>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         DatePicker: WinJS.Class.derive(Control, function (element, options) {
             /// <summary locid="4">DatePicker control</summary>
             /// <param name="element" type="HTMLElement" domElement="true" locid="5">
@@ -168,7 +168,7 @@
 
             /// <field type="Date" locid="8">The current date of the DatePicker.</field>
             current: {
-                get: function () { 
+                get: function () {
                     var d = this._currentDate;
                     var y = d.getFullYear();
                     return new Date(Math.max(Math.min(this.maxYear, y), this.minYear), d.getMonth(), d.getDate(), 0, 0, 0, 0);
@@ -254,7 +254,7 @@
 
             _getMonthName: function (month) {
                 // TODO: This should be localized using WinRT apis
-                return ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][month - 1];
+                return["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][month - 1];
             },
 
             _getWeekDayName: function (date) {
@@ -262,7 +262,7 @@
                 now.setFullYear(this._yearControl.value, this._monthControl.index, date);
 
                 // TODO: This should be localized using WinRT apis
-                return ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][now.getDay()];
+                return["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][now.getDay()];
             },
 
             _setElement: function (element) {
@@ -384,7 +384,7 @@
                     // JS date object that "0" date is really the last day of
                     // the previous month
                     //
-                    return new Date(year, month+1, 0).getDate();
+                    return new Date(year, month + 1, 0).getDate();
                 };
 
                 var dateHandler = function () {
@@ -425,7 +425,7 @@
     })
 
     WinJS.Class.mix(WinJS.UI.DatePicker, WinJS.Utilities.createEventProperties("change"));
-    
+
 })(WinJS);
 
 
@@ -451,14 +451,14 @@
     WinJS.Class.mix(Control, WinJS.UI.DOMEventMixin);
 
     WinJS.Namespace.defineWithParent(WinJS, "UI", {
-        /// <summary locid="13">TimePicker control allows users to select time value</summary>
-        /// <name locid="14">Time Picker</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.TimePicker"></div>]]></htmlSnippet>
-        /// <event name="change" locid="15">Raised when the time changes</event>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="13">TimePicker control allows users to select time value</summary>
+    /// <name locid="14">Time Picker</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.TimePicker"></div>]]></htmlSnippet>
+    /// <event name="change" locid="15">Raised when the time changes</event>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         TimePicker: WinJS.Class.derive(Control, function (element, options) {
             /// <summary locid="16">TimePicker control</summary>
             /// <param name="element" type="HTMLElement" domElement="true" locid="17">
@@ -508,7 +508,7 @@
 
             /// <field type="Date" locid="20">The current date (and time) of the TimePicker.</field>
             current: {
-                get: function () { 
+                get: function () {
                     var cur = this._currentTime;
                     if (cur) {
                         var time = new Date();
@@ -519,7 +519,7 @@
                         return time;
                     }
                     else {
-                        return cur; 
+                        return cur;
                     }
                 },
                 set: function (value) {
@@ -595,7 +595,7 @@
 
             /// <field type="Number" integer="true" locid="23">Constrains the TimePicker minute element to multiples of the provided increment.</field>
             minuteIncrement: {
-                //prevent divide by 0, and leave user's input intact
+            //prevent divide by 0, and leave user's input intact
                 get: function () { return Math.max(1, Math.abs(this._minuteIncrement | 0) % 60); },
                 set: function (value) {
                     if (this._minuteIncrement != value) {
@@ -742,8 +742,8 @@
             }
         })
     });
-    
-    
+
+
     WinJS.Class.mix(WinJS.UI.TimePicker, WinJS.Utilities.createEventProperties("change"));
 })(WinJS);
 
@@ -924,10 +924,10 @@ WinJS.Namespace.define("WinJS.UI", {});
 
 (function (global) {
 
-var utilities = WinJS.Utilities;
+    var utilities = WinJS.Utilities;
 
-// Error messages
-var elementIsInvalid = "Invalid argument: Rating control expects a valid DOM element as the first argument.",
+    // Error messages
+    var elementIsInvalid = "Invalid argument: Rating control expects a valid DOM element as the first argument.",
     maxRatingIsInvalid = "Invalid argument: maxRating must be an integer number greater than zero.",
     maxRatingCannotBeUpdated = "Invalid argument: maxRating cannot be set after instantiation.",
     userRatingIsInvalid = "Invalid argument: userRating must be an integer number greater or equal to zero and less than or equal to maxRating.",
@@ -938,8 +938,8 @@ var elementIsInvalid = "Invalid argument: Rating control expects a valid DOM ele
     invalidCreation = "Invalid constructor call: Please use the \"new\" operator to create a rating control.",
     elementCannotBeUpdated = "The element can not be updated.";
 
-// Constants definition
-var DEFAULT_MAX_RATING = 5,
+    // Constants definition
+    var DEFAULT_MAX_RATING = 5,
     DEFAULT_READ_ONLY = false,
     CANCEL = "cancel",
     CHANGE = "change",
@@ -947,8 +947,8 @@ var DEFAULT_MAX_RATING = 5,
     CLEAR_YOUR_RATING = "Clear your rating",
     PT_TOUCH = 2; // pointer type to indicate a touch event
 
-// CSS class names
-var msRating = "win-rating",
+    // CSS class names
+    var msRating = "win-rating",
     msRatingAverageEmpty = "win-rating-star win-rating-average-empty",
     msRatingAverageFull = "win-rating-star win-rating-average-full",
     msRatingUserEmpty = "win-rating-star win-rating-user-empty",
@@ -958,8 +958,8 @@ var msRating = "win-rating",
     msRatingDisabledEmpty = "win-rating-star win-rating-disabled-empty",
     msRatingDisabledFull = "win-rating-star win-rating-disabled-full";
 
-// Rating control implementation
-WinJS.Namespace.defineWithParent(WinJS, "UI", {
+    // Rating control implementation
+    WinJS.Namespace.defineWithParent(WinJS, "UI", {
     /// <summary locid="24">
     /// The Rating control allows users to give a number on a scale of 1 to maxRating (5 being the default).
     /// </summary>
@@ -980,328 +980,328 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
     /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
     /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
-    Rating: WinJS.Class.define(function (element, options) {
-        /// <summary locid="37">
-        /// Constructs the Rating control
-        /// </summary>
-        /// <param name="element" domElement="true" locid="38">
-        /// The DOM element to be associated with the Rating control.
-        /// </param>
-        /// <param name="options" type="object" locid="39">
-        /// The set of options to be applied initially to the Rating control.
-        /// </param>
-        /// <returns type="WinJS.UI.Rating" locid="40">
-        /// A Rating control.
-        /// </returns>
-        if (!(this instanceof WinJS.UI.Rating)) {
-            throw new Error(invalidCreation);
-        }
+        Rating: WinJS.Class.define(function (element, options) {
+            /// <summary locid="37">
+            /// Constructs the Rating control
+            /// </summary>
+            /// <param name="element" domElement="true" locid="38">
+            /// The DOM element to be associated with the Rating control.
+            /// </param>
+            /// <param name="options" type="object" locid="39">
+            /// The set of options to be applied initially to the Rating control.
+            /// </param>
+            /// <returns type="WinJS.UI.Rating" locid="40">
+            /// A Rating control.
+            /// </returns>
+            if (!(this instanceof WinJS.UI.Rating)) {
+                throw new Error(invalidCreation);
+            }
 
-        if (!element) {
-            throw new Error(elementIsInvalid);
-        }
+            if (!element) {
+                throw new Error(elementIsInvalid);
+            }
 
-        var rating = utilities.data(element).rating;
-        if (rating) {
-            return rating;
-        }
+            var rating = utilities.data(element).rating;
+            if (rating) {
+                return rating;
+            }
 
-        this._element = element;
-        this._offsetFirstStar = null;
-        this._starWidth = null;
-        this._lastEventWasChange = false;
-        this._tentativeRating = -1;
-        this._captured = false;
-        this._pointerDownFocus = false;
-        this._elements = [];
-        this._elementsClassName = [];
-        this._toolTips = [];
-        this._clearElement = null;
-        this._enableClear = true;
+            this._element = element;
+            this._offsetFirstStar = null;
+            this._starWidth = null;
+            this._lastEventWasChange = false;
+            this._tentativeRating = -1;
+            this._captured = false;
+            this._pointerDownFocus = false;
+            this._elements = [];
+            this._elementsClassName = [];
+            this._toolTips = [];
+            this._clearElement = null;
+            this._enableClear = true;
 
-        this._maxRating = DEFAULT_MAX_RATING;
-        this._userRating = 0;
-        this._averageRating = 0;
-        this._readOnly = DEFAULT_READ_ONLY;
-        this._tooltipStrings = [];
+            this._maxRating = DEFAULT_MAX_RATING;
+            this._userRating = 0;
+            this._averageRating = 0;
+            this._readOnly = DEFAULT_READ_ONLY;
+            this._tooltipStrings = [];
 
-        // Element that is used for showing average rating
-        this._averageRatingElement = null;
-        this._elementWidth = null;
-        this._elementPadding = null;
-        this._elementBorder = null;
-        this._floatingValue = 0;
+            // Element that is used for showing average rating
+            this._averageRatingElement = null;
+            this._elementWidth = null;
+            this._elementPadding = null;
+            this._elementBorder = null;
+            this._floatingValue = 0;
 
-        this._setControlSize(options);
-        this._createControl();
-        this._setOptions(options);
-        this._events();
-        this._setAccessibilityProperties();
+            this._setControlSize(options);
+            this._createControl();
+            this._setOptions(options);
+            this._events();
+            this._setAccessibilityProperties();
 
-        WinJS.UI.setOptions(this, options);
-        // Remember ourselves
-        WinJS.UI.setControl(element, this);
-        utilities.data(element).rating = this;
-    }, {
+            WinJS.UI.setOptions(this, options);
+            // Remember ourselves
+            WinJS.UI.setControl(element, this);
+            utilities.data(element).rating = this;
+        }, {
         /// <field type="Number" locid="41">
         /// The number for the maximum rating
         /// </field>
-        maxRating: {
-            get: function () {
-                return this._maxRating;
+            maxRating: {
+                get: function () {
+                    return this._maxRating;
+                },
+                set: function (value) {
+                    if (value !== this._maxRating) {
+                        throw new Error(maxRatingCannotBeUpdated);
+                    }
+                }
             },
-            set: function (value) {
-                if (value !== this._maxRating) {
-                    throw new Error(maxRatingCannotBeUpdated);
-                }
-            }
-        },
 
-        /// <field type="Number" locid="42">
-        /// The number for the user rating (from 1 to maxRating, integer number)
-        /// </field>
-        userRating: {
-            get: function () {
-                return this._userRating;
+            /// <field type="Number" locid="42">
+            /// The number for the user rating (from 1 to maxRating, integer number)
+            /// </field>
+            userRating: {
+                get: function () {
+                    return this._userRating;
+                },
+                set: function (value) {
+                    if ((typeof value !== "number") || (value < 0) || (value > this._maxRating) || (Math.floor(value) !== value)) {
+                        throw new Error(userRatingIsInvalid);
+                    }
+                    this._userRating = value;
+                    this._updateControl();
+                }
             },
-            set: function (value) {
-                if ((typeof value !== "number") || (value < 0) || (value > this._maxRating) || (Math.floor(value) !== value)) {
-                    throw new Error(userRatingIsInvalid);
-                }
-                this._userRating = value;
-                this._updateControl();
-            }
-        },
 
-        /// <field type="Number" locid="43">
-        /// The number for the average rating (0, or from 1 to maxRating, float number)
-        /// </field>
-        averageRating: {
-            get: function () {
-                return this._averageRating;
+            /// <field type="Number" locid="43">
+            /// The number for the average rating (0, or from 1 to maxRating, float number)
+            /// </field>
+            averageRating: {
+                get: function () {
+                    return this._averageRating;
+                },
+                set: function (value) {
+                    if ((typeof value !== "number") || ((value < 1) && (value !== 0)) || (value > this._maxRating)) {
+                        throw new Error(averageRatingIsInvalid);
+                    }
+                    this._averageRating = value;
+                    this._updateControl();
+                }
             },
-            set: function (value) {
-                if ((typeof value !== "number") || ((value < 1) && (value !== 0)) || (value > this._maxRating)) {
-                    throw new Error(averageRatingIsInvalid);
-                }
-                this._averageRating = value;
-                this._updateControl();
-            }
-        },
 
-        /// <field type="Boolean" locid="44">
-        /// Whether the control can be modified by users
-        /// </field>
-        readOnly: {
-            get: function () {
-                return this._readOnly;
+            /// <field type="Boolean" locid="44">
+            /// Whether the control can be modified by users
+            /// </field>
+            readOnly: {
+                get: function () {
+                    return this._readOnly;
+                },
+                set: function (value) {
+                    if (typeof value !== "boolean") {
+                        throw new Error(readOnlyIsInvalid);
+                    }
+                    this._readOnly = value;
+                    if (this._readOnly) {
+                        this._clearTooltips();
+                    }
+                    this._updateControl();
+                }
             },
-            set: function (value) {
-                if (typeof value !== "boolean") {
-                    throw new Error(readOnlyIsInvalid);
-                }
-                this._readOnly = value;
-                if (this._readOnly) {
-                    this._clearTooltips();
-                }
-                this._updateControl();
-            }
-        },
 
-        /// <field type="Boolean" locid="45">
-        /// Whether the control allow clear rating functionality
-        /// </field>
-        enableClear: {
-            get: function () {
-                return this._enableClear;
+            /// <field type="Boolean" locid="45">
+            /// Whether the control allow clear rating functionality
+            /// </field>
+            enableClear: {
+                get: function () {
+                    return this._enableClear;
+                },
+                set: function (value) {
+                    if (typeof value !== "boolean") {
+                        throw new Error(enableClearIsInvalid);
+                    }
+                    this._enableClear = value;
+                    this._updateControl();
+                }
             },
-            set: function (value) {
-                if (typeof value !== "boolean") {
-                    throw new Error(enableClearIsInvalid);
-                }
-                this._enableClear = value;
-                this._updateControl();
-            }
-        },
 
-        /// <field type="Array" locid="46">
-        /// Array of strings for the tooltip for each value (index 0 for userRating of 1 and so on).
-        /// </field>
-        tooltipStrings: {
-            get: function () {
-                return this._tooltipStrings;
+            /// <field type="Array" locid="46">
+            /// Array of strings for the tooltip for each value (index 0 for userRating of 1 and so on).
+            /// </field>
+            tooltipStrings: {
+                get: function () {
+                    return this._tooltipStrings;
+                },
+                set: function (value) {
+                    if (typeof value !== "object") {
+                        throw new Error(tooltipStringsIsInvalid);
+                    }
+                    this._updateTooltips(value);
+                }
             },
-            set: function (value) {
-                if (typeof value !== "object") {
-                    throw new Error(tooltipStringsIsInvalid);
-                }
-                this._updateTooltips(value);
-            }
-        },
 
-        /// <field type="HTMLElement" locid="47">
-        /// The element that rating is attached to
-        /// </field>
-        element: {
-            get: function () {
-                return this._element;
+            /// <field type="HTMLElement" locid="47">
+            /// The element that rating is attached to
+            /// </field>
+            element: {
+                get: function () {
+                    return this._element;
+                },
+                set: function (value) {
+                    if (this._element !== value) {
+                        throw new Error(elementCannotBeUpdated);
+                    }
+                }
             },
-            set: function (value) {
-                if (this._element !== value) {
-                    throw new Error(elementCannotBeUpdated);
+
+            /// <summary locid="48">
+            /// Adds an event listener
+            /// </summary>
+            /// <param name="eventName" type="String" locid="49">Event name</param>
+            /// <param name="eventCallback" type="Function" locid="50">The event handler function to associate with this event</param>
+            /// <param name="capture" type="Boolean" locid="51">Whether the event handler should be called during the capturing phase</param>
+            addEventListener: function (eventName, eventCallBack, capture) {
+                this._element.addEventListener(eventName, eventCallBack, capture);
+            },
+
+            /// <summary locid="52">
+            /// Removes an event listener
+            /// </summary>
+            /// <param name="eventName" type="String" locid="49">Event name</param>
+            /// <param name="eventCallback" type="Function" locid="50">The event handler function to associate with this event</param>
+            /// <param name="capture" type="Boolean" locid="51">Whether the event handler should be called during the capturing phase</param>
+            removeEventListener: function (eventName, eventCallBack, capture) {
+                return this._element.removeEventListener(eventName, eventCallBack, capture);
+            },
+
+            // Hide the help star if the control is not showing average rating
+            _hideAverageRating: function () {
+                var style = this._averageRatingElement.style;
+                style.paddingLeft = "0px";
+                style.paddingRight = "0px";
+                style.borderLeft = "0px";
+                style.borderRight = "0px";
+                style.msBoxFlex = 0;
+                style.display = "none";
+                style.width = this._resizeStringValue(this._averageRatingElement.currentStyle.width, 0);
+            },
+
+            _createControl: function () {
+                // rating control could have more than one class name
+                utilities.addClass(this._element, msRating);
+
+                // create control
+                for (var i = 0; i <= this._maxRating; i++) {
+                    var oneStar = document.createElement("div");
+                    this._element.appendChild(oneStar);
+                    oneStar.id = this._element.id + "_" + i;
+                    oneStar.className = msRatingUserEmpty;
+                    this._elementsClassName[i] = msRatingUserEmpty;
+                    this._elements[i] = oneStar;
+                    this._tooltipStrings[i] = i + 1;
                 }
-            }
-        },
+                this._averageRatingElement = this._elements[this._maxRating];
+                this._averageRatingElement.className = msRatingAverageFull;
+                this._elementsClassName[this._maxRating] = msRatingAverageFull;
+                this._tooltipStrings[this._maxRating] = CLEAR_YOUR_RATING;
+                // make invisible the last star
+                this._hideAverageRating();
 
-        /// <summary locid="48">
-        /// Adds an event listener
-        /// </summary>
-        /// <param name="eventName" type="String" locid="49">Event name</param>
-        /// <param name="eventCallback" type="Function" locid="50">The event handler function to associate with this event</param>
-        /// <param name="capture" type="Boolean" locid="51">Whether the event handler should be called during the capturing phase</param>
-        addEventListener: function (eventName, eventCallBack, capture) {
-            this._element.addEventListener(eventName, eventCallBack, capture);
-        },
+                // add focus capability relative to element's position in the document
+                this._element.tabIndex = "0";
+            },
 
-        /// <summary locid="52">
-        /// Removes an event listener
-        /// </summary>
-        /// <param name="eventName" type="String" locid="49">Event name</param>
-        /// <param name="eventCallback" type="Function" locid="50">The event handler function to associate with this event</param>
-        /// <param name="capture" type="Boolean" locid="51">Whether the event handler should be called during the capturing phase</param>
-        removeEventListener: function (eventName, eventCallBack, capture) {
-            return this._element.removeEventListener(eventName, eventCallBack, capture);
-        },
+            _setAccessibilityProperties: function () {
+                this._element.setAttribute("role", "slider");
+                this._element.setAttribute("aria-valuemin", 1);
+                this._element.setAttribute("aria-valuemax", this._maxRating);
+                this._updateAccessibilityProperties();
+            },
 
-        // Hide the help star if the control is not showing average rating
-        _hideAverageRating: function () {
-            var style = this._averageRatingElement.style;
-            style.paddingLeft = "0px";
-            style.paddingRight = "0px";
-            style.borderLeft = "0px";
-            style.borderRight = "0px";
-            style.msBoxFlex = 0;
-            style.display = "none";
-            style.width = this._resizeStringValue(this._averageRatingElement.currentStyle.width, 0);
-        },
-
-        _createControl: function () {
-            // rating control could have more than one class name
-            utilities.addClass(this._element, msRating);
-
-            // create control
-            for (var i = 0; i <= this._maxRating; i++) {
-                var oneStar = document.createElement("div");
-                this._element.appendChild(oneStar);
-                oneStar.id = this._element.id + "_" + i;
-                oneStar.className = msRatingUserEmpty;
-                this._elementsClassName[i] = msRatingUserEmpty;
-                this._elements[i] = oneStar;
-                this._tooltipStrings[i] = i + 1;
-            }
-            this._averageRatingElement = this._elements[this._maxRating];
-            this._averageRatingElement.className = msRatingAverageFull;
-            this._elementsClassName[this._maxRating] = msRatingAverageFull;
-            this._tooltipStrings[this._maxRating] = CLEAR_YOUR_RATING;
-            // make invisible the last star
-            this._hideAverageRating();
-
-            // add focus capability relative to element's position in the document
-            this._element.tabIndex = "0";
-        },
-
-        _setAccessibilityProperties: function () {
-            this._element.setAttribute("role", "slider");
-            this._element.setAttribute("aria-valuemin", 1);
-            this._element.setAttribute("aria-valuemax", this._maxRating);
-            this._updateAccessibilityProperties();
-        },
-
-        _updateAccessibilityProperties: function () {
-            var element = this._element;
-            element.setAttribute("aria-readOnly", this._readOnly);
-            if (this._tentativeRating > 0) {
-                element.setAttribute("aria-label", "Tentative Rating");
-                element.setAttribute("aria-valuenow", this._tentativeRating);
-                element.setAttribute("aria-valuetext", this._tooltipStrings[this._tentativeRating - 1]);
-            } else if (this._tentativeRating === 0) {
-                element.setAttribute("aria-valuenow", "undefined");
-                element.setAttribute("aria-label", "Tentative Rating");
-                element.setAttribute("aria-valuetext", "");
-            } else if (this._userRating !== 0) {
-                element.setAttribute("aria-valuenow", this._userRating);
-                element.setAttribute("aria-label", "User Rating");
-                element.setAttribute("aria-valuetext", this._tooltipStrings[this._userRating - 1]);
-            } else if (this._averageRating !== 0) {
-                element.setAttribute("aria-valuenow", this._averageRating);
-                element.setAttribute("aria-label", "Average Rating");
-                element.setAttribute("aria-valuetext", this._averageRating);
-            } else {
-                element.setAttribute("aria-valuenow", "undefined");
-                element.setAttribute("aria-label", "Average Rating");
-                element.setAttribute("aria-valuetext", "");
-            }
-        },
-
-        _ensureTooltips: function () {
-            if (this._toolTips.length === 0) {
-                for (var i = 0; i < this._maxRating; i++) {
-                    this._toolTips[i] = new WinJS.UI.Tooltip(this._elements[i]);
+            _updateAccessibilityProperties: function () {
+                var element = this._element;
+                element.setAttribute("aria-readOnly", this._readOnly);
+                if (this._tentativeRating > 0) {
+                    element.setAttribute("aria-label", "Tentative Rating");
+                    element.setAttribute("aria-valuenow", this._tentativeRating);
+                    element.setAttribute("aria-valuetext", this._tooltipStrings[this._tentativeRating - 1]);
+                } else if (this._tentativeRating === 0) {
+                    element.setAttribute("aria-valuenow", "undefined");
+                    element.setAttribute("aria-label", "Tentative Rating");
+                    element.setAttribute("aria-valuetext", "");
+                } else if (this._userRating !== 0) {
+                    element.setAttribute("aria-valuenow", this._userRating);
+                    element.setAttribute("aria-label", "User Rating");
+                    element.setAttribute("aria-valuetext", this._tooltipStrings[this._userRating - 1]);
+                } else if (this._averageRating !== 0) {
+                    element.setAttribute("aria-valuenow", this._averageRating);
+                    element.setAttribute("aria-label", "Average Rating");
+                    element.setAttribute("aria-valuetext", this._averageRating);
+                } else {
+                    element.setAttribute("aria-valuenow", "undefined");
+                    element.setAttribute("aria-label", "Average Rating");
+                    element.setAttribute("aria-valuetext", "");
                 }
-            }
-        },
+            },
 
-        // decrement tentative rating by one
-        _decrementRating: function () {
-            this._closeTooltip();
-            var firePreviewChange = true;
-            if ((this._tentativeRating === 0) || ((this._tentativeRating === -1) && (this._userRating === 0))) {
-                firePreviewChange = false;
-            }
+            _ensureTooltips: function () {
+                if (this._toolTips.length === 0) {
+                    for (var i = 0; i < this._maxRating; i++) {
+                        this._toolTips[i] = new WinJS.UI.Tooltip(this._elements[i]);
+                    }
+                }
+            },
 
-            if (this._tentativeRating > 0) {
-                this._tentativeRating--;
-            } else if (this._tentativeRating === -1) {
-                if (this._userRating !== 0) {
-                    if (this._userRating > 0) {
-                        this._tentativeRating = this._userRating - 1;
+            // decrement tentative rating by one
+            _decrementRating: function () {
+                this._closeTooltip();
+                var firePreviewChange = true;
+                if ((this._tentativeRating === 0) || ((this._tentativeRating === -1) && (this._userRating === 0))) {
+                    firePreviewChange = false;
+                }
+
+                if (this._tentativeRating > 0) {
+                    this._tentativeRating--;
+                } else if (this._tentativeRating === -1) {
+                    if (this._userRating !== 0) {
+                        if (this._userRating > 0) {
+                            this._tentativeRating = this._userRating - 1;
+                        } else {
+                            this._tentativeRating = 0;
+                        }
                     } else {
                         this._tentativeRating = 0;
                     }
-                } else {
-                    this._tentativeRating = 0;
                 }
-            }
 
-            if ((this._tentativeRating === 0) && !this._enableClear) {
-                this._tentativeRating = 1;
-                firePreviewChange = false;
-            }
+                if ((this._tentativeRating === 0) && !this._enableClear) {
+                    this._tentativeRating = 1;
+                    firePreviewChange = false;
+                }
 
-            this._showTentativeRating(firePreviewChange, "keyboard");
-        },
+                this._showTentativeRating(firePreviewChange, "keyboard");
+            },
 
-        _events: function () {
-            var that = this;
-            function ratingHandler(eventName) {
-                return {
-                    name: eventName,
-                    lowerCaseName: eventName.toLowerCase(),
-                    handler: function (event) {
-                        var fn = that["_on" + eventName];
-                        if (fn) {
-                            fn.apply(that, [event]);
+            _events: function () {
+                var that = this;
+                function ratingHandler(eventName) {
+                    return {
+                        name: eventName,
+                        lowerCaseName: eventName.toLowerCase(),
+                        handler: function (event) {
+                            var fn = that["_on" + eventName];
+                            if (fn) {
+                                fn.apply(that, [event]);
+                            }
                         }
-                    }
-                };
-            }
+                    };
+                }
 
-            var eventsRegisteredInLowerCase = [
+                var eventsRegisteredInLowerCase = [
                     ratingHandler("KeyDown"),
                     ratingHandler("Blur"),
                     ratingHandler("Focus")
                     ];
-            var events = [
+                var events = [
                     ratingHandler("MSPointerDown"),
                     ratingHandler("MSPointerMove"),
                     ratingHandler("MSPointerUp"),
@@ -1310,682 +1310,682 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     ratingHandler("DOMAttrModified")
                     ];
 
-            var i;
-            for (i = 0; i < eventsRegisteredInLowerCase.length; ++i) {
-                this._element.addEventListener(eventsRegisteredInLowerCase[i].lowerCaseName, eventsRegisteredInLowerCase[i].handler, false);
-            }
-            for (i = 0; i < events.length; ++i) {
-                this._element.addEventListener(events[i].name, events[i].handler, false);
-            }
-        },
-
-        _onDOMNodeInserted: function(eventObject) {
-            if (eventObject.target === this._element) {
-                this._recalculateStarProperties();
-                this._updateControl();
-            }
-        },
-
-        _recalculateStarProperties: function () {
-            this._elementWidth = this._elements[0].currentStyle.width;
-            if (this._element.currentStyle.direction === "rtl") {
-                this._elementPadding = this._elements[0].currentStyle.paddingRight;
-                this._elementBorder = this._elements[0].currentStyle.borderRight;
-            } else {
-                this._elementPadding = this._elements[0].currentStyle.paddingLeft;
-                this._elementBorder = this._elements[0].currentStyle.borderLeft;
-            }
-        },
-
-        _getStarNumber: function (star) {
-            for (var i = 0; i < this._maxRating; i++) {
-                if (this._elements[i] === star) {
-                    return i;
+                var i;
+                for (i = 0; i < eventsRegisteredInLowerCase.length; ++i) {
+                    this._element.addEventListener(eventsRegisteredInLowerCase[i].lowerCaseName, eventsRegisteredInLowerCase[i].handler, false);
                 }
-            }
-            // check if it is the average star
-            if (this._elements[this._maxRating] === star) {
-                return Math.floor(this._averageRating);
-            }
-
-            return -1;
-        },
-
-        // Hide the help star if the control is not showing average rating
-        _hideAverageStar: function () {
-            // check if this average rating control
-            if (this._averageRating !== 0) {
-                // hide the empty star
-                this._resetAverageStar(false);
-            }
-        },
-
-        // increase tentative rating by one
-        _incrementRating: function () {
-            this._closeTooltip();
-            var firePreviewChange = true;
-            if ((this._tentativeRating === this._maxRating) || ((this._tentativeRating === -1) && (this._userRating === this._maxRating))) {
-                firePreviewChange = false;
-            }
-
-            if (this._tentativeRating !== -1) {
-                if (this._tentativeRating < this._maxRating) {
-                    this._tentativeRating++;
+                for (i = 0; i < events.length; ++i) {
+                    this._element.addEventListener(events[i].name, events[i].handler, false);
                 }
-            } else {
-                if (this._userRating !== 0) {
-                    if (this._userRating < this._maxRating) {
-                        this._tentativeRating = this._userRating + 1;
-                    } else {
-                        this._tentativeRating = this._maxRating;
-                    }
+            },
+
+            _onDOMNodeInserted: function (eventObject) {
+                if (eventObject.target === this._element) {
+                    this._recalculateStarProperties();
+                    this._updateControl();
+                }
+            },
+
+            _recalculateStarProperties: function () {
+                this._elementWidth = this._elements[0].currentStyle.width;
+                if (this._element.currentStyle.direction === "rtl") {
+                    this._elementPadding = this._elements[0].currentStyle.paddingRight;
+                    this._elementBorder = this._elements[0].currentStyle.borderRight;
                 } else {
-                    this._tentativeRating = 1;
+                    this._elementPadding = this._elements[0].currentStyle.paddingLeft;
+                    this._elementBorder = this._elements[0].currentStyle.borderLeft;
                 }
-            }
-            this._showTentativeRating(firePreviewChange, "keyboard");
-        },
+            },
 
-        _onDOMAttrModified: function (eventObject) {
-            if ((eventObject.attrName === "dir") || (eventObject.attrName === "style.direction")) {
-                this._calculateOffset();
-                this._resetAverageStar(true);
-                this._updateControl();
-            }
-        },
-
-        _onMSPointerDown: function (eventObject) {
-            eventObject.preventManipulation();
-            this._pointerDownFocus = true;
-            this._element.focus();
-            this._element.msSetPointerCapture(eventObject.pointerId);
-            this._captured = true;
-            if (eventObject.pointerType === PT_TOUCH) {
-                var starNum = this._getStarNumber(eventObject.srcElement);
-                if (starNum >= 0) {
-                    // increase number by one (stars beginning from 0)
-                    this._tentativeRating = starNum + 1;
-
-                    // if the control is read only don't hover stars
-                    if (!this._readOnly) {
-                        // change states for all stars
-                        this._setStarClasses(msRatingTentativeFull, starNum, msRatingTentativeEmpty);
-                        // hide help star
-                        this._hideAverageStar();
-                        this._updateAccessibilityProperties();
-                        this._openTooltip("touch");
-                        this._raiseEvent(PREVIEW_CHANGE, this._tentativeRating);
+            _getStarNumber: function (star) {
+                for (var i = 0; i < this._maxRating; i++) {
+                    if (this._elements[i] === star) {
+                        return i;
                     }
                 }
-            } else if (!this._readOnly) {
-                this._openTooltip("mousedown");
-            }
-        },
+                // check if it is the average star
+                if (this._elements[this._maxRating] === star) {
+                    return Math.floor(this._averageRating);
+                }
 
-        _onPointerMove: function (eventObject, tooltipType) {
-            this._calculateOffset();
+                return -1;
+            },
 
-            var offsetPointer = eventObject.offsetX;
-            var obj = eventObject.target;
-            while (obj !== null) {
-                offsetPointer += obj.offsetLeft;
-                obj = obj.offsetParent;
-            }
+            // Hide the help star if the control is not showing average rating
+            _hideAverageStar: function () {
+                // check if this average rating control
+                if (this._averageRating !== 0) {
+                    // hide the empty star
+                    this._resetAverageStar(false);
+                }
+            },
 
-            var starNum = (offsetPointer - this._offsetFirstStar) / this._starWidth;
-            if (this._element.currentStyle.direction === "rtl") {
-                starNum *= -1;
-            }
-            if (starNum < 0) {
-                starNum = 0;
-            }
-
-            var firePreviewChange = false;
-            var newTentativeRating = Math.min(Math.ceil(starNum), this._maxRating);
-            if ((newTentativeRating === 0) && !this._enableClear) {
-                newTentativeRating = 1;
-            }
-            if (newTentativeRating !== this._tentativeRating) {
+            // increase tentative rating by one
+            _incrementRating: function () {
                 this._closeTooltip();
-                firePreviewChange = true;
-            }
+                var firePreviewChange = true;
+                if ((this._tentativeRating === this._maxRating) || ((this._tentativeRating === -1) && (this._userRating === this._maxRating))) {
+                    firePreviewChange = false;
+                }
 
-            this._tentativeRating = newTentativeRating;
-            this._showTentativeRating(firePreviewChange, tooltipType);
-        },
-
-        _onPointerUp: function () {
-            this._closeTooltip();
-            var fireOnChange = false;
-            if (this._userRating !== this._tentativeRating) {
-                fireOnChange = true;
-            }
-
-            if (!this._readOnly) {
-                if (this._tentativeRating === 0) {
-                    this._clearRating();
+                if (this._tentativeRating !== -1) {
+                    if (this._tentativeRating < this._maxRating) {
+                        this._tentativeRating++;
+                    }
                 } else {
-                    this._setOptions({ userRating: this._tentativeRating });
+                    if (this._userRating !== 0) {
+                        if (this._userRating < this._maxRating) {
+                            this._tentativeRating = this._userRating + 1;
+                        } else {
+                            this._tentativeRating = this._maxRating;
+                        }
+                    } else {
+                        this._tentativeRating = 1;
+                    }
                 }
-            }
+                this._showTentativeRating(firePreviewChange, "keyboard");
+            },
 
-            if (fireOnChange) {
-                this._raiseEvent(CHANGE, this._userRating);
-            }
-        },
-
-        _onMSPointerMove: function (eventObject) {
-            if (eventObject.pointerType === PT_TOUCH) {
-                this._onPointerMove(eventObject, "touch");
-            } else {
-                if (this._captured) {
-                    this._onPointerMove(eventObject, "mousedown");
-                } else {
-                    this._onPointerMove(eventObject, "mouseover");
+            _onDOMAttrModified: function (eventObject) {
+                if ((eventObject.attrName === "dir") || (eventObject.attrName === "style.direction")) {
+                    this._calculateOffset();
+                    this._resetAverageStar(true);
+                    this._updateControl();
                 }
-            }
-        },
+            },
 
-        _onMSPointerUp: function (eventObject) {
-            this._element.msReleasePointerCapture(eventObject.pointerId);
-            this._captured = false;
-            this._onPointerUp();
-        },
+            _onMSPointerDown: function (eventObject) {
+                eventObject.preventManipulation();
+                this._pointerDownFocus = true;
+                this._element.focus();
+                this._element.msSetPointerCapture(eventObject.pointerId);
+                this._captured = true;
+                if (eventObject.pointerType === PT_TOUCH) {
+                    var starNum = this._getStarNumber(eventObject.srcElement);
+                    if (starNum >= 0) {
+                        // increase number by one (stars beginning from 0)
+                        this._tentativeRating = starNum + 1;
 
-        _calculateOffset: function () {
-            this._starWidth = this._elements[0].offsetWidth;
-            this._offsetFirstStar = 0;
-            var obj = this._elements[0];
-            if (this._element.currentStyle.direction === "rtl") {
-                this._offsetFirstStar = obj.offsetWidth;
-            }
-            do {
-                this._offsetFirstStar += obj.offsetLeft;
-                obj = obj.offsetParent;
-            } while (obj !== null);
-        },
-
-        _clearRating: function () {
-            this._userRating = 0;
-            this._updateControl();
-        },
-
-        _onBlur: function () {
-            if (!this._captured) {
-                this._showCurrentRating();
-                if (!this._readOnly && !this._lastEventWasChange) {
-                    this._raiseEvent(CANCEL, null);
-                }
-            }
-        },
-
-        _onFocus: function () {
-            if (!this._pointerDownFocus) {
-                // if the control is read only don't hover stars
-                if (!this._readOnly) {
-                    // change states for all previous stars
-                    // but only if user didnt vote
-                    if (this._userRating === 0) {
-                        for (var i = 0; i < this._maxRating; i++) {
-                            this._elements[i].className = msRatingTentativeEmpty;
+                        // if the control is read only don't hover stars
+                        if (!this._readOnly) {
+                            // change states for all stars
+                            this._setStarClasses(msRatingTentativeFull, starNum, msRatingTentativeEmpty);
+                            // hide help star
+                            this._hideAverageStar();
+                            this._updateAccessibilityProperties();
+                            this._openTooltip("touch");
+                            this._raiseEvent(PREVIEW_CHANGE, this._tentativeRating);
                         }
                     }
-                    // hide the help star
-                    this._hideAverageStar();
+                } else if (!this._readOnly) {
+                    this._openTooltip("mousedown");
+                }
+            },
+
+            _onPointerMove: function (eventObject, tooltipType) {
+                this._calculateOffset();
+
+                var offsetPointer = eventObject.offsetX;
+                var obj = eventObject.target;
+                while (obj !== null) {
+                    offsetPointer += obj.offsetLeft;
+                    obj = obj.offsetParent;
                 }
 
-                if (this._userRating !== 0) {
-                    this._raiseEvent(PREVIEW_CHANGE, this._userRating);
-                } else {
-                    this._raiseEvent(PREVIEW_CHANGE, 0);
+                var starNum = (offsetPointer - this._offsetFirstStar) / this._starWidth;
+                if (this._element.currentStyle.direction === "rtl") {
+                    starNum *= -1;
                 }
-                this._tentativeRating = this._userRating;
-                this._updateAccessibilityProperties();
-            }
-            this._pointerDownFocus = false;
-        },
+                if (starNum < 0) {
+                    starNum = 0;
+                }
 
-        _onKeyDown: function (eventObject) {
-            var Key = utilities.Key;
-            var keyCode = eventObject.keyCode;
-            var rtlString = this._element.currentStyle.direction;
-            var handled = true;
-            switch (keyCode) {
-                case Key.enter: // Enter
+                var firePreviewChange = false;
+                var newTentativeRating = Math.min(Math.ceil(starNum), this._maxRating);
+                if ((newTentativeRating === 0) && !this._enableClear) {
+                    newTentativeRating = 1;
+                }
+                if (newTentativeRating !== this._tentativeRating) {
                     this._closeTooltip();
-                    // check tentative rating
-                    if (this._tentativeRating >= 0) {
-                        // check onchange event
-                        var fireOnChange = false;
-                        if (this._userRating !== this._tentativeRating) {
-                            fireOnChange = true;
-                        }
-                        this._setOptions({ userRating: this._tentativeRating });
-                        if (fireOnChange) {
-                            this._raiseEvent(CHANGE, this._userRating);
-                        }
-                    }
-                    break;
-                case Key.escape: // escape
-                    this._showCurrentRating();
+                    firePreviewChange = true;
+                }
 
+                this._tentativeRating = newTentativeRating;
+                this._showTentativeRating(firePreviewChange, tooltipType);
+            },
+
+            _onPointerUp: function () {
+                this._closeTooltip();
+                var fireOnChange = false;
+                if (this._userRating !== this._tentativeRating) {
+                    fireOnChange = true;
+                }
+
+                if (!this._readOnly) {
+                    if (this._tentativeRating === 0) {
+                        this._clearRating();
+                    } else {
+                        this._setOptions({ userRating: this._tentativeRating });
+                    }
+                }
+
+                if (fireOnChange) {
+                    this._raiseEvent(CHANGE, this._userRating);
+                }
+            },
+
+            _onMSPointerMove: function (eventObject) {
+                if (eventObject.pointerType === PT_TOUCH) {
+                    this._onPointerMove(eventObject, "touch");
+                } else {
+                    if (this._captured) {
+                        this._onPointerMove(eventObject, "mousedown");
+                    } else {
+                        this._onPointerMove(eventObject, "mouseover");
+                    }
+                }
+            },
+
+            _onMSPointerUp: function (eventObject) {
+                this._element.msReleasePointerCapture(eventObject.pointerId);
+                this._captured = false;
+                this._onPointerUp();
+            },
+
+            _calculateOffset: function () {
+                this._starWidth = this._elements[0].offsetWidth;
+                this._offsetFirstStar = 0;
+                var obj = this._elements[0];
+                if (this._element.currentStyle.direction === "rtl") {
+                    this._offsetFirstStar = obj.offsetWidth;
+                }
+                do {
+                    this._offsetFirstStar += obj.offsetLeft;
+                    obj = obj.offsetParent;
+                } while (obj !== null);
+            },
+
+            _clearRating: function () {
+                this._userRating = 0;
+                this._updateControl();
+            },
+
+            _onBlur: function () {
+                if (!this._captured) {
+                    this._showCurrentRating();
                     if (!this._readOnly && !this._lastEventWasChange) {
                         this._raiseEvent(CANCEL, null);
                     }
-
-                    break;
-                case Key.leftArrow: // Arrow Left
-                    if (rtlString === "rtl") {
-                        this._incrementRating();
-                    } else {
-                        this._decrementRating();
-                    }
-                    break;
-                case Key.upArrow: // Arrow Up
-                    this._incrementRating();
-                    break;
-                case Key.rightArrow: // Arrow Right
-                    if (rtlString === "rtl") {
-                        this._decrementRating();
-                    } else {
-                        this._incrementRating();
-                    }
-                    break;
-                case Key.downArrow: // Arrow Down
-                    this._decrementRating();
-                    break;
-                default:
-                    var number = 0;
-                    if ((keyCode >= Key.num0) && (keyCode <= Key.num9)) {
-                        number = Key.num0;
-                    } else if ((keyCode >= Key.numPad0) && (keyCode <= Key.numPad9)) {
-                        number = Key.numPad0;
-                    }
-
-                    if (number > 0) {
-                        var firePreviewChange = false;
-                        var newTentativeRating = Math.min(keyCode - number, this._maxRating);
-                        if ((newTentativeRating === 0) && !this._enableClear) {
-                            newTentativeRating = 1;
-                        }
-                        if (newTentativeRating !== this._tentativeRating) {
-                            this._closeTooltip();
-                            firePreviewChange = true;
-                        }
-                        this._tentativeRating = newTentativeRating;
-                        this._showTentativeRating(firePreviewChange, "keyboard");
-                    } else {
-                        handled = false;
-                    }
-            }
-
-            if (handled) {
-                eventObject.stopPropagation();
-                eventObject.preventDefault();
-            }
-        },
-
-        _onMSPointerOut: function (eventObject) {
-            // skip pointer out events between the stars
-            if (!this._captured && (this._getStarNumber(eventObject.toElement) < 0) && (this._element !== eventObject.toElement)) {
-                this._showCurrentRating();
-                // do not fire cancel event if we are changing rating on the same control
-                if (((this._getStarNumber(eventObject.fromElement) < 0) || (this._getStarNumber(eventObject.toElement) < 0)) && !this._lastEventWasChange) {
-                    this._raiseEvent(CANCEL, null);
                 }
-            }
-        },
+            },
 
-        _raiseEvent: function (eventName, tentativeRating) {
-            this._lastEventWasChange = (eventName === CHANGE);
-            if (document.createEvent) {
-                var event = document.createEvent("Event");
-                event.initEvent(eventName, false, false);
-                event.tentativeRating = tentativeRating;
-                this._element.dispatchEvent(event);
-            }
-        },
+            _onFocus: function () {
+                if (!this._pointerDownFocus) {
+                    // if the control is read only don't hover stars
+                    if (!this._readOnly) {
+                        // change states for all previous stars
+                        // but only if user didnt vote
+                        if (this._userRating === 0) {
+                            for (var i = 0; i < this._maxRating; i++) {
+                                this._elements[i].className = msRatingTentativeEmpty;
+                            }
+                        }
+                        // hide the help star
+                        this._hideAverageStar();
+                    }
 
-        _resetNextElement: function (prevState) {
-            if (this._averageRatingElement.nextSibling !== null) {
-                var style = this._averageRatingElement.nextSibling.style;
-                style.msBoxFlex = 1;
-                var direction = this._element.currentStyle.direction;
-                if (prevState) { 
+                    if (this._userRating !== 0) {
+                        this._raiseEvent(PREVIEW_CHANGE, this._userRating);
+                    } else {
+                        this._raiseEvent(PREVIEW_CHANGE, 0);
+                    }
+                    this._tentativeRating = this._userRating;
+                    this._updateAccessibilityProperties();
+                }
+                this._pointerDownFocus = false;
+            },
+
+            _onKeyDown: function (eventObject) {
+                var Key = utilities.Key;
+                var keyCode = eventObject.keyCode;
+                var rtlString = this._element.currentStyle.direction;
+                var handled = true;
+                switch (keyCode) {
+                    case Key.enter: // Enter
+                        this._closeTooltip();
+                        // check tentative rating
+                        if (this._tentativeRating >= 0) {
+                            // check onchange event
+                            var fireOnChange = false;
+                            if (this._userRating !== this._tentativeRating) {
+                                fireOnChange = true;
+                            }
+                            this._setOptions({ userRating: this._tentativeRating });
+                            if (fireOnChange) {
+                                this._raiseEvent(CHANGE, this._userRating);
+                            }
+                        }
+                        break;
+                    case Key.escape: // escape
+                        this._showCurrentRating();
+
+                        if (!this._readOnly && !this._lastEventWasChange) {
+                            this._raiseEvent(CANCEL, null);
+                        }
+
+                        break;
+                    case Key.leftArrow: // Arrow Left
+                        if (rtlString === "rtl") {
+                            this._incrementRating();
+                        } else {
+                            this._decrementRating();
+                        }
+                        break;
+                    case Key.upArrow: // Arrow Up
+                        this._incrementRating();
+                        break;
+                    case Key.rightArrow: // Arrow Right
+                        if (rtlString === "rtl") {
+                            this._decrementRating();
+                        } else {
+                            this._incrementRating();
+                        }
+                        break;
+                    case Key.downArrow: // Arrow Down
+                        this._decrementRating();
+                        break;
+                    default:
+                        var number = 0;
+                        if ((keyCode >= Key.num0) && (keyCode <= Key.num9)) {
+                            number = Key.num0;
+                        } else if ((keyCode >= Key.numPad0) && (keyCode <= Key.numPad9)) {
+                            number = Key.numPad0;
+                        }
+
+                        if (number > 0) {
+                            var firePreviewChange = false;
+                            var newTentativeRating = Math.min(keyCode - number, this._maxRating);
+                            if ((newTentativeRating === 0) && !this._enableClear) {
+                                newTentativeRating = 1;
+                            }
+                            if (newTentativeRating !== this._tentativeRating) {
+                                this._closeTooltip();
+                                firePreviewChange = true;
+                            }
+                            this._tentativeRating = newTentativeRating;
+                            this._showTentativeRating(firePreviewChange, "keyboard");
+                        } else {
+                            handled = false;
+                        }
+                }
+
+                if (handled) {
+                    eventObject.stopPropagation();
+                    eventObject.preventDefault();
+                }
+            },
+
+            _onMSPointerOut: function (eventObject) {
+                // skip pointer out events between the stars
+                if (!this._captured && (this._getStarNumber(eventObject.toElement) < 0) && (this._element !== eventObject.toElement)) {
+                    this._showCurrentRating();
+                    // do not fire cancel event if we are changing rating on the same control
+                    if (((this._getStarNumber(eventObject.fromElement) < 0) || (this._getStarNumber(eventObject.toElement) < 0)) && !this._lastEventWasChange) {
+                        this._raiseEvent(CANCEL, null);
+                    }
+                }
+            },
+
+            _raiseEvent: function (eventName, tentativeRating) {
+                this._lastEventWasChange = (eventName === CHANGE);
+                if (document.createEvent) {
+                    var event = document.createEvent("Event");
+                    event.initEvent(eventName, false, false);
+                    event.tentativeRating = tentativeRating;
+                    this._element.dispatchEvent(event);
+                }
+            },
+
+            _resetNextElement: function (prevState) {
+                if (this._averageRatingElement.nextSibling !== null) {
+                    var style = this._averageRatingElement.nextSibling.style;
+                    style.msBoxFlex = 1;
+                    var direction = this._element.currentStyle.direction;
+                    if (prevState) {
+                        if (direction === "rtl") {
+                            direction = "ltr";
+                        } else {
+                            direction = "rtl";
+                        }
+                    }
                     if (direction === "rtl") {
-                        direction = "ltr";
+                        style.paddingRight = this._elementPadding;
+                        style.borderRight = this._elementBorder;
                     } else {
-                        direction = "rtl";
+                        style.paddingLeft = this._elementPadding;
+                        style.borderLeft = this._elementBorder;
+                    }
+                    style.backgroundPosition = "left";
+                    style.backgroundSize = "100% 100%";
+                    style.width = this._elementWidth;
+                    style.textIndent = this._resizeStringValue(this._elementWidth, 0);
+                }
+            },
+
+            _resetAverageStar: function (prevState) {
+                this._resetNextElement(prevState);
+                this._hideAverageRating();
+            },
+
+            _resizeStringValue: function (string, factor) {
+                var number = parseFloat(string);
+                if (isNaN(number)) {
+                    return string;
+                }
+                var unit = string.substring(number.toString(10).length);
+                number = number * factor;
+                return (number + unit);
+            },
+
+            _setControlSize: function (options) {
+                if (options !== undefined) {
+                    if ("maxRating" in options) {
+                        if ((typeof options.maxRating === "number") && (options.maxRating > 0) && (Math.floor(options.maxRating) === options.maxRating)) {
+                            this._maxRating = options.maxRating;
+                        } else {
+                            throw new Error(maxRatingIsInvalid);
+                        }
                     }
                 }
-                if (direction === "rtl") {
+            },
+
+            _setCurrentStarClasses: function (classNameBeforeThreshold, threshold, classNameAfterThreshold) {
+                for (var i = 0; i < this._maxRating; i++) {
+                    if (i <= threshold) {
+                        this._elementsClassName[i] = classNameBeforeThreshold;
+                    } else {
+                        this._elementsClassName[i] = classNameAfterThreshold;
+                    }
+                }
+            },
+
+            _updateTooltips: function (value) {
+                var i, max = 0;
+                if (value !== null) {
+                    max = ((value.length <= this._maxRating + 1) ? value.length : this._maxRating + 1);
+                    for (i = 0; i < max; i++) {
+                        this._tooltipStrings[i] = value[i];
+                    }
+                } else {
+                    for (i = 0; i < this._maxRating; i++) {
+                        this._tooltipStrings[i] = i + 1;
+                    }
+                    this._tooltipStrings[this._maxRating] = CLEAR_YOUR_RATING;
+                }
+            },
+
+            _setOptions: function (options) {
+                if (options !== undefined) {
+                    if ("userRating" in options) {
+                        this._userRating = options.userRating;
+                    }
+                    if ("averageRating" in options) {
+                        this._averageRating = options.averageRating;
+                    }
+                    if ("readOnly" in options) {
+                        this._readOnly = options.readOnly;
+                        this._element.tabIndex = (this._readOnly ? "-1" : "0");
+                    }
+                    if ("tooltipStrings" in options) {
+                        this._updateTooltips(options.tooltipStrings);
+                    }
+                    if ("enableClear" in options) {
+                        this._enableClear = options.enableClear;
+                    }
+                }
+
+                this._updateControl();
+            },
+
+            _setStarClasses: function (classNameBeforeThreshold, threshold, classNameAfterThreshold) {
+                for (var i = 0; i < this._maxRating; i++) {
+                    if (i <= threshold) {
+                        this._elements[i].className = classNameBeforeThreshold;
+                    } else {
+                        this._elements[i].className = classNameAfterThreshold;
+                    }
+                }
+            },
+
+            _updateFloatingStar: function () {
+                var style = this._averageRatingElement.style;
+                var nextStyle = this._averageRatingElement.nextSibling.style;
+                if (this._element.currentStyle.direction == "rtl") {
+                    style.backgroundPosition = "right";
                     style.paddingRight = this._elementPadding;
                     style.borderRight = this._elementBorder;
+                    nextStyle.paddingRight = "0px";
+                    nextStyle.borderRight = "0px";
+                    nextStyle.textIndent = "-" + this._resizeStringValue(this._elementWidth, this._floatingValue);
                 } else {
+                    style.backgroundPosition = "left";
+                    nextStyle.backgroundPosition = "right";
                     style.paddingLeft = this._elementPadding;
                     style.borderLeft = this._elementBorder;
+                    nextStyle.paddingLeft = "0px";
+                    nextStyle.borderLeft = "0px";
+                    nextStyle.textIndent = "-" + this._resizeStringValue(this._elementWidth, this._floatingValue);
                 }
-                style.backgroundPosition = "left";
-                style.backgroundSize = "100% 100%";
-                style.width = this._elementWidth;
-                style.textIndent = this._resizeStringValue(this._elementWidth, 0);
-            }
-        },
+                style.width = this._resizeStringValue(this._elementWidth, this._floatingValue);
+                style.msBoxFlex = this._floatingValue;
+                style.backgroundSize = (100 / this._floatingValue) + "% 100%";
+                style.display = this._averageRatingElement.nextSibling.currentStyle.display;
+                nextStyle.msBoxFlex = 1 - this._floatingValue;
+                nextStyle.width = this._resizeStringValue(this._elementWidth, 1 - this._floatingValue);
+                nextStyle.backgroundSize = (100 / (1 - this._floatingValue)) + "% 100%";
+            },
 
-        _resetAverageStar: function (prevState) {
-            this._resetNextElement(prevState);
-            this._hideAverageRating();
-        },
-
-        _resizeStringValue: function (string, factor) {
-            var number = parseFloat(string);
-            if (isNaN(number)) {
-                return string;
-            }
-            var unit = string.substring(number.toString(10).length);
-            number = number * factor;
-            return (number + unit);
-        },
-
-        _setControlSize: function (options) {
-            if (options !== undefined) {
-                if ("maxRating" in options) {
-                    if ((typeof options.maxRating === "number") && (options.maxRating > 0) && (Math.floor(options.maxRating) === options.maxRating)) {
-                        this._maxRating = options.maxRating;
-                    } else {
-                        throw new Error(maxRatingIsInvalid);
-                    }
-                }
-            }
-        },
-
-        _setCurrentStarClasses: function (classNameBeforeThreshold, threshold, classNameAfterThreshold) {
-            for (var i = 0; i < this._maxRating; i++) {
-                if (i <= threshold) {
-                    this._elementsClassName[i] = classNameBeforeThreshold;
-                } else {
-                    this._elementsClassName[i] = classNameAfterThreshold;
-                }
-            }
-        },
-
-        _updateTooltips: function (value) {
-            var i, max = 0;
-            if (value !== null) {
-                max = ((value.length <= this._maxRating + 1) ? value.length : this._maxRating + 1);
-                for (i = 0; i < max; i++) {
-                    this._tooltipStrings[i] = value[i];
-                }
-            } else {
-                for (i = 0; i < this._maxRating; i++) {
-                    this._tooltipStrings[i] = i + 1;
-                }
-                this._tooltipStrings[this._maxRating] = CLEAR_YOUR_RATING;
-            }
-        },
-
-        _setOptions: function (options) {
-            if (options !== undefined) {
-                if ("userRating" in options) {
-                    this._userRating = options.userRating;
-                }
-                if ("averageRating" in options) {
-                    this._averageRating = options.averageRating;
-                }
-                if ("readOnly" in options) {
-                    this._readOnly = options.readOnly;
-                    this._element.tabIndex = (this._readOnly ? "-1" : "0");
-                }
-                if ("tooltipStrings" in options) {
-                    this._updateTooltips(options.tooltipStrings);
-                }
-                if ("enableClear" in options) {
-                    this._enableClear = options.enableClear;
-                }
-            }
-
-            this._updateControl();
-        },
-
-        _setStarClasses: function (classNameBeforeThreshold, threshold, classNameAfterThreshold) {
-            for (var i = 0; i < this._maxRating; i++) {
-                if (i <= threshold) {
-                    this._elements[i].className = classNameBeforeThreshold;
-                } else {
-                    this._elements[i].className = classNameAfterThreshold;
-                }
-            }
-        },
-
-        _updateFloatingStar: function () {
-            var style = this._averageRatingElement.style;
-            var nextStyle = this._averageRatingElement.nextSibling.style;
-            if (this._element.currentStyle.direction == "rtl") {
-                style.backgroundPosition = "right";
-                style.paddingRight = this._elementPadding;
-                style.borderRight = this._elementBorder;
-                nextStyle.paddingRight = "0px";
-                nextStyle.borderRight = "0px";
-                nextStyle.textIndent = "-" + this._resizeStringValue(this._elementWidth, this._floatingValue);
-            } else {
-                style.backgroundPosition = "left";
-                nextStyle.backgroundPosition = "right";
-                style.paddingLeft = this._elementPadding;
-                style.borderLeft = this._elementBorder;
-                nextStyle.paddingLeft = "0px";
-                nextStyle.borderLeft = "0px";
-                nextStyle.textIndent = "-" + this._resizeStringValue(this._elementWidth, this._floatingValue);
-            }
-            style.width = this._resizeStringValue(this._elementWidth, this._floatingValue);
-            style.msBoxFlex = this._floatingValue;
-            style.backgroundSize = (100 / this._floatingValue) + "% 100%";
-            style.display = this._averageRatingElement.nextSibling.currentStyle.display;
-            nextStyle.msBoxFlex = 1 - this._floatingValue;
-            nextStyle.width = this._resizeStringValue(this._elementWidth, 1 - this._floatingValue);
-            nextStyle.backgroundSize = (100 / (1 - this._floatingValue)) + "% 100%";
-        },
-
-        // show current rating
-        _showCurrentRating: function () {
-            this._closeTooltip();
-            // reset tentative rating
-            this._tentativeRating = -1;
-            // if the control is read only then we didn't change anything on hover
-            if (!this._readOnly) {
-                if (this._elementsClassName !== null) {
-                    for (var i = 0; i < this._maxRating; i++) {
-                        this._elements[i].className = this._elementsClassName[i];
-                    }
-                    // check for average value
-                    if ((this._averageRating !== 0) && (this._userRating === 0)) {
-                        this._updateFloatingStar();
-                    }
-                }
-            }
-            this._updateAccessibilityProperties();
-        },
-
-        _showTentativeRating: function (firePreviewChange, tooltipType) {
-            // if the control is read only don't hover stars
-            if ((!this._readOnly) && (this._tentativeRating >= 0)) {
-                this._setStarClasses(msRatingTentativeFull, this._tentativeRating - 1, msRatingTentativeEmpty);
-
-                // hide the empty star
-                this._hideAverageStar();
-            }
-
-            this._updateAccessibilityProperties();
-
-            if (!this._readOnly && firePreviewChange) {
-                this._openTooltip(tooltipType);
-                this._raiseEvent(PREVIEW_CHANGE, this._tentativeRating);
-            }
-        },
-
-        _openTooltip: function (tooltipType) {
-            this._ensureTooltips();
-            if (this._tentativeRating > 0) {
-                this._toolTips[this._tentativeRating - 1].innerHTML = this._tooltipStrings[this._tentativeRating - 1];
-                this._toolTips[this._tentativeRating - 1].open(tooltipType);
-            } else if (this._tentativeRating === 0) {
-                this._clearElement = document.createElement("div");
-                var style = this._clearElement.style;
-                style.visible = "hidden";
-                style.position = "relative";
-                style.width = "0px";
-                style.height = "0px";
-                this._elements[0].appendChild(this._clearElement);
-                var distance = this._elements[0].offsetWidth + parseInt(this._elementPadding, 10);
-                if (this._element.currentStyle.direction === "rtl") {
-                    style.left = distance + "px";
-                } else {
-                    style.left = -distance + "px";
-                }
-                style.top = -(this._element.offsetHeight) + "px";
-                this._toolTips[this._maxRating] = new WinJS.UI.Tooltip(this._clearElement);
-                this._toolTips[this._maxRating].innerHTML = this._tooltipStrings[this._maxRating];
-                this._toolTips[this._maxRating].open(tooltipType);
-            }
-        },
-
-        _closeTooltip: function (tooltipType) {
-            if (this._toolTips.length !== 0) {
-                if (this._tentativeRating > 0) {
-                    this._toolTips[this._tentativeRating - 1].close();
-                } else if (this._tentativeRating === 0) {
-                    if (this._clearElement !== null) {
-                        this._toolTips[this._maxRating].close();
-                        this._elements[0].removeChild(this._clearElement);
-                        this._clearElement = null;
-                    }
-                }
-            }
-        },
-
-        _clearTooltips: function () {
-            if (this._toolTips.length !== 0) {
-                for (var i = 0; i < this._maxRating; i++) {
-                    this._toolTips[i].innerHTML = null;
-                }
-            }
-        },
-
-        _updateControl: function () {
-            var i;
-            // check for average rating (if user rating is specified then we are not showing average rating)
-            if ((this._averageRating !== 0) && (this._userRating === 0)) {
-                if ((this._averageRating >= 1) && (this._averageRating <= this._maxRating)) {
-                    for (i = 0; i < this._maxRating; i++) {
-                        if ((i + 1) < this._averageRating) {
-                            this._elements[i].className = msRatingAverageFull;
-                            this._elementsClassName[i] = msRatingAverageFull;
-                        } else {
-                            this._elements[i].className = msRatingAverageEmpty;
-                            this._elementsClassName[i] = msRatingAverageEmpty;
+            // show current rating
+            _showCurrentRating: function () {
+                this._closeTooltip();
+                // reset tentative rating
+                this._tentativeRating = -1;
+                // if the control is read only then we didn't change anything on hover
+                if (!this._readOnly) {
+                    if (this._elementsClassName !== null) {
+                        for (var i = 0; i < this._maxRating; i++) {
+                            this._elements[i].className = this._elementsClassName[i];
                         }
-                        // check if it is floating star
-                        if ((i < this._averageRating) && ((i + 1) >= this._averageRating)) {
-                            this._resetNextElement(false);
-
-                            this._element.insertBefore(this._elements[this._maxRating], this._elements[i]);
-
-                            this._floatingValue =  this._averageRating - i;
-                            this._elementWidth = this._elements[i].currentStyle.width;
-
-                            if (this._element.currentStyle.direction == "rtl") {
-                                this._elementPadding = this._elements[i].currentStyle.paddingRight;
-                                this._elementBorder = this._elements[i].currentStyle.borderRight;
-                            } else {
-                                this._elementPadding = this._elements[i].currentStyle.paddingLeft;
-                                this._elementBorder = this._elements[i].currentStyle.borderLeft;
-                            }
-
+                        // check for average value
+                        if ((this._averageRating !== 0) && (this._userRating === 0)) {
                             this._updateFloatingStar();
                         }
                     }
                 }
-            }
+                this._updateAccessibilityProperties();
+            },
 
-            // check if it is user rating control
-            if (this._userRating !== 0) {
-                if ((this._userRating >= 1) && (this._userRating <= this._maxRating)) {
+            _showTentativeRating: function (firePreviewChange, tooltipType) {
+                // if the control is read only don't hover stars
+                if ((!this._readOnly) && (this._tentativeRating >= 0)) {
+                    this._setStarClasses(msRatingTentativeFull, this._tentativeRating - 1, msRatingTentativeEmpty);
+
+                    // hide the empty star
+                    this._hideAverageStar();
+                }
+
+                this._updateAccessibilityProperties();
+
+                if (!this._readOnly && firePreviewChange) {
+                    this._openTooltip(tooltipType);
+                    this._raiseEvent(PREVIEW_CHANGE, this._tentativeRating);
+                }
+            },
+
+            _openTooltip: function (tooltipType) {
+                this._ensureTooltips();
+                if (this._tentativeRating > 0) {
+                    this._toolTips[this._tentativeRating - 1].innerHTML = this._tooltipStrings[this._tentativeRating - 1];
+                    this._toolTips[this._tentativeRating - 1].open(tooltipType);
+                } else if (this._tentativeRating === 0) {
+                    this._clearElement = document.createElement("div");
+                    var style = this._clearElement.style;
+                    style.visible = "hidden";
+                    style.position = "relative";
+                    style.width = "0px";
+                    style.height = "0px";
+                    this._elements[0].appendChild(this._clearElement);
+                    var distance = this._elements[0].offsetWidth + parseInt(this._elementPadding, 10);
+                    if (this._element.currentStyle.direction === "rtl") {
+                        style.left = distance + "px";
+                    } else {
+                        style.left = -distance + "px";
+                    }
+                    style.top = -(this._element.offsetHeight) + "px";
+                    this._toolTips[this._maxRating] = new WinJS.UI.Tooltip(this._clearElement);
+                    this._toolTips[this._maxRating].innerHTML = this._tooltipStrings[this._maxRating];
+                    this._toolTips[this._maxRating].open(tooltipType);
+                }
+            },
+
+            _closeTooltip: function (tooltipType) {
+                if (this._toolTips.length !== 0) {
+                    if (this._tentativeRating > 0) {
+                        this._toolTips[this._tentativeRating - 1].close();
+                    } else if (this._tentativeRating === 0) {
+                        if (this._clearElement !== null) {
+                            this._toolTips[this._maxRating].close();
+                            this._elements[0].removeChild(this._clearElement);
+                            this._clearElement = null;
+                        }
+                    }
+                }
+            },
+
+            _clearTooltips: function () {
+                if (this._toolTips.length !== 0) {
+                    for (var i = 0; i < this._maxRating; i++) {
+                        this._toolTips[i].innerHTML = null;
+                    }
+                }
+            },
+
+            _updateControl: function () {
+                var i;
+                // check for average rating (if user rating is specified then we are not showing average rating)
+                if ((this._averageRating !== 0) && (this._userRating === 0)) {
+                    if ((this._averageRating >= 1) && (this._averageRating <= this._maxRating)) {
+                        for (i = 0; i < this._maxRating; i++) {
+                            if ((i + 1) < this._averageRating) {
+                                this._elements[i].className = msRatingAverageFull;
+                                this._elementsClassName[i] = msRatingAverageFull;
+                            } else {
+                                this._elements[i].className = msRatingAverageEmpty;
+                                this._elementsClassName[i] = msRatingAverageEmpty;
+                            }
+                            // check if it is floating star
+                            if ((i < this._averageRating) && ((i + 1) >= this._averageRating)) {
+                                this._resetNextElement(false);
+
+                                this._element.insertBefore(this._elements[this._maxRating], this._elements[i]);
+
+                                this._floatingValue = this._averageRating - i;
+                                this._elementWidth = this._elements[i].currentStyle.width;
+
+                                if (this._element.currentStyle.direction == "rtl") {
+                                    this._elementPadding = this._elements[i].currentStyle.paddingRight;
+                                    this._elementBorder = this._elements[i].currentStyle.borderRight;
+                                } else {
+                                    this._elementPadding = this._elements[i].currentStyle.paddingLeft;
+                                    this._elementBorder = this._elements[i].currentStyle.borderLeft;
+                                }
+
+                                this._updateFloatingStar();
+                            }
+                        }
+                    }
+                }
+
+                // check if it is user rating control
+                if (this._userRating !== 0) {
+                    if ((this._userRating >= 1) && (this._userRating <= this._maxRating)) {
+                        for (i = 0; i < this._maxRating; i++) {
+                            if (i < this._userRating) {
+                                if (this._readOnly) {
+                                    this._elements[i].className = msRatingDisabledFull;
+                                    this._elementsClassName[i] = msRatingDisabledFull;
+                                } else {
+                                    this._elements[i].className = msRatingUserFull;
+                                    this._elementsClassName[i] = msRatingUserFull;
+                                }
+                            } else {
+                                if (this._readOnly) {
+                                    this._elements[i].className = msRatingDisabledEmpty;
+                                    this._elementsClassName[i] = msRatingDisabledEmpty;
+                                } else {
+                                    this._elements[i].className = msRatingUserEmpty;
+                                    this._elementsClassName[i] = msRatingUserEmpty;
+                                }
+                            }
+                        }
+
+                        // hide helping floating star
+                        this._resetAverageStar(false);
+                    }
+                }
+
+                // update hearts if the rating is not set
+                if ((this._userRating === 0) && (this._averageRating === 0)) {
                     for (i = 0; i < this._maxRating; i++) {
-                        if (i < this._userRating) {
-                            if (this._readOnly) {
-                                this._elements[i].className = msRatingDisabledFull;
-                                this._elementsClassName[i] = msRatingDisabledFull;
-                            } else {
-                                this._elements[i].className = msRatingUserFull;
-                                this._elementsClassName[i] = msRatingUserFull;
-                            }
+                        if (this._readOnly) {
+                            this._elements[i].className = msRatingDisabledEmpty;
+                            this._elementsClassName[i] = msRatingDisabledEmpty;
                         } else {
-                            if (this._readOnly) {
-                                this._elements[i].className = msRatingDisabledEmpty;
-                                this._elementsClassName[i] = msRatingDisabledEmpty;
-                            } else {
-                                this._elements[i].className = msRatingUserEmpty;
-                                this._elementsClassName[i] = msRatingUserEmpty;
-                            }
+                            this._elements[i].className = msRatingUserEmpty;
+                            this._elementsClassName[i] = msRatingUserEmpty;
                         }
                     }
 
                     // hide helping floating star
                     this._resetAverageStar(false);
                 }
+
+                this._updateAccessibilityProperties();
             }
-
-            // update hearts if the rating is not set
-            if ((this._userRating === 0) && (this._averageRating === 0)) {
-                for (i = 0; i < this._maxRating; i++) {
-                    if (this._readOnly) {
-                        this._elements[i].className = msRatingDisabledEmpty;
-                        this._elementsClassName[i] = msRatingDisabledEmpty;
-                    } else {
-                        this._elements[i].className = msRatingUserEmpty;
-                        this._elementsClassName[i] = msRatingUserEmpty;
-                    }
-                }
-
-                // hide helping floating star
-                this._resetAverageStar(false);
-            }
-
-            this._updateAccessibilityProperties();
-        }
-    })
-});
+        })
+    });
 
 })(this, WinJS);
 
 
 (function (global) {
 
-// Error messages
-var elementIsInvalid = "Invalid argument: Toggle control expects a valid DOM element as the first argument.",
+    // Error messages
+    var elementIsInvalid = "Invalid argument: Toggle control expects a valid DOM element as the first argument.",
     invalidCreation = "Invalid constructor call: Please use the \"new\" operator to create a toggle switch.";
 
-// Const definitions
-var LABEL_ON = "On",
+    // Const definitions
+    var LABEL_ON = "On",
     LABEL_OFF = "Off";
 
-// CSS class names
-var msToggle = "win-toggle",
+    // CSS class names
+    var msToggle = "win-toggle",
     msToggleSwitch = "win-toggle-switch",
     msToggleTitle = "win-toggle-title",
     msToggleLabelOn = "win-toggle-label-on",
     msToggleLabelOff = "win-toggle-label-off";
 
-var Control = WinJS.Class.define(null, {
-    raiseEvent: function (type, eventProperties) {
-        this.dispatchEvent(type, eventProperties);
-    }
-});
+    var Control = WinJS.Class.define(null, {
+        raiseEvent: function (type, eventProperties) {
+            this.dispatchEvent(type, eventProperties);
+        }
+    });
 
-var utilities = WinJS.Utilities;
+    var utilities = WinJS.Utilities;
 
-WinJS.Class.mix(Control, WinJS.UI.DOMEventMixin);
+    WinJS.Class.mix(Control, WinJS.UI.DOMEventMixin);
 
-WinJS.Namespace.defineWithParent(WinJS, "UI", {
+    WinJS.Namespace.defineWithParent(WinJS, "UI", {
     /// <summary locid="53">
     /// The Toggle control is similar to a light switch with 2 positions: on or off
     /// </summary>
@@ -2000,228 +2000,228 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
     /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
     /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
-    Toggle: WinJS.Class.derive(Control, function (element, options) {
-        /// <summary locid="60">
-        /// Constructs the Toggle control
-        /// </summary>
-        /// <param name="element" domElement="true" locid="61">
-        /// The DOM element to be associated with the Toggle control.
-        /// </param>
-        /// <param name="options" type="object" locid="62">
-        /// The set of options to be applied initially to the Toggle control.
-        /// </param>
-        /// <returns type="WinJS.UI.Toggle" locid="63">
-        /// A Toggle control.
-        /// </returns>
-        if (!(this instanceof WinJS.UI.Toggle)) {
-            throw new Error(invalidCreation);
-        }
+        Toggle: WinJS.Class.derive(Control, function (element, options) {
+            /// <summary locid="60">
+            /// Constructs the Toggle control
+            /// </summary>
+            /// <param name="element" domElement="true" locid="61">
+            /// The DOM element to be associated with the Toggle control.
+            /// </param>
+            /// <param name="options" type="object" locid="62">
+            /// The set of options to be applied initially to the Toggle control.
+            /// </param>
+            /// <returns type="WinJS.UI.Toggle" locid="63">
+            /// A Toggle control.
+            /// </returns>
+            if (!(this instanceof WinJS.UI.Toggle)) {
+                throw new Error(invalidCreation);
+            }
 
-        if (!element) {
-            throw new Error(elementIsInvalid);
-        }
+            if (!element) {
+                throw new Error(elementIsInvalid);
+            }
 
-        var toggle = utilities.data(element).toggle;
-        if (toggle) {
-            return toggle;
-        }
+            var toggle = utilities.data(element).toggle;
+            if (toggle) {
+                return toggle;
+            }
 
-        // Elements
-        this._domElement = null;
-        this._switchElement = null;
-        this._titleElement = null;
-        this._labelElement = null;
+            // Elements
+            this._domElement = null;
+            this._switchElement = null;
+            this._titleElement = null;
+            this._labelElement = null;
 
-        // Strings
-        this._labelOn = LABEL_ON;
-        this._labelOff = LABEL_OFF;
+            // Strings
+            this._labelOn = LABEL_ON;
+            this._labelOff = LABEL_OFF;
 
-        // Variable
-        this._spaceKeyDown = false;
-        this._valueChanged = false;
-        this._mouseDownWithoutMove = false;
+            // Variable
+            this._spaceKeyDown = false;
+            this._valueChanged = false;
+            this._mouseDownWithoutMove = false;
 
-        this._setElement(element);
-        this._setDefaultOptions();
-        WinJS.UI.setOptions(this, options);
-        this._domElement.setAttribute("aria-checked", this._checked);
-        WinJS.UI.setControl(element, this);
-        utilities.data(element).toggle = this;
-    }, {
+            this._setElement(element);
+            this._setDefaultOptions();
+            WinJS.UI.setOptions(this, options);
+            this._domElement.setAttribute("aria-checked", this._checked);
+            WinJS.UI.setControl(element, this);
+            utilities.data(element).toggle = this;
+        }, {
         // Properties
 
         /// <field type="Boolean" locid="64">
         /// Whether the state is On (checked is true) or Off (false)
         /// </field>
-        checked: {
-            get: function () {
-                return this._checked;
-            },
-            set: function (value) {
-                this._checked = !!value; // Sanitize the value so _checked will be only true or false (ex: null/undefined will be translated into false)
-                this._setChecked(value);
-            }
-        },
-        /// <field type="Boolean" locid="65">
-        /// Whether the control is enabled
-        /// </field>
-        disabled: {
-            get: function () {
-                return this._switchElement.disabled;
-            },
-            set: function (value) {
-                var disabled = !!value; // Sanitize for a bool
-                this._domElement.disabled = disabled;
-                this._switchElement.disabled = disabled; // This is necessary to apply the css
-                this._domElement.setAttribute("aria-disabled", disabled);
-            }
-        },
-        /// <field type="String" locid="66">
-        /// The text for when the switch is On
-        /// </field>
-        labelOn: {
-            get: function () {
-                return this._labelOn;
-            },
-            set: function (value) {
-                this._labelOn = value;
-                if (this._checked) { // It's On now
-                    this._labelElement.innerHTML = this._labelOn;
+            checked: {
+                get: function () {
+                    return this._checked;
+                },
+                set: function (value) {
+                    this._checked = !!value; // Sanitize the value so _checked will be only true or false (ex: null/undefined will be translated into false)
+                    this._setChecked(value);
                 }
-            }
-        },
-        /// <field type="String" locid="67">
-        /// The text for when the switch is Off
-        /// </field>
-        labelOff: {
-            get: function () {
-                return this._labelOff;
             },
-            set: function (value) {
-                this._labelOff = value;
-                if (!this._checked) { // It's Off now
-                    this._labelElement.innerHTML = this._labelOff;
+            /// <field type="Boolean" locid="65">
+            /// Whether the control is enabled
+            /// </field>
+            disabled: {
+                get: function () {
+                    return this._switchElement.disabled;
+                },
+                set: function (value) {
+                    var disabled = !!value; // Sanitize for a bool
+                    this._domElement.disabled = disabled;
+                    this._switchElement.disabled = disabled; // This is necessary to apply the css
+                    this._domElement.setAttribute("aria-disabled", disabled);
                 }
-            }
-        },
-        /// <field type="String" locid="57">
-        /// The main text for this Toggle control
-        /// </field>
-        title: {
-            get: function () {
-                return this._titleElement.innerHTML;
             },
-            set: function (value) {
-                this._titleElement.innerHTML = value;
-            }
-        },
-
-        _addControlsInOrder: function () {
-            this._domElement.appendChild(this._titleElement);
-            this._domElement.appendChild(this._labelElement);
-            this._domElement.appendChild(this._switchElement);
-        },
-
-        _setChecked: function (value) {
-            if (value) { // On state
-                utilities.addClass(this._labelElement, msToggleLabelOn);
-                this._labelElement.innerHTML = this._labelOn;
-                this._switchElement.valueAsNumber = 1; // Update the slider visual
-            } else { // Off state
-                utilities.addClass(this._labelElement, msToggleLabelOff);
-                this._labelElement.innerHTML = this._labelOff;
-                this._switchElement.valueAsNumber = 0; // Update the slider visual
-            }
-        },
-
-        _setDefaultOptions: function () {
-            this.labelOn = LABEL_ON;
-            this.labelOff = LABEL_OFF;
-            this.title = "";
-            this.checked = false;
-            this.disabled = false;
-        },
-
-        _setElement: function (element) {
-            this._domElement = element;
-            utilities.addClass(this._domElement, msToggle);
-
-            this._switchElement = document.createElement("input");
-            this._switchElement.type = "range";
-            this._switchElement.max = 1;
-            this._switchElement.step = 1;
-            utilities.addClass(this._switchElement, msToggleSwitch);
-
-            this._titleElement = document.createElement("div");
-            var id = utilities.generateID("toggle-");
-            this._titleElement.setAttribute("id", id);
-            utilities.addClass(this._titleElement, msToggleTitle);
-
-            this._labelElement = document.createElement("div");
-            utilities.addClass(this._labelElement, msToggleLabelOff);
-
-            this._addControlsInOrder();
-
-            this._wireupEvents();
-            this._domElement.setAttribute("role", "checkbox");
-            this._domElement.setAttribute("aria-labelledby", id);
-        },
-
-        _valueHandler: function (fTapped) {
-            var oldValue = this._checked;
-            if (fTapped) {
-                this.checked = !this.checked;
-            } else {
-                this.checked = this._switchElement.valueAsNumber;
-            }
-
-            if (oldValue !== this._checked) {
-                this._domElement.setAttribute("aria-checked", this._checked);
-                this.raiseEvent("change");
-                this._valueChanged = true;
-            } else {
-                this._valueChanged = false;
-            }
-        },
-
-        _wireupEvents: function () {
-            var that = this;
-            var touchUpHandler = function (event) {
-                that._valueHandler(false);
-            };
-            var reloadChangeHandler = function (event) {
-                if (event.propertyName === "defaultValue") {
-                    that.checked = that._switchElement.valueAsNumber;
-                }
-            };
-            var spaceDownHandler = function (event) {
-                if (event.keyCode === utilities.Key.space && !that._spaceKeyDown) { // Spacebar
-                    that._switchElement.valueAsNumber = (that._switchElement.valueAsNumber + 1) % 2;
-                    that._spaceKeyDown = true;
-                }
-            };
-            var keyUpHandler = function (event) {
-                if (event.keyCode === utilities.Key.space || (event.keyCode >= utilities.Key.end && event.keyCode <= utilities.Key.downArrow)) { // Spacebar and arrow, home/end key
-                    that._valueHandler(false);
-                    if (event.keyCode === 32) {
-                        that._spaceKeyDown = false;
+            /// <field type="String" locid="66">
+            /// The text for when the switch is On
+            /// </field>
+            labelOn: {
+                get: function () {
+                    return this._labelOn;
+                },
+                set: function (value) {
+                    this._labelOn = value;
+                    if (this._checked) { // It's On now
+                        this._labelElement.innerHTML = this._labelOn;
                     }
                 }
-            };
-            var tapHandler = function () {
-                if (!that._valueChanged) {
-                    that._valueHandler(true);
+            },
+            /// <field type="String" locid="67">
+            /// The text for when the switch is Off
+            /// </field>
+            labelOff: {
+                get: function () {
+                    return this._labelOff;
+                },
+                set: function (value) {
+                    this._labelOff = value;
+                    if (!this._checked) { // It's Off now
+                        this._labelElement.innerHTML = this._labelOff;
+                    }
                 }
-            };
-            this._switchElement.addEventListener("MSPointerUp", touchUpHandler, false);
-            this._switchElement.addEventListener("MSGestureTap", tapHandler, false);
-            this._switchElement.addEventListener("keydown", spaceDownHandler, false);
-            this._switchElement.addEventListener("keyup", keyUpHandler, false);
-            this._switchElement.attachEvent("onpropertychange", reloadChangeHandler);
-            this._switchElement.addEventListener("change", function (ev) { ev.stopPropagation(); }, true);
-        }
-    })
-});
+            },
+            /// <field type="String" locid="57">
+            /// The main text for this Toggle control
+            /// </field>
+            title: {
+                get: function () {
+                    return this._titleElement.innerHTML;
+                },
+                set: function (value) {
+                    this._titleElement.innerHTML = value;
+                }
+            },
+
+            _addControlsInOrder: function () {
+                this._domElement.appendChild(this._titleElement);
+                this._domElement.appendChild(this._labelElement);
+                this._domElement.appendChild(this._switchElement);
+            },
+
+            _setChecked: function (value) {
+                if (value) { // On state
+                    utilities.addClass(this._labelElement, msToggleLabelOn);
+                    this._labelElement.innerHTML = this._labelOn;
+                    this._switchElement.valueAsNumber = 1; // Update the slider visual
+                } else { // Off state
+                    utilities.addClass(this._labelElement, msToggleLabelOff);
+                    this._labelElement.innerHTML = this._labelOff;
+                    this._switchElement.valueAsNumber = 0; // Update the slider visual
+                }
+            },
+
+            _setDefaultOptions: function () {
+                this.labelOn = LABEL_ON;
+                this.labelOff = LABEL_OFF;
+                this.title = "";
+                this.checked = false;
+                this.disabled = false;
+            },
+
+            _setElement: function (element) {
+                this._domElement = element;
+                utilities.addClass(this._domElement, msToggle);
+
+                this._switchElement = document.createElement("input");
+                this._switchElement.type = "range";
+                this._switchElement.max = 1;
+                this._switchElement.step = 1;
+                utilities.addClass(this._switchElement, msToggleSwitch);
+
+                this._titleElement = document.createElement("div");
+                var id = utilities.generateID("toggle-");
+                this._titleElement.setAttribute("id", id);
+                utilities.addClass(this._titleElement, msToggleTitle);
+
+                this._labelElement = document.createElement("div");
+                utilities.addClass(this._labelElement, msToggleLabelOff);
+
+                this._addControlsInOrder();
+
+                this._wireupEvents();
+                this._domElement.setAttribute("role", "checkbox");
+                this._domElement.setAttribute("aria-labelledby", id);
+            },
+
+            _valueHandler: function (fTapped) {
+                var oldValue = this._checked;
+                if (fTapped) {
+                    this.checked = !this.checked;
+                } else {
+                    this.checked = this._switchElement.valueAsNumber;
+                }
+
+                if (oldValue !== this._checked) {
+                    this._domElement.setAttribute("aria-checked", this._checked);
+                    this.raiseEvent("change");
+                    this._valueChanged = true;
+                } else {
+                    this._valueChanged = false;
+                }
+            },
+
+            _wireupEvents: function () {
+                var that = this;
+                var touchUpHandler = function (event) {
+                    that._valueHandler(false);
+                };
+                var reloadChangeHandler = function (event) {
+                    if (event.propertyName === "defaultValue") {
+                        that.checked = that._switchElement.valueAsNumber;
+                    }
+                };
+                var spaceDownHandler = function (event) {
+                    if (event.keyCode === utilities.Key.space && !that._spaceKeyDown) { // Spacebar
+                        that._switchElement.valueAsNumber = (that._switchElement.valueAsNumber + 1) % 2;
+                        that._spaceKeyDown = true;
+                    }
+                };
+                var keyUpHandler = function (event) {
+                    if (event.keyCode === utilities.Key.space || (event.keyCode >= utilities.Key.end && event.keyCode <= utilities.Key.downArrow)) { // Spacebar and arrow, home/end key
+                        that._valueHandler(false);
+                        if (event.keyCode === 32) {
+                            that._spaceKeyDown = false;
+                        }
+                    }
+                };
+                var tapHandler = function () {
+                    if (!that._valueChanged) {
+                        that._valueHandler(true);
+                    }
+                };
+                this._switchElement.addEventListener("MSPointerUp", touchUpHandler, false);
+                this._switchElement.addEventListener("MSGestureTap", tapHandler, false);
+                this._switchElement.addEventListener("keydown", spaceDownHandler, false);
+                this._switchElement.addEventListener("keyup", keyUpHandler, false);
+                this._switchElement.attachEvent("onpropertychange", reloadChangeHandler);
+                this._switchElement.addEventListener("change", function (ev) { ev.stopPropagation(); }, true);
+            }
+        })
+    });
 
 })(WinJS);
 
@@ -2284,17 +2284,17 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
 
     WinJS.Namespace.define("WinJS.UI", {
 
-        /// <summary locid="68">
-        /// The SemanticZoom allows the user to zoom in and out between two child controls
-        /// </summary>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.SemanticZoom"><div data-win-control="ZoomedInControlType"></div><div data-win-control="ZoomedOutControlType"></div></div>]]></htmlSnippet>
-        /// <part name="semanticZoom" class="win-semanticzoom" locid="69">The SemanticZoom itself</part>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/controls.css" shared="true" />
-            SemanticZoom: WinJS.Class.define(function (element, options) {
+    /// <summary locid="68">
+    /// The SemanticZoom allows the user to zoom in and out between two child controls
+    /// </summary>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.SemanticZoom"><div data-win-control="ZoomedInControlType"></div><div data-win-control="ZoomedOutControlType"></div></div>]]></htmlSnippet>
+    /// <part name="semanticZoom" class="win-semanticzoom" locid="69">The SemanticZoom itself</part>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/controls.css" shared="true" />
+        SemanticZoom: WinJS.Class.define(function (element, options) {
             /// <summary locid="70">
             /// Constructs a SemanticZoom
             /// </summary>
@@ -2363,7 +2363,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             this._elementOut = children[1];
 
             // Ensure the child controls have the same height as the SemanticZoom element
-            
+
             this._elementIn.style.height = this._elementOut.style.height = this._element.offsetHeight + "px";
 
             // Create the child controls if they haven't been created already
@@ -2484,11 +2484,11 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 that._setVisibility();
             });
         }, {
-            // Public members
+        // Public members
 
-            /// <field type="Boolean" locid="74">
-            /// True if the zoomed out view is currently being displayed
-            /// </field>
+        /// <field type="Boolean" locid="74">
+        /// True if the zoomed out view is currently being displayed
+        /// </field>
             zoomedOut: {
                 get: function () {
                     return this._zoomedOut;
@@ -2533,7 +2533,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             // Private members
 
             _onResize: function () {
-                msSetImmediate((function() {
+                msSetImmediate((function () {
                     function positionElement(element, left, top, width, height) {
                         var style = element.style;
                         style.left = left + "px";
@@ -2622,7 +2622,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     for (var i = 0; i < contactKeys.length; i++) {
                         targetSurface.msSetPointerCapture(parseInt(contactKeys[i]));
                     }
-                } 
+                }
                 ev.preventManipulation();
             },
 
@@ -2695,7 +2695,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     }
                 } else {
                     if (this._pointerCount === 2) {
-                        // The order in which these contacts are stored and retrieved from contactKeys is unimportant.  Any two points will suffice." 
+                        // The order in which these contacts are stored and retrieved from contactKeys is unimportant.  Any two points will suffice."
                         var contactKeys = Object.keys(this._pointerRecords),
                             point1 = this._pointerRecords[contactKeys[0]],
                             point2 = this._pointerRecords[contactKeys[1]];
@@ -2725,7 +2725,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                                 }
                             }
                             var change = contactDistance - this._firstPinchDistance;
-                            if (Math.abs(change)  >= pinchDistance) {
+                            if (Math.abs(change) >= pinchDistance) {
                                 processPinchGesture(change <= -pinchDistance);
                             }
                         }
@@ -2741,7 +2741,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 }
 
                 // If the pointerCount isn't 2, we're no longer making a pinch. This generally happens if you try pinching, find you can't zoom in the pinched direction,
-                // then release one finger. When that happens we need to animate back to normal state. 
+                // then release one finger. When that happens we need to animate back to normal state.
                 if (this._pointerCount !== 2 && this._bouncing) {
                     this._playBounce(false);
                 }
@@ -2911,11 +2911,11 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     return (completedCurrentItem || this._viewIn.getCurrentItem()).then(function (current) {
                         var positionIn = current.position,
                             positionOut = {
-                                left: positionIn.left * that._zoomFactor + offsetLeft,
-                                top: positionIn.top * that._zoomFactor + offsetTop,
-                                width: positionIn.width * that._zoomFactor,
-                                height: positionIn.height * that._zoomFactor
-                            };
+                            left: positionIn.left * that._zoomFactor + offsetLeft,
+                            top: positionIn.top * that._zoomFactor + offsetTop,
+                            width: positionIn.width * that._zoomFactor,
+                            height: positionIn.height * that._zoomFactor
+                        };
 
                         return that._viewOut.positionItem(that._zoomedOutItem(current.item), positionOut);
                     });
@@ -2923,11 +2923,11 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     return (completedCurrentItem || this._viewOut.getCurrentItem()).then(function (current) {
                         var positionOut = current.position,
                             positionIn = {
-                                left: (positionOut.left - offsetLeft) / that._zoomFactor,
-                                top: (positionOut.top - offsetTop) / that._zoomFactor,
-                                width: positionOut.width / that._zoomFactor,
-                                height: positionOut.height / that._zoomFactor
-                            };
+                            left: (positionOut.left - offsetLeft) / that._zoomFactor,
+                            top: (positionOut.top - offsetTop) / that._zoomFactor,
+                            width: positionOut.width / that._zoomFactor,
+                            height: positionOut.height / that._zoomFactor
+                        };
 
                         return that._viewIn.positionItem(that._zoomedInItem(current.item), positionIn);
                     });
@@ -3166,7 +3166,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     function _resolveElements(elements) {
         // No input is just an empty array
         if (!elements) {
-            return [];
+            return[];
         }
 
         // Make sure it's in array form.
@@ -3201,20 +3201,20 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
 
     WinJS.Namespace.define("WinJS.UI", {
         _Overlay: WinJS.Class.define(
-        /// <summary locid="76">
-        /// Constructs the Overlay control and associates it with the underlying DOM element.
-        /// </summary>
-        /// <param name="element" type="HTMLElement" domElement="true" locid="77">
-        /// The DOM element to be associated with the Overlay control.
-        /// </param>
-        /// <param name="options" type="object" domElement="false" locid="78">
-        /// The set of options to be applied initially to the Overlay control.
-        /// </param>
-        /// <returns type="WinJS.UI._Overlay" locid="79">A fully constructed Overlay control.</returns>
+            /// <summary locid="76">
+            /// Constructs the Overlay control and associates it with the underlying DOM element.
+            /// </summary>
+            /// <param name="element" type="HTMLElement" domElement="true" locid="77">
+            /// The DOM element to be associated with the Overlay control.
+            /// </param>
+            /// <param name="options" type="object" domElement="false" locid="78">
+            /// The set of options to be applied initially to the Overlay control.
+            /// </param>
+            /// <returns type="WinJS.UI._Overlay" locid="79">A fully constructed Overlay control.</returns>
         function (element, options) {
             this._baseOverlayConstructor(element, options);
         }, {
-            /// <field type="HTMLElement" domElement="true" locid="80">The DOM element the Overlay is attached to</field>
+        /// <field type="HTMLElement" domElement="true" locid="80">The DOM element the Overlay is attached to</field>
             element: {
                 get: function () {
                     return this._element;
@@ -3310,7 +3310,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     // So we'll set up "add" for showing, and use "delete" for "hiding" + moving,
                     // then trigger both at the same time.
 
-                    // In case they're in different DIVs we also need to check the parents so 
+                    // In case they're in different DIVs we also need to check the parents so
                     // that we're only animating siblings.  If input elements have different
                     // parents, we'll run a set of animations for each parent.
                     var parentDiv,
@@ -3472,7 +3472,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                                         }
                                         _animError(err);
                                     });
-                                } (hideAnim, toHide));
+                                }(hideAnim, toHide));
                             }
                         }
                     }
@@ -3725,7 +3725,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 return WinJS.UI.Animation.hidePopup(this._element, { top: '20px', left: '20px' });
             },
 
-            // Send one of our events 
+            // Send one of our events
             _sendEvent: function (eventName) {
                 var event = document.createEvent("Event");
                 event.initEvent(eventName, true, true);
@@ -3889,7 +3889,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     thisWinUI._Overlay.requiresElements = "Invalid argument: elements must not be empty";
 })(WinJS);
 
-   
+
 
 
 (function (WinJS) {
@@ -3918,8 +3918,8 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
         }
     }
 
-    // _repositionBottomAppBar is temporary to move the bottom AppBar when the soft keyboard show up. 
-    // This code will be removed when the automatic layout work will be done 
+    // _repositionBottomAppBar is temporary to move the bottom AppBar when the soft keyboard show up.
+    // This code will be removed when the automatic layout work will be done
     function _repositionBottomAppBar() {
         var elements = document.querySelectorAll('.win-appbar');
         var len = elements.length;
@@ -3997,20 +3997,20 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     }
 
     WinJS.Namespace.define("WinJS.UI", {
-        /// <summary locid="99">Constructs the AppBar control and associates it with the underlying DOM element.</summary>
-        /// <name locid="100">Application Bar</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.AppBar"></div>]]></htmlSnippet>
-        /// <event name="beforeshow" locid="101">Raised just before showing an appbar.</event>
-        /// <event name="aftershow" locid="102">Raised immediately after an appbar is fully shown.</event>
-        /// <event name="beforehide" locid="103">Raised just before hiding an appbar.</event>
-        /// <event name="afterhide" locid="104">Raised immediately after an appbar is fully hidden.</event>
-        /// <part name="appbar" class="win-appbar" locid="105">The Appbar control itself</part>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="99">Constructs the AppBar control and associates it with the underlying DOM element.</summary>
+    /// <name locid="100">Application Bar</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.AppBar"></div>]]></htmlSnippet>
+    /// <event name="beforeshow" locid="101">Raised just before showing an appbar.</event>
+    /// <event name="aftershow" locid="102">Raised immediately after an appbar is fully shown.</event>
+    /// <event name="beforehide" locid="103">Raised just before hiding an appbar.</event>
+    /// <event name="afterhide" locid="104">Raised immediately after an appbar is fully hidden.</event>
+    /// <part name="appbar" class="win-appbar" locid="105">The Appbar control itself</part>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         AppBar: WinJS.Class.derive(WinJS.UI._Overlay, function (element, options) {
             /// <summary locid="106">Constructs the AppBar control</summary>
             /// <param name="element" type="HTMLElement" domElement="true" locid="107">
@@ -4055,8 +4055,8 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 this.position = appBarPositionBottom;
             }
 
-            // _repositionBottomAppBar is temporary to move the bottom AppBar when the soft keyboard show up. 
-            // This code will be removed when the automatic layout work will be done 
+            // _repositionBottomAppBar is temporary to move the bottom AppBar when the soft keyboard show up.
+            // This code will be removed when the automatic layout work will be done
             window.addEventListener("resize", _repositionBottomAppBar, false);
 
             // Ensure our peristent bars are correctly initialized (default)
@@ -4119,9 +4119,9 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             // Make sure flyout event handlers are hooked up (this aids light dismiss)
             thisWinUI._Overlay._addFlyoutEventHandlers();
         }, {
-            // Public Properties
+        // Public Properties
 
-            /// <field type="String" locid="110">The Overlay position of the AppBar.  Values are "top", "bottom" or undefined.</field>
+        /// <field type="String" locid="110">The Overlay position of the AppBar.  Values are "top", "bottom" or undefined.</field>
             position: {
                 get: function () {
                     return this._position;
@@ -4326,20 +4326,20 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     }
 
     WinJS.Namespace.define("WinJS.UI", {
-        /// <summary locid="116">Constructs the Flyout control and associates it with the underlying DOM element.</summary>
-        /// <name locid="117">Flyout</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.Flyout"></div>]]></htmlSnippet>
-        /// <event name="beforeshow" locid="118">Raised just before showing a flyout.</event>
-        /// <event name="aftershow" locid="119">Raised immediately after a flyout is fully shown.</event>
-        /// <event name="beforehide" locid="120">Raised just before hiding a flyout.</event>
-        /// <event name="afterhide" locid="121">Raised immediately after a flyout is fully hidden.</event>
-        /// <part name="flyout" class="win-flyout" locid="122">The Flyout control itself</part>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="116">Constructs the Flyout control and associates it with the underlying DOM element.</summary>
+    /// <name locid="117">Flyout</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.Flyout"></div>]]></htmlSnippet>
+    /// <event name="beforeshow" locid="118">Raised just before showing a flyout.</event>
+    /// <event name="aftershow" locid="119">Raised immediately after a flyout is fully shown.</event>
+    /// <event name="beforehide" locid="120">Raised just before hiding a flyout.</event>
+    /// <event name="afterhide" locid="121">Raised immediately after a flyout is fully hidden.</event>
+    /// <part name="flyout" class="win-flyout" locid="122">The Flyout control itself</part>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         Flyout: WinJS.Class.derive(WinJS.UI._Overlay, function (element, options) {
             /// <summary locid="116">
             /// Constructs the Flyout control and associates it with the underlying DOM element.
@@ -4395,16 +4395,16 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             var that = this;
             this._element.addEventListener("focusout", function (e) { thisWinUI._Overlay._hideIfLostFocus(that, e); }, false);
         }, {
-            /// <summary locid="125">
-            /// Shows the Flyout, if hidden, regardless of other state
-            /// </summary>
-            /// <param name="anchor" type="HTMLElement" domElement="true" locid="126">
-            /// The DOM element to anchor the flyout.
-            /// </param>
-            /// <param name="placement" type="object" domElement="false" locid="127">
-            /// The placement of the flyout to the anchor: 'top', 'bottom', 'left', or 'right'.
-            /// </param>
-            /// <returns type="undefined" locid="82" />
+        /// <summary locid="125">
+        /// Shows the Flyout, if hidden, regardless of other state
+        /// </summary>
+        /// <param name="anchor" type="HTMLElement" domElement="true" locid="126">
+        /// The DOM element to anchor the flyout.
+        /// </param>
+        /// <param name="placement" type="object" domElement="false" locid="127">
+        /// The placement of the flyout to the anchor: 'top', 'bottom', 'left', or 'right'.
+        /// </param>
+        /// <returns type="undefined" locid="82" />
             show: function (anchor, placement) {
                 // We expect an anchor
                 if (!anchor) {
@@ -4480,7 +4480,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 // If we are already animating don't change position (yet)
                 if (!this._element.msAnimating) {
                     this._element.style.top = this._nextTop + 'px';
-                    this._element.style.left = this._nextLeft + 'px'; ;
+                    this._element.style.left = this._nextLeft + 'px';;
                     this._element.style.bottom = 'auto';
                     this._element.style.right = 'auto';
                     this._nextLeft = undefined;
@@ -4613,21 +4613,21 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
     }
 
     WinJS.Namespace.define("WinJS.UI", {
-        /// <summary locid="129">Constructs the SettingsPane control and associates it with the underlying DOM element.</summary>
-        /// <name locid="130">Settings Pane</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.SettingsPane"></div>]]></htmlSnippet>
-        /// <event name="beforeshow" locid="131">Raised just before showing a settings pane.</event>
-        /// <event name="aftershow" locid="132">Raised immediately after a settings pane is fully shown.</event>
-        /// <event name="beforehide" locid="133">Raised just before hiding a settings pane.</event>
-        /// <event name="afterhide" locid="134">Raised immediately after a settings pane is fully hidden.</event>
-        /// <part name="settings" class="win-settingspane" locid="135">The Settings Pane control itself</part>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/wwaapp.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="129">Constructs the SettingsPane control and associates it with the underlying DOM element.</summary>
+    /// <name locid="130">Settings Pane</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.SettingsPane"></div>]]></htmlSnippet>
+    /// <event name="beforeshow" locid="131">Raised just before showing a settings pane.</event>
+    /// <event name="aftershow" locid="132">Raised immediately after a settings pane is fully shown.</event>
+    /// <event name="beforehide" locid="133">Raised just before hiding a settings pane.</event>
+    /// <event name="afterhide" locid="134">Raised immediately after a settings pane is fully hidden.</event>
+    /// <part name="settings" class="win-settingspane" locid="135">The Settings Pane control itself</part>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/binding.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/wwaapp.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/animations.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         SettingsPane: WinJS.Class.derive(WinJS.UI._Overlay, function (element, options) {
             /// <summary locid="136">Constructs a SettingsPane control</summary>
             /// <param name="element" type="HTMLElement" domElement="true" locid="137">
@@ -4735,9 +4735,9 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             this._currentAnimateIn = this._animateSlideIn;
             this._currentAnimateOut = this._animateSlideOut;
         }, {
-            // Public Properties
+        // Public Properties
 
-            /// <field type="String" locid="140">Command Id of the settings pane</field>
+        /// <field type="String" locid="140">Command Id of the settings pane</field>
             commandId: {
                 get: function () {
                     return this._commandId;
@@ -4931,19 +4931,19 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
 
     // Tooltip control implementation
     WinJS.Namespace.defineWithParent(WinJS, "UI", {
-        /// <summary locid="145">
-        /// The Tooltip control allows a rich tooltip to be set on HTML elements
-        /// </summary>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.Tooltip" data-win-options="{innerHTML:'The tip content goes here'}"></div>]]></htmlSnippet>
-        /// <event name="beforeopen" bubbles="false" locid="146">Raised when the tooltip is about to start showing itself</event>
-        /// <event name="opened" bubbles="false" locid="147">Raised when the tooltip is showing</event>
-        /// <event name="beforeclose" bubbles="false" locid="148">Raised when the tooltip is about to become hidden</event>
-        /// <event name="closed" bubbles="false" locid="149">Raised when the tooltip is now hidden</event>
-        /// <part name="tooltip" class="win-tooltip" locid="150">The Tooltip control itself</part>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="145">
+    /// The Tooltip control allows a rich tooltip to be set on HTML elements
+    /// </summary>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.Tooltip" data-win-options="{innerHTML:'The tip content goes here'}"></div>]]></htmlSnippet>
+    /// <event name="beforeopen" bubbles="false" locid="146">Raised when the tooltip is about to start showing itself</event>
+    /// <event name="opened" bubbles="false" locid="147">Raised when the tooltip is showing</event>
+    /// <event name="beforeclose" bubbles="false" locid="148">Raised when the tooltip is about to become hidden</event>
+    /// <event name="closed" bubbles="false" locid="149">Raised when the tooltip is now hidden</event>
+    /// <part name="tooltip" class="win-tooltip" locid="150">The Tooltip control itself</part>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         Tooltip: WinJS.Class.define(function (anchorElement, options) {
             /// <summary locid="151">
             /// Constructs the Tooltip control
@@ -4994,9 +4994,9 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             this._events();
             utilities.data(anchorElement).tooltip = this;
         }, {
-            /// <field type="String" locid="155">
-            /// The HTML content of the tooltip
-            /// </field>
+        /// <field type="String" locid="155">
+        /// The HTML content of the tooltip
+        /// </field>
             innerHTML: {
                 get: function () {
                     return this._innerHTML;
@@ -5227,7 +5227,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                     this._onAnimationEnd(event);
                 } else if (!this._triggerByOpen) {
                     // If the anchor element has children, we should ignore events that are caused within the anchor element
-                    // Please note that we are not using event.target here as in bubbling phases from the child, the event target 
+                    // Please note that we are not using event.target here as in bubbling phases from the child, the event target
                     // is usually the child
                     if (eventType in EVENTS_BY_CHILD) {
                         var elem = event.relatedTarget;
@@ -5304,7 +5304,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 else {
                     value = mouseHoverTime;
                     var curTime = (new Date()).getTime();
-                    // If the mouse is moved immediately from another anchor that has 
+                    // If the mouse is moved immediately from another anchor that has
                     // tooltip open, we should use a shorter delay
                     if (curTime - lastCloseTime <= RESHOW_THRESHOLD) {
                         value = DELAY_RESHOW;
@@ -5316,7 +5316,7 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
             },
 
             // This function returns the anchor element's position in the Window coordinates.
-            // utilities.getPosition returns the position in document coordinates. 
+            // utilities.getPosition returns the position in document coordinates.
             _getAnchorPositionWindowCoord: function () {
                 var pos = utilities.getPosition(this._anchorElement);
                 return {
@@ -5477,19 +5477,19 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
                 var that = this;
                 var removeTooltip =
                     function (event) {
-                        if (event.target == that._anchorElement && that._domElement) {
-                            document.body.removeChild(that._phantomDiv);
-                            document.body.removeChild(that._domElement);
-                            that._domElement = null;
-                            that._phantomDiv = null;
-                        }
-                        if (event.target == that._anchorElement) {
-                            document.body.removeEventListener("DOMNodeRemoved", removeTooltip, false);
-                        }
-                    };
+                    if (event.target == that._anchorElement && that._domElement) {
+                        document.body.removeChild(that._phantomDiv);
+                        document.body.removeChild(that._domElement);
+                        that._domElement = null;
+                        that._phantomDiv = null;
+                    }
+                    if (event.target == that._anchorElement) {
+                        document.body.removeEventListener("DOMNodeRemoved", removeTooltip, false);
+                    }
+                };
                 document.body.addEventListener("DOMNodeRemoved", removeTooltip, false);
 
-                // Set the hide delay, 
+                // Set the hide delay,
                 this._hideDelay = hide;
 
                 // Tooltip display offset differently for touch events and non-touch events
@@ -5546,79 +5546,79 @@ WinJS.Namespace.defineWithParent(WinJS, "UI", {
 (function (global, undefined) {
 
     WinJS.Namespace.define("WinJS.UI", {
-        /// <summary locid="163">
-        /// ViewBox control scales a single child element to fill the available space without
-        /// resizing it. The control reacts to changes in the size of the container as well as
-        /// changes in size of the child element (for instance if a media query results in
-        /// a change in aspect ratio).
-        /// </summary>
-        /// <name locid="164">View Box</name>
-        /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.ViewBox"></div>]]></htmlSnippet>
-        /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
-        /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
-        /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
+    /// <summary locid="163">
+    /// ViewBox control scales a single child element to fill the available space without
+    /// resizing it. The control reacts to changes in the size of the container as well as
+    /// changes in size of the child element (for instance if a media query results in
+    /// a change in aspect ratio).
+    /// </summary>
+    /// <name locid="164">View Box</name>
+    /// <htmlSnippet><![CDATA[<div data-win-control="WinJS.UI.ViewBox"></div>]]></htmlSnippet>
+    /// <resource type="javascript" src="/winjs/js/base.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/ui.js" shared="true" />
+    /// <resource type="javascript" src="/winjs/js/controls.js" shared="true" />
+    /// <resource type="css" src="/winjs/css/ui-dark.css" shared="true" />
         ViewBox: WinJS.Class.define(
             function (element, options) {
-                /// <summary locid="165">ViewBox control</summary>
-                /// <param name="element" type="HTMLElement" domElement="true" mayBeNull="true" locid="166">
-                /// The DOM element to function as the scaling box. This element will fill 100% of the width and height allotted to it.
-                /// </param>
-                /// <param name="options" type="object" optional="true" locid="167">
-                /// The set of options to be applied initially to the ViewBox control.
-                /// </param>
-                /// <returns type="WinJS.UI.ViewBox" locid="168">A constructed ViewBox control.</returns>
-                this._element = element || document.createElement("div");
-                this._initialize();
-                this._updateLayout();
-            }, 
-            {
-                _sizer: null,
-                _element: null,
+            /// <summary locid="165">ViewBox control</summary>
+            /// <param name="element" type="HTMLElement" domElement="true" mayBeNull="true" locid="166">
+            /// The DOM element to function as the scaling box. This element will fill 100% of the width and height allotted to it.
+            /// </param>
+            /// <param name="options" type="object" optional="true" locid="167">
+            /// The set of options to be applied initially to the ViewBox control.
+            /// </param>
+            /// <returns type="WinJS.UI.ViewBox" locid="168">A constructed ViewBox control.</returns>
+            this._element = element || document.createElement("div");
+            this._initialize();
+            this._updateLayout();
+        },
+        {
+            _sizer: null,
+            _element: null,
 
-                /// <field type="HTMLElement" domElement="true" locid="169">
-                /// The DOM element which functions as the scaling box.
-                /// </field>
-                element: {
-                    get: function () { return this._element; }
-                },
+            /// <field type="HTMLElement" domElement="true" locid="169">
+            /// The DOM element which functions as the scaling box.
+            /// </field>
+            element: {
+                get: function () { return this._element; }
+            },
 
-                _initialize: function () {
-                    var box = this.element;
-                    WinJS.UI.setControl(box, this);
-                    WinJS.Utilities.addClass(box, "win-viewbox");
-                    if (WinJS.validation) {
-                        if (box.childElementCount != 1) {
-                            throw "WinJS.UI.ViewBox expects to only have one child element";
-                        }
+            _initialize: function () {
+                var box = this.element;
+                WinJS.UI.setControl(box, this);
+                WinJS.Utilities.addClass(box, "win-viewbox");
+                if (WinJS.validation) {
+                    if (box.childElementCount != 1) {
+                        throw "WinJS.UI.ViewBox expects to only have one child element";
                     }
-                    var sizer = box.firstElementChild;
-                    this._sizer = sizer;
-                    if (sizer) {
-                        var that = this;
-                        var onresize = function() {
-                            that._updateLayout();
-                        }
-                        box.onresize = onresize;
-                        sizer.onresize = onresize;
-                    }
-                },
-                _updateLayout: function () {
-                    var sizer = this._sizer;
-                    var box = this.element;
-                    var w = sizer.clientWidth;
-                    var h = sizer.clientHeight;
-                    var bw = box.clientWidth;
-                    var bh = box.clientHeight;
-                    var wRatio = bw / w;
-                    var hRatio = bh / h;
-                    var mRatio = Math.min(wRatio, hRatio);
-                    var transX = Math.abs(bw - (w * mRatio)) / 2;
-                    var transY = Math.abs(bh - (h * mRatio)) / 2;
-                    this._sizer.style["-ms-transform"] = "translate(" + transX + "px," + transY + "px) scale(" + mRatio + ")";
-                    this._sizer.style["-ms-transform-origin"] = "top left";
                 }
+                var sizer = box.firstElementChild;
+                this._sizer = sizer;
+                if (sizer) {
+                    var that = this;
+                    var onresize = function () {
+                        that._updateLayout();
+                    }
+                    box.onresize = onresize;
+                    sizer.onresize = onresize;
+                }
+            },
+            _updateLayout: function () {
+                var sizer = this._sizer;
+                var box = this.element;
+                var w = sizer.clientWidth;
+                var h = sizer.clientHeight;
+                var bw = box.clientWidth;
+                var bh = box.clientHeight;
+                var wRatio = bw / w;
+                var hRatio = bh / h;
+                var mRatio = Math.min(wRatio, hRatio);
+                var transX = Math.abs(bw - (w * mRatio)) / 2;
+                var transY = Math.abs(bh - (h * mRatio)) / 2;
+                this._sizer.style["-ms-transform"] = "translate(" + transX + "px," + transY + "px) scale(" + mRatio + ")";
+                this._sizer.style["-ms-transform-origin"] = "top left";
             }
+        }
         )
     });
 

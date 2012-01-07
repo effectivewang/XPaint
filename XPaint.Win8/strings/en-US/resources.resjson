@@ -17,9 +17,29 @@
 // underscore (_) are reserved for comments.
 
 {
-    "greeting"              : "Hello!",
-    "_greeting.comment "    : "A welcome greeting",
+    // General
+    "greeting"                  : "Hello!",
+    "_greeting.comment "        : "A welcome greeting",
 
-    "farewell"              : "Goodbye!",
-    "_farewell.comment"     : "This is a comment to the localizer"
+    "farewell"                  : "Goodbye!",
+    "_farewell.comment"         : "This is a comment to the localizer",
+
+    // Appbar
+    "xpaint_appbar_colorPicker" : "Picker",
+    "xpaint_appbar_brush"       : "Brush",
+    "xpaint_appbar_shape"       : "Shape",
+    "xpaint_appbar_redo"        : "Redo",
+    "xpaint_appbar_undo"        : "Undo",
+    "xpaint_appbar_eraser"      : "Eraser",
+    "xpaint_appbar_crop"        : "Crop",
+    "xpaint_appbar_palette"     : "Palette",
+    "xpaint_appbar_gallery"     : "Gallery",
+    
+    // Brush
+    "palette_brush_size"        : "Size",
+    "palette_brush_red"         : "Red",
+    "palette_brush_green"       : "Green",
+    "palette_brush_blue"        : "Blue",
+    "palette_brush_opacity"     : "Opacity"
+
 }
