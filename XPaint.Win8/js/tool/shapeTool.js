@@ -3,41 +3,72 @@
     XPaint = XPaint || {};
 
     XPaint.ShapeType = {
-        none    : 0,
-        rect    : 1,
-        ellipse : 2,
-        polygon : 3,
-        star    : 4
+        none: 0,
+        rect: 1,
+        ellipse: 2,
+        polygon: 3,
+        star: 4
     };
+
+    XPaint.ShapeData = [
+    { title: "Rectangle", picture: "/assets/images/rect.png", text: "rect" },
+    { title: "Ellipse", picture: "/assets/images/ellipse.png", text: "ellipse" },
+    { title: "Polygon", picture: "/assets/images/polygon.png", text: "polygon" },
+    { title: "Start", picture: "/assets/images/star.png", text: "star" }
+    ];
 
     XPaint.ShapeTool = function () {
         var borderColor, borderSize, color = color, shapeType;
 
         this.view = "/html/palettes/shape.html";
 
-        this.onmousedown = function (e) {
-            this._isMouseDown = true;
+        this.shapeType = XPaint.ShapeType.rect;
 
-            this._startX = e.pageX;
-            this._startY = e.pageY;
+        var context = layerManager.getDefault().context;
+        var opeartionLayer = layerManager.getOperation();
+        var lastPos;
+
+        this.setStyle = function () {
+            layerManager.setStyle({
+                strokeStyle : Utility.colorToStyle(Settings.brush.color),
+                lineWidth: Settings.brush.width,
+                lineCap : 'round',
+                lineJoin :'round'
+            });
         }
 
-        this.onmouseup = function (e) {
+        this.down = function (e) {
+            context.beginPath();
+            this.setStyle();
+
+            lastPos = { x: e.x, y: e.y };
+        }
+
+        this.up = function (e) {
             this._isMouseDown = false;
+            
+            context.closePath();
+            
+            var r = Utility.getRect(lastPos, e);
 
-            var x = e.pageX;
-            var y = e.pageY;
-
-            var context = this._context;
-
-            context.moveTo(this._startX, this._startY);
-            context.lineTo(x, y);
-            context.stroke();
+            context.fillRect(r.x, r.y, r.width, r.height);
+            context.strokeRect(r.x, r.y, r.width, r.height);
+            
         }
 
-        this.prototype = XPaint.Tool.prototype;
-        this.prototype.base = XPaint.Tool;
-        this.constructor = XPaint.ShapeTool;
+        this.move = function (e) {
+            var offsetX = 0;
+            
+            var r = Utility.getRect(lastPos, e);
+
+            opeartionLayer.clear();
+            opeartionLayer.context.strokeRect(r.x, r.y, r.width, r.height);
+        }
+
+        this.changeType = function (g, value, el, eventName) {
+            console.log(arguments);
+        }
+
     }
 
 })();

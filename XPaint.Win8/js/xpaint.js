@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var tool;
+    this.tool = null;
 
     function hookupAppbarEvents() {
         var elements = document.getElementsByClassName('win-command');
@@ -93,6 +93,9 @@
         width: function () { return layerManager.defaultLayer.width; },
         height: function () { return layerManager.defaultLayer.height; },
         getTool: function () { return tool; },
+        curTool: {
+            get: function () { return tool; }
+        },
         setTool: function (t) { return tool = t; }
     });
 })();

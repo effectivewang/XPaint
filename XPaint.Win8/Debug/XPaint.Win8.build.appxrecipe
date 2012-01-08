@@ -602,7 +602,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-01-08T00:42:37.475</Modified>
+      <Modified>2012-01-09T01:10:37.110</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\default.html">
       <PackagePath>default.html</PackagePath>
@@ -614,19 +614,19 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\color.html">
       <PackagePath>html\palettes\color.html</PackagePath>
-      <Modified>2012-01-04T21:33:26.093</Modified>
+      <Modified>2012-01-08T22:07:47.531</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\shape.html">
       <PackagePath>html\palettes\shape.html</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2012-01-09T00:21:23.164</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\size.html">
       <PackagePath>html\palettes\size.html</PackagePath>
-      <Modified>2012-01-05T22:12:58.422</Modified>
+      <Modified>2012-01-08T23:39:21.043</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\xpaint.html">
       <PackagePath>html\xpaint.html</PackagePath>
-      <Modified>2012-01-08T00:39:24.861</Modified>
+      <Modified>2012-01-09T00:52:31.159</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command\command.js">
       <PackagePath>js\command\command.js</PackagePath>
@@ -642,7 +642,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\layer.js">
       <PackagePath>js\layer.js</PackagePath>
-      <Modified>2012-01-08T00:23:41.169</Modified>
+      <Modified>2012-01-09T01:10:36.221</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\loader\head.js">
       <PackagePath>js\loader\head.js</PackagePath>
@@ -650,11 +650,11 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\palettes.js">
       <PackagePath>js\palettes.js</PackagePath>
-      <Modified>2012-01-08T00:37:42.915</Modified>
+      <Modified>2012-01-08T23:40:51.183</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\brushTool.js">
       <PackagePath>js\tool\brushTool.js</PackagePath>
-      <Modified>2012-01-08T00:40:48.860</Modified>
+      <Modified>2012-01-08T22:57:51.544</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\cropTool.js">
       <PackagePath>js\tool\cropTool.js</PackagePath>
@@ -674,7 +674,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\shapeTool.js">
       <PackagePath>js\tool\shapeTool.js</PackagePath>
-      <Modified>2012-01-08T00:41:25.965</Modified>
+      <Modified>2012-01-09T01:06:12.571</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\tool.js">
       <PackagePath>js\tool\tool.js</PackagePath>
@@ -682,11 +682,11 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\utility.js">
       <PackagePath>js\utility.js</PackagePath>
-      <Modified>2012-01-08T00:37:13.792</Modified>
+      <Modified>2012-01-09T00:33:03.742</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\xpaint.js">
       <PackagePath>js\xpaint.js</PackagePath>
-      <Modified>2012-01-08T00:42:35.692</Modified>
+      <Modified>2012-01-09T00:12:59.451</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\Css\ui-dark.css">
       <PackagePath>winjs\Css\ui-dark.css</PackagePath>
@@ -706,7 +706,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\binding.js">
       <PackagePath>winjs\js\binding.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2012-01-09T00:00:09.913</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\controls.js">
       <PackagePath>winjs\js\controls.js</PackagePath>
@@ -718,11 +718,11 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\ui.js">
       <PackagePath>winjs\js\ui.js</PackagePath>
-      <Modified>2012-01-07T15:36:07.173</Modified>
+      <Modified>2012-01-08T22:34:43.174</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\uicollections.js">
       <PackagePath>winjs\js\uicollections.js</PackagePath>
-      <Modified>2011-08-23T00:28:50.000</Modified>
+      <Modified>2012-01-08T22:57:53.963</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\js\wwaapp.js">
       <PackagePath>winjs\js\wwaapp.js</PackagePath>
