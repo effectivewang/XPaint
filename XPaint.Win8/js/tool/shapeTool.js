@@ -51,6 +51,7 @@
             
             var r = Utility.getRect(lastPos, e);
 
+            opeartionLayer.clear();
             context.fillRect(r.x, r.y, r.width, r.height);
             context.strokeRect(r.x, r.y, r.width, r.height);
             

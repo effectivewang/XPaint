@@ -51,15 +51,15 @@
             XPaint.getTool().down(e);
         }
 
-        var canvas = document.getElementById('xpaint');
-        canvas.height = window.screen.height;
-        canvas.width = window.screen.width;
+        var conatainer = document.getElementById('layerHost');
+        conatainer.height = window.screen.height;
+        conatainer.width = window.screen.width;
 
-        layers = layerManager.createLayers(canvas);
+        layers = layerManager.createLayers(conatainer);
 
-        canvas.addEventListener('MSPointerDown', down, false);
-        canvas.addEventListener('MSPointerMove', move, false);
-        canvas.addEventListener('MSPointerUp', up, false);
+        conatainer.addEventListener('MSPointerDown', down, false);
+        conatainer.addEventListener('MSPointerMove', move, false);
+        conatainer.addEventListener('MSPointerUp', up, false);
 
         document.getElementById('appbar').addEventListener('MSPointerMove', up, false);
     }

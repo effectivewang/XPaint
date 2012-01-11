@@ -1,26 +1,36 @@
 ﻿(function layer(canvas) {
 
-    var canvas;
-    var ctx;
 
-    function create(canvas, zIndex) {
+    function create(container, zIndex) {
         var c = document.createElement("canvas");
         c.className = "layer";
         c.style.zIndex = zIndex;
+        c.width = container.width;
+        c.height = container.height;
 
-        this.canvas = c;
-        this.context = c.getContext("2d");
-
-        return this;
-    }
-
-    function clear() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        c.id  = "canvas_" + zIndex;
+        container.appendChild(c);
+        
+        return {
+            canvas: c,
+            context: c.getContext("2d"),
+            hide: function () {
+                this.canvas.style.visibility = "hidden";
+            },
+            show: function () {
+                this.canvas.style.visibility = "visible";
+            },
+            transparent: function() {
+                this.canvas.style.background = "none";
+            },
+            clear: function () {
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            }
+        };
     }
 
     WinJS.Namespace.define("layer", {
-        create: create,
-        clear: clear
+        create: create
     });
 
 })();
@@ -28,10 +38,11 @@
 (function () {
 
     var layers;
-    function createLayers(canvas) {
-        this.operationLayer = layer.create(canvas, 1);
-        this.paintingLayer = layer.create(canvas, 0);
+    function createLayers(container) {
+        this.operationLayer = layer.create(container, 3);
+        this.paintingLayer = layer.create(container, 2);
 
+        this.operationLayer.transparent();
         layers = [this.operationLayer, this.paintingLayer];
         return layers;
     }
