@@ -30,10 +30,10 @@
 
         this.setStyle = function () {
             layerManager.setStyle({
-                strokeStyle : Utility.colorToStyle(Settings.brush.color),
+                strokeStyle: Utility.colorToStyle(Settings.brush.color),
                 lineWidth: Settings.brush.width,
-                lineCap : 'round',
-                lineJoin :'round'
+                lineCap: 'round',
+                lineJoin: 'round'
             });
         }
 
@@ -46,30 +46,65 @@
 
         this.up = function (e) {
             this._isMouseDown = false;
-            
-            context.closePath();
-            
+
             var r = Utility.getRect(lastPos, e);
 
             opeartionLayer.clear();
-            context.fillRect(r.x, r.y, r.width, r.height);
-            context.strokeRect(r.x, r.y, r.width, r.height);
-            
+
+            switch (this.shapeType) {
+                case XPaint.ShapeType.rect:
+                    context.fillRect(r.x, r.y, r.width, r.height);
+                    context.strokeRect(r.x, r.y, r.width, r.height);
+                    break;
+                case XPaint.ShapeType.ellipse:
+                    context.ellipse(r.x, r.y, r.width, r.height);
+
+                    context.fill();
+                    break;
+                default: break;
+            }
+
+            context.closePath();
         }
 
         this.move = function (e) {
             var offsetX = 0;
-            
+
             var r = Utility.getRect(lastPos, e);
 
             opeartionLayer.clear();
-            opeartionLayer.context.strokeRect(r.x, r.y, r.width, r.height);
+            opeartionLayer.context.beginPath();
+
+            switch (this.shapeType) {
+                case XPaint.ShapeType.rect:
+                    opeartionLayer.context.rect(r.x, r.y, r.width, r.height);
+                    break;
+                case XPaint.ShapeType.ellipse:                    
+                    opeartionLayer.context.ellipse(r.x, r.y, r.width, r.height);
+                    break;
+                case XPaint.ShapeType.polygon:
+
+                    break;
+                case XPaint.ShapeType.star:
+
+                    break;
+            }
+
+            opeartionLayer.context.closePath();
+            opeartionLayer.context.stroke();
         }
 
         this.changeType = function (g, value, el, eventName) {
-            console.log(arguments);
+
+            el.addEventListener("change", function (evt) {
+                var target = evt.currentTarget;
+                XPaint.curTool.shapeType = parseInt(target.value);
+            });
         }
 
+        this.prototype = XPaint.Tool.prototype;
+        this.prototype.base = XPaint.Tool;
+        this.constructor = XPaint.BrushTool;
     }
 
 })();

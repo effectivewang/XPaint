@@ -169,13 +169,15 @@
     <Content Include="css\style.css" />
     <Content Include="default.html" />
     <Content Include="html\gallery.html" />
-    <Content Include="html\palettes\color.html" />
+    <Content Include="html\palettes\picker.html" />
     <Content Include="html\palettes\shape.html" />
+    <Content Include="html\palettes\erasersize.html" />
     <Content Include="html\palettes\size.html" />
     <Content Include="html\xpaint.html" />
     <AppxManifest Include="package.appxmanifest" />
     <Content Include="js\command\command.js" />
     <Content Include="js\command\history.js" />
+    <Content Include="js\extendcanvas.js" />
     <Content Include="js\layer.js" />
     <Content Include="js\loader\head.js" />
     <Content Include="js\palettes.js" />

@@ -6,16 +6,12 @@
 <body>
     <div id="shapePalette" role="main" class="palette">
         <div class="options">
-<!--             <select size="5" id="Select1" aria-labelledby="listLabel" data-win-bind="value: XPaint.curTool.shapeType; change: XPaint.curTool.changeType">-->
-            <select size="5" id="shapeSelect" aria-labelledby="listLabel">
+            <select size="5" id="shapeSelect" aria-labelledby="listLabel" data-win-bind="value: XPaint.curTool.shapeType; change: XPaint.curTool.shapeType XPaint.curTool.changeType">
                 <option value="1" selected="selected">Rectangle</option>
                 <option value="2">Ellipse</option>
-                <option value="3">Polygon</option>
-                <option value="4">Star</option>
             </select>
         </div>
         <div class="details" role="region" aria-labelledby="descLabel" aria-live="assertive">
-    
         </div>
     </div>
 </body>

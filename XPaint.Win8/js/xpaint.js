@@ -1,6 +1,7 @@
 ﻿(function () {
 
     this.tool = null;
+    this.tools = {};
 
     function hookupAppbarEvents() {
         var elements = document.getElementsByClassName('win-command');
@@ -11,8 +12,15 @@
                 el.addEventListener('click', function () {
                     var target = arguments[0].target;
 
-                    var toolName = "XPaint." + target.id;
-                    var tool = new Function("return new " + toolName + "();")();
+                    var toolName = target.id;
+                    var toolFullName = "XPaint." + target.id;
+
+                    var tool = tools[target.id];
+
+                    if (tool == null) {
+                        tool = new Function("return new " + toolFullName + "();")();
+                        tools[toolName] = tool;
+                    }
 
                     var appbar = document.getElementById("appbar");
                     var paletteName, paletteHTML;
@@ -22,7 +30,9 @@
 
                     XPaint.setTool(tool);
 
-                    Palettes.togglePalette(paletteName, paletteHTML, target);
+                    if (tool.view != null) {
+                        Palettes.togglePalette(paletteName, paletteHTML, target);
+                    }
                 }, false);
             }
         }
@@ -64,11 +74,49 @@
         document.getElementById('appbar').addEventListener('MSPointerMove', up, false);
     }
 
+    function setTool(t) {
+        if (t == null) return;
+
+        if (tool != null && tool.deactive != null) {
+            tool.deactive();
+        }
+
+        if (t.active != null) {
+            t.active();
+        }
+
+        function getToolId(t) {
+            var toolName = null;
+            for (var v in tools) {
+                if (tools[v] === t) {
+                    toolName = v;
+                    break;
+                }
+            }
+
+            return toolName;
+        }
+
+        if (tool != null) {
+            WinJS.Utilities.removeClass(document.querySelector('#' + getToolId(tool) + ' .win-commandicon'), 'activetool');
+        }
+
+        WinJS.Utilities.addClass(document.querySelector('#' + getToolId(t) + ' .win-commandicon'), 'activetool');
+
+        return tool = t;
+    }
+
     function onload(elements, state) {
         hookupAppbarEvents();
         hookupcanvasEvents();
 
-        XPaint.setTool(new XPaint.BrushTool());
+        var t = new XPaint.BrushTool();
+        tools["BrushTool"] = t;
+        XPaint.setTool(t);
+    }
+
+    function setCursor(cursor) {
+        document.getElementById('layerHost').style.cursor = cursor;
     }
 
     WinJS.Application.addEventListener('fragmentappended', function handler(e) {
@@ -96,6 +144,7 @@
         curTool: {
             get: function () { return tool; }
         },
-        setTool: function (t) { return tool = t; }
+        setTool: setTool,
+        setCursor: setCursor
     });
 })();

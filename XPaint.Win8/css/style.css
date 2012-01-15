@@ -67,6 +67,9 @@ canvas.layer
     line-height: 36px; /* line-height must match the content box height */
 }
 
+.activetool {
+    background-color: rgba(0, 176, 216, 1);
+}
 
 /* Color, brush, and eraser palette styling.
 ***************************************************************/
@@ -146,3 +149,4 @@ input[type="range"].size::-ms-fill-lower {
 	width: 0;
 	margin-left: -20px;
 }
+

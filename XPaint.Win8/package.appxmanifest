@@ -20,9 +20,20 @@
         <DefaultTile ShowName="true" />
         <SplashScreen Image="assets\images\splashscreen.png" />
       </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="default.html">
+          <ShareTarget>
+            <SupportedFileTypes>
+              <FileType>.gif</FileType>
+              <FileType>.bmp</FileType>
+              <FileType>.jpg</FileType>
+              <FileType>.png</FileType>
+            </SupportedFileTypes>
+            <DataFormat>bitmap</DataFormat>
+            <DataFormat>text</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>

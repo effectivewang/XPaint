@@ -47,7 +47,7 @@
     }
 
     function updateCurrentColor() {
-        document.getElementById('colorPalette').style.backgroundColor = XPaint.colorToStyle(Settings.brush.color);
+        document.getElementById('pickerToolBackground').style.backgroundColor = Utility.colorToStyle(Settings.brush.color);
     }
 
     function swatchClicked(e) {

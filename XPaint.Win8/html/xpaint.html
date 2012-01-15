@@ -25,14 +25,14 @@
                 </span>
                 <span id="lbl-cmd-shape" class="win-label" data-win-res="textContent: xpaint_appbar_shape"></span>
             </button>
-            <button aria-labelledby="lbl-cmd-eraser" id="EraserTool" class="win-command">
+            <button aria-labelledby="lbl-cmd-eraser" id="EraseTool" class="win-command">
                 <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/eraser.png)">
                 </span>
                 <span id="lbl-cmd-eraser" class="win-label" data-win-res="textContent: xpaint_appbar_eraser"></span>
             </button>
             
             <button aria-labelledby="lbl-cmd-colorPicker" id="PickerTool" class="win-command">
-                <span class="win-spritestates win-commandicon win-large" style="background-image: url(/assets/icons/appbar/colorPicker.png)" data-win-bind="style.backgroundColor: Settings.brush.color Palettes.colorToStyle">
+                <span class="win-spritestates win-commandicon win-large" id="pickerToolBackground" style="background-image: url(/assets/icons/appbar/colorPicker.png)" data-win-bind="style.backgroundColor: Settings.brush.color Utility.colorToStyle">
                 </span>
                 <span id="lbl-cmd-colorPicker" class="win-label" data-win-res="textContent: xpaint_appbar_colorPicker"></span>
             </button>

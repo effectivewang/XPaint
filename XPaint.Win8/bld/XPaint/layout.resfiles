@@ -147,12 +147,14 @@ css\default.css
 css\style.css
 default.html
 html\gallery.html
-html\palettes\color.html
+html\palettes\picker.html
 html\palettes\shape.html
+html\palettes\erasersize.html
 html\palettes\size.html
 html\xpaint.html
 js\command\command.js
 js\command\history.js
+js\extendcanvas.js
 js\layer.js
 js\loader\head.js
 js\palettes.js
