@@ -1,1 +1,18 @@
 XPaint aims to provide a HTML5 based graphics application, just like paint on windows.
+
+The target of XPaint is to research on the HTML5 canvas capacibility, see how it function in Windows 8 platform and Web Browsers with HTML5 supported.
+
+The phase I mainly focus on Windows 8 platform, the projet is called XPaint.Win8, which is based on Windows 8 and the WinRT features.
+
+The XPaint would provide following abilities:
+  > Brush
+  > Shapes
+  > Eraser
+  > History
+  > Gallery
+  > Share
+  > Import
+  > Export
+  > Save
+
+I can be reached at http://weibo.com/effectivewang
