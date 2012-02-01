@@ -3,6 +3,35 @@
     this.tool = null;
     this.tools = {};
 
+    function createTool(target) {
+        var toolName = target.id;
+        var toolFullName = "XPaint." + target.id;
+
+        var tool = tools[target.id];
+
+        if (tool == null) {
+            tool = new Function("return new " + toolFullName + "();")();
+            tools[toolName] = tool;
+        }
+
+        var appbar = document.getElementById("appbar");
+        var paletteName, paletteHTML;
+
+        paletteName = toolName;
+        paletteHTML = tool.view;
+
+        XPaint.setTool(tool);
+
+        if (tool.view != null) {
+            Palettes.togglePalette(paletteName, paletteHTML, target);
+        }
+    }
+
+    function updateHistoryState() {
+        document.getElementById('undo').disabled = !XPaint.history.canUndo();
+        document.getElementById('redo').disabled = !XPaint.history.canRedo();
+    }
+
     function hookupAppbarEvents() {
         var elements = document.getElementsByClassName('win-command');
 
@@ -12,26 +41,16 @@
                 el.addEventListener('click', function () {
                     var target = arguments[0].target;
 
-                    var toolName = target.id;
-                    var toolFullName = "XPaint." + target.id;
-
-                    var tool = tools[target.id];
-
-                    if (tool == null) {
-                        tool = new Function("return new " + toolFullName + "();")();
-                        tools[toolName] = tool;
+                    if (target.id == 'undo') {
+                        XPaint.history.undo();
+                        updateHistoryState();
                     }
-
-                    var appbar = document.getElementById("appbar");
-                    var paletteName, paletteHTML;
-
-                    paletteName = toolName;
-                    paletteHTML = tool.view;
-
-                    XPaint.setTool(tool);
-
-                    if (tool.view != null) {
-                        Palettes.togglePalette(paletteName, paletteHTML, target);
+                    else if (target.id == 'redo') {
+                        XPaint.history.redo();
+                        updateHistoryState();
+                    }
+                    else {
+                        createTool(target);
                     }
                 }, false);
             }
@@ -40,7 +59,9 @@
 
     function hookupcanvasEvents() {
         var painting = false;
+        XPaint.history = new  XPaint.history();
 
+        var command = null;
         function move(e) {
             if (XPaint.getTool() == null || !painting) return;
 
@@ -52,6 +73,12 @@
 
             painting = false;
             XPaint.getTool().up(e);
+
+            if (command != null) {
+                command.execute();
+                XPaint.history.queue(command);
+            }
+            updateHistoryState();
         }
 
         function down(e) {
@@ -59,6 +86,8 @@
 
             painting = true;
             XPaint.getTool().down(e);
+
+            command = new XPaint.command();
         }
 
         var conatainer = document.getElementById('layerHost');

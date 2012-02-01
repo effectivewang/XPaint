@@ -11,14 +11,6 @@
         var lastPos;
         var width = 15;
 
-        this.setStyle = function () {
-            context.strokeStyle = Utility.colorToStyle(Settings.brush.color);
-            context.lineWidth = Settings.brush.width;
-            width = Settings.brush.width;
-            context.lineCap = 'round';
-            context.lineJoin = 'round';
-        }
-
         this.down = function (e) {
             this.setStyle();
 

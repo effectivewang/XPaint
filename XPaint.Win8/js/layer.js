@@ -14,6 +14,8 @@
         return {
             canvas: c,
             context: c.getContext("2d"),
+            width: c.width,
+            height: c.height,
             hide: function () {
                 this.canvas.style.visibility = "hidden";
             },

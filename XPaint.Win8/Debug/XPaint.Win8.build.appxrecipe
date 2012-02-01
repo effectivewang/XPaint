@@ -8,7 +8,7 @@
   <ItemGroup>
     <AppXManifest Include="C:\Projects\XPaint\XPaint.Win8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2012-01-15T22:59:00.535</Modified>
+      <Modified>2012-02-01T22:45:17.253</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -602,11 +602,11 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-01-15T22:59:00.521</Modified>
+      <Modified>2012-02-01T23:31:04.576</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2012-01-15T22:26:52.243</Modified>
+      <Modified>2012-02-01T23:10:21.672</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\gallery.html">
       <PackagePath>html\gallery.html</PackagePath>
@@ -615,6 +615,10 @@
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\erasersize.html">
       <PackagePath>html\palettes\erasersize.html</PackagePath>
       <Modified>2012-01-15T22:10:12.109</Modified>
+    </AppXPackagedFile>
+    <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\palette.html">
+      <PackagePath>html\palettes\palette.html</PackagePath>
+      <Modified>2012-01-24T22:07:50.067</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\palettes\picker.html">
       <PackagePath>html\palettes\picker.html</PackagePath>
@@ -630,15 +634,15 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\html\xpaint.html">
       <PackagePath>html\xpaint.html</PackagePath>
-      <Modified>2012-01-15T22:37:28.964</Modified>
+      <Modified>2012-02-01T23:07:07.916</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command\command.js">
       <PackagePath>js\command\command.js</PackagePath>
-      <Modified>2011-12-16T22:21:10.836</Modified>
+      <Modified>2012-02-01T23:27:03.378</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\command\history.js">
       <PackagePath>js\command\history.js</PackagePath>
-      <Modified>2012-01-03T20:37:54.257</Modified>
+      <Modified>2012-02-01T23:31:03.602</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -650,7 +654,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\layer.js">
       <PackagePath>js\layer.js</PackagePath>
-      <Modified>2012-01-15T12:18:02.347</Modified>
+      <Modified>2012-02-01T22:28:10.010</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\loader\head.js">
       <PackagePath>js\loader\head.js</PackagePath>
@@ -666,15 +670,15 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\cropTool.js">
       <PackagePath>js\tool\cropTool.js</PackagePath>
-      <Modified>2012-01-07T23:50:30.260</Modified>
+      <Modified>2012-01-24T23:04:58.790</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\eraseTool.js">
       <PackagePath>js\tool\eraseTool.js</PackagePath>
-      <Modified>2012-01-15T22:25:37.009</Modified>
+      <Modified>2012-01-24T22:08:06.373</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\pickerTool.js">
       <PackagePath>js\tool\pickerTool.js</PackagePath>
-      <Modified>2012-01-15T22:33:54.762</Modified>
+      <Modified>2012-02-01T22:13:17.738</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\selectTool.js">
       <PackagePath>js\tool\selectTool.js</PackagePath>
@@ -682,7 +686,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\shapeTool.js">
       <PackagePath>js\tool\shapeTool.js</PackagePath>
-      <Modified>2012-01-15T13:11:01.495</Modified>
+      <Modified>2012-01-24T22:19:16.462</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\tool\tool.js">
       <PackagePath>js\tool\tool.js</PackagePath>
@@ -694,7 +698,7 @@
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\js\xpaint.js">
       <PackagePath>js\xpaint.js</PackagePath>
-      <Modified>2012-01-15T22:32:21.148</Modified>
+      <Modified>2012-02-01T23:28:08.003</Modified>
     </AppXPackagedFile>
     <AppXPackagedFile Include="C:\Projects\XPaint\XPaint.Win8\winjs\Css\ui-dark.css">
       <PackagePath>winjs\Css\ui-dark.css</PackagePath>

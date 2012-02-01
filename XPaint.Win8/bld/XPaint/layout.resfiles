@@ -147,6 +147,7 @@ css\default.css
 css\style.css
 default.html
 html\gallery.html
+html\palettes\palette.html
 html\palettes\picker.html
 html\palettes\shape.html
 html\palettes\erasersize.html

@@ -169,6 +169,7 @@
     <Content Include="css\style.css" />
     <Content Include="default.html" />
     <Content Include="html\gallery.html" />
+    <Content Include="html\palettes\palette.html" />
     <Content Include="html\palettes\picker.html" />
     <Content Include="html\palettes\shape.html" />
     <Content Include="html\palettes\erasersize.html" />

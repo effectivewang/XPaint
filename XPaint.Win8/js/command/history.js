@@ -1,23 +1,35 @@
 ﻿(function () {
-    
+
     XPaint = XPaint || {};
 
     XPaint.history = function () {
-        var undostack = [];
-        var redostack = [];
+        var commands = [];
+        var index = 0;
 
-        function redo() {
-            if (redostack.length < 1) return;
+        this.redo = function() {
+            if (!this.canRedo()) return;
+
+            commands[index++].execute();
         }
 
-        function undo() {
-            if (undostack.length < 1) return;
+        this.undo = function() {
+            if (!this.canUndo()) return;
+
+            commands[index--].unexecute();
         }
-    
-        WinJS.Application.addEventListener('commandExecuted', function handler(cmd) {
-            if (cmd != undefined) {
-                undostack.push(cmd);
-            }
-        });
+
+        this.canUndo = function() {
+            return commands.length > 0;
+        }
+
+        this.canRedo = function() {
+            return index < commands.length - 1;
+        }
+
+        this.queue = function (cmd) {
+            commands.push(cmd);
+            index = commands.length - 1;
+        }
     }
+
 })();
