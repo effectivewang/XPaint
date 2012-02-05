@@ -34,3 +34,11 @@
     }
 
 })();
+        }
+
+        this.prototype = XPaint.Tool.prototype;
+        this.prototype.base = XPaint.Tool;
+        this.constructor = XPaint.PickerTool;
+    }
+
+})();

@@ -14,6 +14,11 @@
             tools[toolName] = tool;
         }
 
+                    if (tool == null) {
+                        tool = new Function("return new " + toolFullName + "();")();
+                        tools[toolName] = tool;
+                    }
+
         var appbar = document.getElementById("appbar");
         var paletteName, paletteHTML;
 
