@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ec9d2385-76aa-4105-a8ef-e66bd79c6ba9}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\4.0\Microsoft.VisualStudioVersion.v11.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.props" />
+  <PropertyGroup>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets\icons\appbar\applyFilter.png" />
+    <Content Include="assets\icons\appbar\brush.png" />
+    <Content Include="assets\icons\appbar\colorPicker.png" />
+    <Content Include="assets\icons\appbar\deleteFile.png" />
+    <Content Include="assets\icons\appbar\eraser.png" />
+    <Content Include="assets\icons\appbar\home.png" />
+    <Content Include="assets\icons\appbar\import.png" />
+    <Content Include="assets\icons\appbar\newFile.png" />
+    <Content Include="assets\icons\appbar\palette.png" />
+    <Content Include="assets\icons\appbar\redo.png" />
+    <Content Include="assets\icons\appbar\saveAs.png" />
+    <Content Include="assets\icons\appbar\undo.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\marker.png" />
+    <Content Include="assets\images\mask.png" />
+    <Content Include="assets\images\patterns\adc-en-100c-000000.png" />
+    <Content Include="assets\images\patterns\ad_choices_en.png" />
+    <Content Include="assets\images\patterns\ad_choices_i.png" />
+    <Content Include="assets\images\patterns\pattern_057.gif" />
+    <Content Include="assets\images\patterns\pattern_058.gif" />
+    <Content Include="assets\images\patterns\pattern_059.gif" />
+    <Content Include="assets\images\patterns\pattern_060.gif" />
+    <Content Include="assets\images\patterns\pattern_061.gif" />
+    <Content Include="assets\images\patterns\pattern_062.gif" />
+    <Content Include="assets\images\patterns\pattern_063.gif" />
+    <Content Include="assets\images\patterns\pattern_064.gif" />
+    <Content Include="assets\images\patterns\pattern_065.gif" />
+    <Content Include="assets\images\patterns\pattern_066.gif" />
+    <Content Include="assets\images\patterns\pattern_067.gif" />
+    <Content Include="assets\images\patterns\pattern_068.gif" />
+    <Content Include="assets\images\patterns\pattern_069.gif" />
+    <Content Include="assets\images\patterns\pattern_070.gif" />
+    <Content Include="assets\images\patterns\pattern_071.gif" />
+    <Content Include="assets\images\patterns\pattern_072.gif" />
+    <Content Include="assets\images\patterns\pattern_073.gif" />
+    <Content Include="assets\images\patterns\pattern_074.gif" />
+    <Content Include="assets\images\patterns\pattern_075.gif" />
+    <Content Include="assets\images\patterns\pattern_076.gif" />
+    <Content Include="assets\images\patterns\pattern_077.gif" />
+    <Content Include="assets\images\patterns\pattern_078.gif" />
+    <Content Include="assets\images\patterns\pattern_079.gif" />
+    <Content Include="assets\images\patterns\pattern_080.gif" />
+    <Content Include="assets\images\patterns\pattern_081.gif" />
+    <Content Include="assets\images\patterns\pattern_082.gif" />
+    <Content Include="assets\images\patterns\pattern_083.gif" />
+    <Content Include="assets\images\patterns\pattern_084.gif" />
+    <Content Include="assets\images\patterns\pattern_085.gif" />
+    <Content Include="assets\images\patterns\pattern_086.gif" />
+    <Content Include="assets\images\patterns\pattern_087.gif" />
+    <Content Include="assets\images\patterns\pattern_088.gif" />
+    <Content Include="assets\images\patterns\pattern_089.gif" />
+    <Content Include="assets\images\patterns\pattern_090.gif" />
+    <Content Include="assets\images\patterns\pattern_091.gif" />
+    <Content Include="assets\images\patterns\pattern_092.gif" />
+    <Content Include="assets\images\patterns\pattern_093.gif" />
+    <Content Include="assets\images\patterns\pattern_094.gif" />
+    <Content Include="assets\images\patterns\pattern_095.gif" />
+    <Content Include="assets\images\patterns\pattern_096.gif" />
+    <Content Include="assets\images\patterns\pattern_097.gif" />
+    <Content Include="assets\images\patterns\pattern_098.gif" />
+    <Content Include="assets\images\patterns\pattern_099.gif" />
+    <Content Include="assets\images\patterns\pattern_100.gif" />
+    <Content Include="assets\images\patterns\pattern_101.gif" />
+    <Content Include="assets\images\patterns\pattern_102.gif" />
+    <Content Include="assets\images\patterns\pattern_103.gif" />
+    <Content Include="assets\images\patterns\pattern_104.gif" />
+    <Content Include="assets\images\patterns\pattern_105.gif" />
+    <Content Include="assets\images\patterns\pattern_106.gif" />
+    <Content Include="assets\images\patterns\pattern_107.gif" />
+    <Content Include="assets\images\patterns\pattern_108.gif" />
+    <Content Include="assets\images\patterns\pattern_109.gif" />
+    <Content Include="assets\images\patterns\pattern_110.gif" />
+    <Content Include="assets\images\patterns\pattern_111.gif" />
+    <Content Include="assets\images\patterns\pattern_112.gif" />
+    <Content Include="assets\images\patterns\pattern_113.gif" />
+    <Content Include="assets\images\patterns\pattern_114.gif" />
+    <Content Include="assets\images\patterns\pattern_115.gif" />
+    <Content Include="assets\images\patterns\pattern_116.gif" />
+    <Content Include="assets\images\patterns\pattern_117.gif" />
+    <Content Include="assets\images\patterns\pattern_118.gif" />
+    <Content Include="assets\images\patterns\pattern_119.gif" />
+    <Content Include="assets\images\patterns\pattern_120.gif" />
+    <Content Include="assets\images\patterns\pattern_121.gif" />
+    <Content Include="assets\images\patterns\pattern_122.gif" />
+    <Content Include="assets\images\patterns\pattern_123.gif" />
+    <Content Include="assets\images\patterns\pattern_124.gif" />
+    <Content Include="assets\images\patterns\pattern_125.gif" />
+    <Content Include="assets\images\patterns\pattern_126.gif" />
+    <Content Include="assets\images\patterns\pattern_127.gif" />
+    <Content Include="assets\images\patterns\pattern_128.gif" />
+    <Content Include="assets\images\patterns\pattern_129.gif" />
+    <Content Include="assets\images\patterns\pattern_130.gif" />
+    <Content Include="assets\images\patterns\pattern_131.gif" />
+    <Content Include="assets\images\patterns\pattern_132.gif" />
+    <Content Include="assets\images\patterns\pattern_133.gif" />
+    <Content Include="assets\images\patterns\pattern_134.gif" />
+    <Content Include="assets\images\patterns\pattern_135.gif" />
+    <Content Include="assets\images\patterns\pattern_136.gif" />
+    <Content Include="assets\images\patterns\pattern_137.gif" />
+    <Content Include="assets\images\patterns\pattern_138.gif" />
+    <Content Include="assets\images\patterns\pattern_139.gif" />
+    <Content Include="assets\images\patterns\pattern_140.gif" />
+    <Content Include="assets\images\patterns\pattern_141.gif" />
+    <Content Include="assets\images\patterns\pattern_142.gif" />
+    <Content Include="assets\images\patterns\pattern_143.gif" />
+    <Content Include="assets\images\patterns\pattern_144.gif" />
+    <Content Include="assets\images\patterns\pattern_145.gif" />
+    <Content Include="assets\images\patterns\pattern_146.gif" />
+    <Content Include="assets\images\patterns\pattern_147.gif" />
+    <Content Include="assets\images\patterns\pattern_148.gif" />
+    <Content Include="assets\images\patterns\pattern_149.gif" />
+    <Content Include="assets\images\patterns\pattern_150.gif" />
+    <Content Include="assets\images\patterns\pattern_151.gif" />
+    <Content Include="assets\images\patterns\pattern_152.gif" />
+    <Content Include="assets\images\patterns\pattern_153.gif" />
+    <Content Include="assets\images\patterns\pattern_154.gif" />
+    <Content Include="assets\images\patterns\pattern_155.gif" />
+    <Content Include="assets\images\patterns\pattern_156.gif" />
+    <Content Include="assets\images\patterns\pattern_157.gif" />
+    <Content Include="assets\images\patterns\pattern_158.gif" />
+    <Content Include="assets\images\sliderBrushSize.png" />
+    <Content Include="assets\images\smalllogo.png" />
+    <Content Include="assets\images\splashscreen.png" />
+    <Content Include="assets\images\storelogo.png" />
+    <Content Include="assets\images\tools\ad_choices_en.png" />
+    <Content Include="assets\images\tools\ad_choices_i.png" />
+    <Content Include="assets\images\tools\Brush_2.png" />
+    <Content Include="assets\images\tools\Crop_2.png" />
+    <Content Include="assets\images\tools\Eraser_2.png" />
+    <Content Include="assets\images\tools\Fill_2.png" />
+    <Content Include="assets\images\tools\loupe.png" />
+    <Content Include="assets\images\tools\Marquee_ellipses_2.png" />
+    <Content Include="assets\images\tools\Picker_2.png" />
+    <Content Include="assets\images\tools\Shape_burst_2.png" />
+    <Content Include="assets\images\tools\Shape_ellipses_2.png" />
+    <Content Include="assets\images\tools\Shape_gear_2.png" />
+    <Content Include="assets\images\tools\Shape_polygon_2.png" />
+    <Content Include="assets\images\tools\Shape_star_2.png" />
+    <Content Include="assets\images\tools\Spirograph_2.png" />
+    <Content Include="assets\images\tools\Stamp_2.png" />
+    <Content Include="assets\images\tools\sw_add.png" />
+    <Content Include="assets\images\tools\sw_switch.png" />
+    <Content Include="assets\images\tools\Text_2.png" />
+    <Content Include="assets\images\tools\win_close.png" />
+    <Content Include="assets\images\wheel.png" />
+    <Content Include="css\default.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.html" />
+    <Content Include="html\gallery.html" />
+<<<<<<< Updated upstream
+    <Content Include="html\palettes\palette.html" />
+=======
+>>>>>>> Stashed changes
+    <Content Include="html\palettes\picker.html" />
+    <Content Include="html\palettes\shape.html" />
+    <Content Include="html\palettes\erasersize.html" />
+    <Content Include="html\palettes\size.html" />
+    <Content Include="html\xpaint.html" />
+    <AppxManifest Include="package.appxmanifest" />
+    <Content Include="js\command\command.js" />
+    <Content Include="js\command\history.js" />
+    <Content Include="js\extendcanvas.js" />
+    <Content Include="js\layer.js" />
+    <Content Include="js\loader\head.js" />
+    <Content Include="js\palettes.js" />
+    <Content Include="js\tool\cropTool.js" />
+    <Content Include="js\tool\eraseTool.js" />
+    <Content Include="js\tool\brushTool.js" />
+    <Content Include="js\tool\pickerTool.js" />
+    <Content Include="js\tool\selectTool.js" />
+    <Content Include="js\tool\shapeTool.js" />
+    <Content Include="js\tool\tool.js" />
+    <Content Include="js\utility.js" />
+    <Content Include="js\xpaint.js" />
+    <Content Include="winjs\Css\ui-dark.css" />
+    <Content Include="winjs\Css\ui-light.css" />
+    <Content Include="winjs\js\animations.js" />
+    <Content Include="winjs\js\base.js" />
+    <Content Include="winjs\js\binding.js" />
+    <Content Include="winjs\js\controls.js" />
+    <Content Include="winjs\js\ui.js" />
+    <Content Include="winjs\js\res.js" />
+    <Content Include="winjs\js\uicollections.js" />
+    <Content Include="winjs\js\wwaapp.js" />
+    <Content Include="js\default.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="strings\en-US\resources.resjson" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.targets" />
+</Project>

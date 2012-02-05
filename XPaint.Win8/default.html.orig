@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024, height=768" />
+    <title>XPaint.Win8</title>
+    <!-- WinJS references -->
+
+    <link rel="stylesheet" href="/winjs/css/ui-dark.css">
+    <script src="/winjs/js/base.js"></script>
+    <script src="/winjs/js/ui.js"></script>
+    <script src="/winjs/js/binding.js"></script>
+    <script src="/winjs/js/controls.js"></script>
+    <script src="/winjs/js/animations.js"></script>
+    <script src="/winjs/js/uicollections.js"></script>
+    <script src="/winjs/js/wwaapp.js"></script>
+    <script src="/winjs/js/res.js"></script>
+
+    <!-- XPaint.Win8 references -->
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    
+    <script src="/js/extendcanvas.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/layer.js"></script>
+    <script src="/js/xpaint.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/js/palettes.js"></script>
+    <script src="/js/command/command.js"></script>
+    <script src="/js/command/history.js"></script>
+    <script src="/js/tool/tool.js"></script>
+    <script src="/js/tool/brushTool.js"></script>
+    <script src="/js/tool/shapeTool.js"></script>
+    <script src="/js/tool/eraseTool.js"></script>
+    <script src="/js/tool/pickerTool.js"></script>
+    <script src="/js/tool/cropTool.js"></script>
+
+</head>
+<body>
+    <div id="contentHost"></div>
+</body>
+</html>
